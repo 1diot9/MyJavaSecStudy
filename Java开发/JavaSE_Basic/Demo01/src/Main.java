@@ -5,7 +5,7 @@
 public class Main {
 
 
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, IllegalAccessException {
+    public static void main(String[] args){
         System.out.println("Hello world!");
         final int z = 777;  //常量，不可修改，只能第一次赋值
         byte a = 127;
