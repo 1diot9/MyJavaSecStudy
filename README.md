@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # MyJavaSecStudy
-记录了我的Java安全学习历程
-=======
+记录一下我的Java安全学习历程
+
 # 反序列化
 
 ## hessian
@@ -58,7 +57,7 @@
 
 [JDBC-Attack 攻击利用汇总-先知社区](https://xz.aliyun.com/news/13371)
 
-[JDBC-Attack 利用汇总 - Boogiepop Doesn't Laugh](https://boogipop.com/2023/10/01/JDBC-Attack 利用汇总/#前言)
+[JDBC-Attack 利用汇总 - Boogiepop Doesn't Laugh](https://boogipop.com/2023/10/01/JDBC-Attack%20利用汇总/#前言)
 
 [Jdbc碎碎念三：内存数据库 | m0d9's blog](https://m0d9.me/2021/04/26/Jdbc碎碎念三：内存数据库/)	h2sql，hsql，sqlite，derby
 
@@ -88,7 +87,7 @@
 
 ## sqlite
 
-[JavaSec/9.JDBC Attack/SQLite/index.md at main · Y4tacker/JavaSec](https://github.com/Y4tacker/JavaSec/blob/main/9.JDBC Attack/SQLite/index.md)
+[JavaSec/9.JDBC Attack/SQLite/index.md at main · Y4tacker/JavaSec](https://github.com/Y4tacker/JavaSec/blob/main/9.JDBC%20Attack/SQLite/index.md)
 
 [CISCN2024 writeup（web部分）](https://jaspersec.top/posts/3286688009.html#ezjava)	ezjava
 
@@ -241,9 +240,3 @@
 [phith0n/JavaThings: Share Things Related to Java - Java安全漫谈笔记相关内容](https://github.com/phith0n/JavaThings?tab=readme-ov-file)
 
 
-
-
-
-
-
->>>>>>> db84501 (Initial commit)
