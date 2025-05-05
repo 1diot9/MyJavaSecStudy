@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Apr 13 20:02:54 CST 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0196-2f07-fc58-00001ea8ea58 
+on database directory D:\BaiduSyncdisk\code\MyJavaSecStudy\JDBC\Hikari\mydb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b 
+Loaded from file:/D:/sec_software/environment/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.6+9-LTS-190
+user.dir=D:\BaiduSyncdisk\code\MyJavaSecStudy\JDBC\Hikari
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath='APP.Runtime'

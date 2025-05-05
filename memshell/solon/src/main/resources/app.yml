@@ -1,0 +1,12 @@
+server.port: 8055
+
+solon.app:
+  name: 'demo-app'
+  group: 'demo'
+
+solon.logging:
+  appender:
+    console:
+      level: INFO
+    file:
+      level: INFO
