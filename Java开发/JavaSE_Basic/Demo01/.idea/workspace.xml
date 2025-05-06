@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64553916-3421-4fe1-9007-df8ea4c2ff7d" name="更改" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/Logic_Opt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/if_for.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Practice03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Demo01.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,9 @@
     "应用程序.Bit_Opt.executor": "Run",
     "应用程序.Logic_Opt.executor": "Run",
     "应用程序.Main.executor": "Run",
+    "应用程序.Practice01.executor": "Run",
+    "应用程序.Practice02.executor": "Run",
+    "应用程序.Practice03.executor": "Run",
     "应用程序.if_for.executor": "Run"
   }
 }]]></component>
@@ -76,14 +78,7 @@
       <recent name="D:\BaiduSyncdisk\code\MyJavaSecStudy\Java开发\JavaSE_Basic\Demo01" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.if_for">
-    <configuration name="Bit_Opt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bit_Opt" />
-      <module name="Demo01" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.Practice03">
     <configuration name="Logic_Opt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Logic_Opt" />
       <module name="Demo01" />
@@ -91,8 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="Practice01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice01" />
+      <module name="Demo01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Practice02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice02" />
+      <module name="Demo01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Practice03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice03" />
       <module name="Demo01" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,10 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Practice03" />
+        <item itemvalue="应用程序.Practice02" />
+        <item itemvalue="应用程序.Practice01" />
         <item itemvalue="应用程序.if_for" />
         <item itemvalue="应用程序.Logic_Opt" />
-        <item itemvalue="应用程序.Bit_Opt" />
-        <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -132,6 +142,7 @@
       <updated>1746438103017</updated>
       <workItem from="1746438104103" duration="5273000" />
       <workItem from="1746445316511" duration="1932000" />
+      <workItem from="1746527872788" duration="1740000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
