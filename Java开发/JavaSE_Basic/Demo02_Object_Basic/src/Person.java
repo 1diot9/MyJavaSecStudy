@@ -1,6 +1,7 @@
 public class Person {
     String name;
     int age;
+    static String info;     //定义静态变量
 
     //无参构造默认在编译时自带，不信可以去看看字节码
     public Person() {
