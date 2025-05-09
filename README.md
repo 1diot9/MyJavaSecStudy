@@ -1,7 +1,13 @@
 # MyJavaSecStudy
 记录一下我的Java安全学习历程
 
-# 反序列化
+[跳转到第一节](#section1)
+
+
+
+
+<a id="section1"></a>
+# 反序列化  
 
 ## hessian
 
@@ -228,6 +234,10 @@
 [自动化代码审计实践 | mayylu's blog](https://mayylu.github.io/2024/08/02/java/自动化代码审计实践/)
 
 
+
+
+
+<span id="jump">跳转到的地方</span>
 
 # 学习路线整合
 
