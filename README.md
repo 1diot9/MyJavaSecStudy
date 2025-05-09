@@ -1,13 +1,13 @@
 # MyJavaSecStudy
 记录一下我的Java安全学习历程
 
-[跳转到第一节](#section1)
+- [反序列化](#反序列化)
 
 
 
 
-<a id="section1"></a>
-# 反序列化  
+
+# 反序列化  <a id="反序列化"></a>
 
 ## hessian
 
