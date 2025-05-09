@@ -2,6 +2,9 @@
 记录一下我的Java安全学习历程
 
 - [反序列化](#反序列化)
+- [JNDI](#JNDI)
+- [JDBC](#JDBC)
+- [Fastjson&Jackson&SnakeYaml](Fastjson&Jackson&SnakeYaml)
 
 
 
@@ -23,7 +26,7 @@
 
 
 
-# JNDI
+# JNDI <a id="JNDI"></a>
 
 [RMI协议分析 - lvyyevd's 安全博客](http://www.lvyyevd.cn/archives/rmi-xie-yi-fen-xi)
 
@@ -57,7 +60,7 @@
 
 
 
-# JDBC
+# JDBC <a id="JDBC"></a>
 
 [JDBC Connection URL 攻击](https://paper.seebug.org/1832/)
 
@@ -117,7 +120,7 @@
 
 
 
-# Fastjson&Jackson&SnakeYaml
+# Fastjson&Jackson&SnakeYaml <a id="Fastjson&Jackson&SnakeYaml"></a>
 
 [Java利用无外网（上）：从HertzBeat聊聊SnakeYAML反序列化 | 离别歌](https://www.leavesongs.com/PENETRATION/jdbc-injection-with-hertzbeat-cve-2024-42323.html)
 
