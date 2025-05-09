@@ -4,7 +4,15 @@
 - [反序列化](#反序列化)
 - [JNDI](#JNDI)
 - [JDBC](#JDBC)
-- [Fastjson&Jackson&SnakeYaml](Fastjson&Jackson&SnakeYaml)
+- [Fastjson&Jackson&SnakeYaml](#Fastjson&Jackson&SnakeYaml)
+- [shiro](#shiro)
+- [内存马&回显](#内存马&回显)
+- [RASP](#RASP)
+- [各种链子&姿势](#各种链子&姿势)
+- [SpringBoot](#SpringBoot)
+- [tabby](#tabby)
+- [CodeQL](#CodeQL)
+- [学习路线整合](#学习路线整合)
 
 
 
@@ -130,7 +138,7 @@
 
 
 
-# shiro
+# shiro <a id="shiro"></a>
 
 [Java反序列化Shiro篇01-Shiro550流程分析 | Drunkbaby's Blog](https://drun1baby.top/2022/07/10/Java反序列化Shiro篇01-Shiro550流程分析/)
 
@@ -144,7 +152,7 @@
 
 
 
-# 内存马&回显
+# 内存马&回显 <a id="内存马&回显"></a>
 
 [奇安信攻防社区-Solon框架注入内存马](https://forum.butian.net/share/3700)  里面提到的Java Object Searcher值得学习
 
@@ -156,7 +164,7 @@
 
 
 
-# RASP
+# RASP <a id="RASP"></a>
 
 [JNI攻击 · 攻击Java Web应用-[Java Web安全\]](https://www.javasec.org/java-vuls/JNI.html)
 
@@ -164,7 +172,7 @@
 
 
 
-# 各种链子&姿势
+# 各种链子&姿势 <a id="各种链子&姿势"></a>
 
 [分析尝试利用tabby挖掘-SpringAOP链 - Potat0w0](https://blog.potatowo.top/2025/03/31/从复现到尝试用tabby挖掘-SpringAOP链/)
 
@@ -176,7 +184,7 @@
 
 
 
-# SpringBoot
+# SpringBoot <a id="SpringBoot"></a>
 
 [LandGrey/SpringBootVulExploit: SpringBoot 相关漏洞学习资料，利用方法和技巧合集，黑盒安全评估 check list](https://github.com/LandGrey/SpringBootVulExploit)
 
@@ -204,7 +212,7 @@
 
 
 
-# tabby
+# tabby <a id="tabby"></a>
 
 [自动化代码审计实践 | mayylu's blog](https://mayylu.github.io/2024/08/02/java/自动化代码审计实践/)
 
@@ -216,7 +224,7 @@
 
 
 
-# CodeQL
+# CodeQL <a id="CodeQL"></a>
 
 [Codeql全新版本从0到1-先知社区](https://xz.aliyun.com/news/16918)  25年的文章，比较新
 
@@ -242,7 +250,7 @@
 
 <span id="jump">跳转到的地方</span>
 
-# 学习路线整合
+# 学习路线整合 <a id="学习路线整合"></a>
 
 [前言 · 攻击Java Web应用-[Java Web安全\]](https://www.javasec.org/)
 
