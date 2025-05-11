@@ -1,4 +1,4 @@
-package parse_parseObject;
+package parse;
 
 import Person.Person1;
 import com.alibaba.fastjson.JSON;
