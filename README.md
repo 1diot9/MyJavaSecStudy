@@ -1,5 +1,5 @@
 # MyJavaSecStudy
-记录一下我的Java安全学习历程
+记录一下我的Java安全学习历程。目前入门和进阶内容放一起了，以后有空的话会整理得更清楚一些。
 
 - [反序列化](#反序列化)
 - [JNDI](#JNDI)
@@ -35,6 +35,8 @@
 
 
 # JNDI <a id="JNDI"></a>
+
+[JNDI · 攻击Java Web应用-[Java Web安全\]](https://www.javasec.org/javase/JNDI/#jndi) 里面引用了一篇命名和目录服务基本概念的文章，记得看，对后面理解RMI和LDAP很有帮助，很多东西都会在调试里遇到
 
 [RMI协议分析 - lvyyevd's 安全博客](http://www.lvyyevd.cn/archives/rmi-xie-yi-fen-xi)
 
@@ -152,7 +154,7 @@
 
 
 
-# 内存马&回显 <a id="内存马&回显"></a>
+# 内存马&回显技术 <a id="内存马&回显"></a>
 
 [奇安信攻防社区-Solon框架注入内存马](https://forum.butian.net/share/3700)  里面提到的Java Object Searcher值得学习
 
@@ -161,6 +163,8 @@
 [Shiro RememberMe 漏洞检测的探索之路 - CT Stack 安全社区](https://stack.chaitin.com/techblog/detail/39)  这里也有用到Java-object-searcher 构造tomcat回显
 
 [半自动化挖掘request实现多种中间件回显 | 回忆飘如雪](https://gv7.me/articles/2020/semi-automatic-mining-request-implements-multiple-middleware-echo/)  java-object-searcher工具的作者
+
+[内存对象搜索原理剖析-先知社区](https://xz.aliyun.com/news/11303)  java-object-searcher原理
 
 
 
