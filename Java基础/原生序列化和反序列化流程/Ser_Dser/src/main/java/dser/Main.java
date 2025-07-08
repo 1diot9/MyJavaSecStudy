@@ -25,15 +25,15 @@ public class Main {
 
 
         public static void main(String[] args) throws IOException, ClassNotFoundException {
-            Demo demo = new Demo();
-            demo.setName("1diOt9");
-            demo.setAge(10);
-            demo.setSchool("bit");
-            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("test.ser"));
-            oos.writeObject(demo);
-            oos.close();
+//            Demo demo = new Demo();
+//            demo.setName("1diOt9");
+//            demo.setAge(10);
+//            demo.setSchool("bit");
+//            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("test.bin"));
+//            oos.writeObject(demo);
+//            oos.close();
 
-            ObjectInputStream ois = new ObjectInputStream((new FileInputStream("test.ser")));
+            ObjectInputStream ois = new ObjectInputStream((new FileInputStream("test.bin")));
             ois.readObject();
         }
 

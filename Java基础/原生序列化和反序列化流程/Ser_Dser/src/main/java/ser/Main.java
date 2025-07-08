@@ -17,7 +17,7 @@ public class Main {
             Demo demo = new Demo("1diOt9");
             demo.setAge(10);
             demo.setSchool("bit");
-            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("test.ser"));
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("test.bin"));
             oos.writeObject(demo);
             oos.close();
         }
