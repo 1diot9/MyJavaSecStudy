@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -22,5 +24,13 @@ public class SerController {
         ois.readObject();
         ois.close();
         return ois.toString();
+    }
+
+    @ResponseBody
+    @RequestMapping("/lookup")
+    public String lookup(@RequestParam String url) throws NamingException {
+        InitialContext initialContext = new InitialContext();
+        initialContext.lookup(url);
+        return url;
     }
 }

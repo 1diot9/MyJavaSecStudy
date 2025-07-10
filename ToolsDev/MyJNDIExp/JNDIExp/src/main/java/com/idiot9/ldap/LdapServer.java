@@ -1,14 +1,15 @@
-package com.feihong.ldap;
+package com.idiot9.ldap;
 
-import com.feihong.ldap.controllers.LdapController;
-import com.feihong.ldap.controllers.LdapMapping;
-import com.feihong.ldap.utils.Config;
+import com.idiot9.ldap.controllers.LdapController;
+import com.idiot9.ldap.controllers.LdapMapping;
+import com.idiot9.ldap.utils.Config;
 import com.unboundid.ldap.listener.InMemoryDirectoryServer;
 import com.unboundid.ldap.listener.InMemoryDirectoryServerConfig;
 import com.unboundid.ldap.listener.InMemoryListenerConfig;
 import com.unboundid.ldap.listener.interceptor.InMemoryInterceptedSearchResult;
 import com.unboundid.ldap.listener.interceptor.InMemoryOperationInterceptor;
 import org.reflections.Reflections;
+
 import javax.net.ServerSocketFactory;
 import javax.net.SocketFactory;
 import javax.net.ssl.SSLSocketFactory;
@@ -28,7 +29,7 @@ public class LdapServer extends InMemoryOperationInterceptor {
             serverConfig.setListenerConfigs(new InMemoryListenerConfig(
                     "listen",
                     InetAddress.getByName("0.0.0.0"),
-                    Config.ldapPort,
+                    Config.ldapport,
                     ServerSocketFactory.getDefault(),
                     SocketFactory.getDefault(),
                     (SSLSocketFactory) SSLSocketFactory.getDefault()));
@@ -36,7 +37,7 @@ public class LdapServer extends InMemoryOperationInterceptor {
             serverConfig.addInMemoryOperationInterceptor(new LdapServer());
             InMemoryDirectoryServer ds = new InMemoryDirectoryServer(serverConfig);
             ds.startListening();
-            System.out.println("[+] LDAP Server Start Listening on " + Config.ldapPort + "...");
+            System.out.println("[+] LDAP Server Start Listening on " + Config.ldapport + "...");
         }
         catch ( Exception e ) {
             e.printStackTrace();
@@ -66,7 +67,7 @@ public class LdapServer extends InMemoryOperationInterceptor {
     /**
      * {@inheritDoc}
      *
-     * @see com.unboundid.ldap.listener.interceptor.InMemoryOperationInterceptor#processSearchResult(com.unboundid.ldap.listener.interceptor.InMemoryInterceptedSearchResult)
+     * @see InMemoryOperationInterceptor#processSearchResult(InMemoryInterceptedSearchResult)
      */
     @Override
     public void processSearchResult(InMemoryInterceptedSearchResult result) {

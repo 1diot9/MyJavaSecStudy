@@ -15,6 +15,8 @@ import org.springframework.web.servlet.handler.AbstractHandlerMapping;
 import javax.xml.transform.Templates;
 import java.io.Serializable;
 
+//弃用此方法，用工厂创建不同Templates
+@Deprecated
 public class TemplatesCreator {
     public static class StubTransletPayload extends AbstractTranslet implements Serializable, HandlerInterceptor {
 
