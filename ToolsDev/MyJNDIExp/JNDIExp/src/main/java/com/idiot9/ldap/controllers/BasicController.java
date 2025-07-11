@@ -90,6 +90,9 @@ public class BasicController implements LdapController {
                 case springinterceptorshell:
                     String key = base.substring(secondIndex + 1);
                     params = new String[]{key};
+                case springecho:
+                    key = base.substring(secondIndex + 1);
+                    params = new String[]{key};
             }
         }catch(Exception e){
             if(e instanceof UnSupportedPayloadTypeException) throw (UnSupportedPayloadTypeException)e;
