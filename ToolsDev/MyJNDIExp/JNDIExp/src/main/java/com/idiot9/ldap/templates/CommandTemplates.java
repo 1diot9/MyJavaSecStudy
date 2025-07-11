@@ -73,16 +73,7 @@ public class CommandTemplates implements TemplateFactory {
             final byte[] classBytes = clazz.toBytecode();
             this.bytes = classBytes;
 
-            // inject class bytes into instance
-            Reflections.setFieldValue(templates, "_bytecodes", new byte[][] {
-                    classBytes, ClassFiles.classAsBytes(TemplateFactory.Foo.class)
-            });
-
-            // required to make TemplatesImpl happy
-            Reflections.setFieldValue(templates, "_name", "Pwnr");
-            Reflections.setFieldValue(templates, "_tfactory", transFactory.newInstance());
-
-            this.templates = templates;
+            this.templates = TemplateFactory.loadBytes(this.bytes, templates);
 
         } catch (Exception e) {
             throw new RuntimeException(e);

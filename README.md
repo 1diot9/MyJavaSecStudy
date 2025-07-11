@@ -10,6 +10,7 @@
 - [RASP](#RASP)
 - [各种链子&姿势](#各种链子&姿势)
 - [SpringBoot](#SpringBoot)
+- [工具开发/二开](#devTools)
 - [tabby](#tabby)
 - [CodeQL](#CodeQL)
 - [学习路线整合](#学习路线整合)
@@ -210,6 +211,10 @@
 
 
 
+# 工具开发/二开<a id="devTools"></a>
+
+[新年快乐 | ysoserial 分析与魔改](https://mp.weixin.qq.com/s?__biz=MzkwMzQyMTg5OA==&mid=2247486647&idx=1&sn=2e2ce3bad829dacd4807cbdb88e4ba2f&chksm=c097c612f7e04f0411454885e3d3248607f32ab6722592cc005eb610973220e8156999e75751&scene=178&cur_album_id=3744968375202660352&search_click_id=#rd)
+
 
 
 
@@ -252,7 +257,7 @@
 
 
 
-<span id="jump">跳转到的地方</span>
+
 
 # 学习路线整合 <a id="学习路线整合"></a>
 

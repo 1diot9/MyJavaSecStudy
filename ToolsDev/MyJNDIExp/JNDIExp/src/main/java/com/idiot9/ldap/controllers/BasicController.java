@@ -4,6 +4,7 @@ import com.idiot9.ldap.enumtypes.PayloadType;
 import com.idiot9.ldap.exceptions.IncorrectParamsException;
 import com.idiot9.ldap.exceptions.UnSupportedPayloadTypeException;
 import com.idiot9.ldap.templates.CommandTemplates;
+import com.idiot9.ldap.templates.SpringEchoTemplates;
 import com.idiot9.ldap.templates.SpringInterceptorTemplates;
 import com.idiot9.ldap.utils.*;
 import com.unboundid.ldap.listener.interceptor.InMemoryInterceptedSearchResult;
@@ -37,6 +38,11 @@ public class BasicController implements LdapController {
                 SpringInterceptorTemplates springInterceptorTemplates = new SpringInterceptorTemplates(params[0]);
                 springInterceptorTemplates.cache();
                 className = springInterceptorTemplates.getClassName();
+                break;
+            case springecho:
+                SpringEchoTemplates springEchoTemplates = new SpringEchoTemplates(params[0]);
+                springEchoTemplates.cache();
+                className = springEchoTemplates.getClassName();
                 break;
         }
 
