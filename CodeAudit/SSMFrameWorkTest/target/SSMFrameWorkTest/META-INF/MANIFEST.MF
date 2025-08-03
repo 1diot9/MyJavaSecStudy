@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: snowstorm-maxy
+Build-Jdk: Oracle OpenJDK 1.8.0_65
+
