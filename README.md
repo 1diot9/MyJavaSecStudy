@@ -11,6 +11,7 @@
 - [各种链子&姿势](#各种链子&姿势)
 - [SpringBoot](#SpringBoot)
 - [工具开发/二开](#devTools)
+- [代码审计](#CodeAudit)
 - [tabby](#tabby)
 - [CodeQL](#CodeQL)
 - [学习路线整合](#学习路线整合)
@@ -219,7 +220,25 @@
 
 
 
+# 代码审计<a id="CodeAudit"></a>
 
+## 若依
+
+[若依各版本漏洞 | 1diot9's Blog](https://1diot9.github.io/2025/08/02/若依各版本漏洞/)
+
+[奇安信攻防社区-若依(RuoYi)框架漏洞战争手册](https://forum.butian.net/share/4328)
+
+[♪(^∇^*)欢迎肥来！RuoYi历史漏洞 | 高木のBlog](https://blog.takake.com/posts/7219/#2-5-4-1-代码审计)
+
+[SecurityList/Java_OA/RuoYi.md at main · ax1sX/SecurityList](https://github.com/ax1sX/SecurityList/blob/main/Java_OA/RuoYi.md)
+
+[charonlight/RuoYiExploitGUI: 若依最新定时任务SQL注入可导致RCE漏洞的一键利用工具](https://github.com/charonlight/RuoYiExploitGUI?tab=readme-ov-file)
+
+## WebGoat
+
+[WebGoat靶场-身份认证缺陷 | 1diot9's Blog](https://1diot9.github.io/2025/07/22/WebGoat靶场-身份认证缺陷/)
+
+[WebGoat代码审计-03-目录遍历漏洞 | Drunkbaby's Blog](https://drun1baby.top/2022/03/22/WebGoat代码审计-03-目录遍历漏洞/)
 
 # tabby <a id="tabby"></a>
 
