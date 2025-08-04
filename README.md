@@ -136,6 +136,10 @@
 
 [Java利用无外网（上）：从HertzBeat聊聊SnakeYAML反序列化 | 离别歌](https://www.leavesongs.com/PENETRATION/jdbc-injection-with-hertzbeat-cve-2024-42323.html)
 
+[SnakeYaml利用总结 | 1diot9's Blog](https://1diot9.github.io/2025/08/03/SnakeYaml利用总结/)
+
+[Yaml文件写法总结 | 1diot9's Blog](https://1diot9.github.io/2025/08/04/Yaml文件写法总结/)
+
 
 
 
