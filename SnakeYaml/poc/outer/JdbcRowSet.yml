@@ -1,0 +1,3 @@
+!!com.sun.rowset.JdbcRowSetImpl
+dataSourceName: "ldap://127.0.0.1:50389/8ebd8d"
+autoCommit: true

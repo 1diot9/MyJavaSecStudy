@@ -1,0 +1,3 @@
+!!com.mchange.v2.c3p0.JndiRefForwardingDataSource
+jndiName: "ldap://127.0.0.1:50389/8ebd8d"
+loginTimeout: 1

