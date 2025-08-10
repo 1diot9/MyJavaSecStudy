@@ -244,6 +244,24 @@
 
 [WebGoat代码审计-03-目录遍历漏洞 | Drunkbaby's Blog](https://drun1baby.top/2022/03/22/WebGoat代码审计-03-目录遍历漏洞/)
 
+## 泛微Ecology9
+
+[泛微ecology9前置 | 1diot9's Blog](https://1diot9.github.io/2025/08/10/泛微ecology9前置/)
+
+[ecology9代码审计 | Sn1pEr's blog](https://sn1per-ssd.github.io/2024/08/15/ecology9代码审计/)
+
+[泛微e-cology9 browser.jsp SQL注入漏洞分析 | _0xf4n9x_'s Blog](https://0xf4n9x.github.io/weaver-ecology9-browser-sqli.html)
+
+[【漏洞复现】泛微E-Cology V9 browser.jspSQL注入漏洞及分析](https://mp.weixin.qq.com/s/YCzAQroLfBOw6OrxcIfb1A)
+
+[微信公众平台](https://mp.weixin.qq.com/s/jNn0PqjP9yYBuPtqW4IdEA)
+
+[changeUserInfo信息泄露+ofsLogin任意用户登录 | 1diot9's Blog](https://1diot9.github.io/2025/08/10/changeUserInfo信息泄露-ofsLogin任意用户登录/)
+
+[泛微e-cology9 changeUserInfo信息泄漏及ofsLogin任意用户登录漏洞分析](https://mp.weixin.qq.com/s?__biz=MzI0NzEwOTM0MA==&mid=2652502015&idx=1&sn=39a4dd93fe5cc0a85dcb4aae28c6bf9c&chksm=f258544cc52fdd5a3ef748e125527cbe76d325b0b403ce359b686362a5cd923963e16faa2d45&scene=126&sessionid=1685092163&key=79faf193ca39ac845d45b240e517ccf717a50d07a9efad057991dbb878a24c00e9e8e4c2f3c84761361f7ff6a20040112d0d939914828f699229867b029a53fa957167f7b7be31f03cc8f249ba8f24232b359ecbc12c17027d3143b22e4915b41d3a6506ca566b13c76ce44a1e998cfa82968ee5fa4b159a3d52661d7480b3a9&ascene=15&uin=MzgxODQ4MjMz&devicetype=Windows+10+x64&version=63060012&lang=zh_CN&session_us=gh_7c749a8346d4&countrycode=GY&exportkey=n_ChQIAhIQ%2BcZx3tWxO0E8DrQjq2wpEhLvAQIE97dBBAEAAAAAADhYIKpLxZwAAAAOpnltbLcz9gKNyK89dVj021DG4x9QVpW9CXybpPpZ9qPTtZ8Qi0IYkOJTsU0z01YuxLeoWHBWWnq6ahSSdj2YdyvXZJVQNRmXDajYswlKJonxlRiXhKW%2Buu%2BNT%2BRFdiemTUgrCWyDH%2FFRsuXV%2FCeFYKdgPyKsjVNsv2nkl%2FurlVE%2F%2ByKVBB6ZktCegyDjbLg3wbFJ3cPplsGjjO4U%2FbW%2BRb7MPyBGa7xALwKMKjBejakftbNF63xcQG7CKN9s8CV73KbORpi3c5JXMk2DVZoNxFcynBMtEoc8&acctmode)
+
+
+
 # tabby <a id="tabby"></a>
 
 [自动化代码审计实践 | mayylu's blog](https://mayylu.github.io/2024/08/02/java/自动化代码审计实践/)
