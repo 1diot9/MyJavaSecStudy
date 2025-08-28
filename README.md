@@ -138,7 +138,9 @@
 
 [Java利用无外网（上）：从HertzBeat聊聊SnakeYAML反序列化 | 离别歌](https://www.leavesongs.com/PENETRATION/jdbc-injection-with-hertzbeat-cve-2024-42323.html)
 
-[SnakeYaml利用总结 | 1diot9's Blog](https://1diot9.github.io/2025/08/03/SnakeYaml利用总结/)
+[奇安信攻防社区-SnakeYaml 不出网 RCE 新链（JDK原生链）挖掘](https://forum.butian.net/share/4486) 
+
+[SnakeYaml利用总结 | 1diot9's Blog](https://1diot9.github.io/2025/08/03/SnakeYaml利用总结/)  我仓库有对应poc，可以直接用
 
 [Yaml文件写法总结 | 1diot9's Blog](https://1diot9.github.io/2025/08/04/Yaml文件写法总结/)
 
@@ -234,6 +236,8 @@
 
 # 代码审计<a id="CodeAudit"></a>
 
+[Java安全慢游记](https://www.yuque.com/pmiaowu/gpy1q8) 非常好整理，强烈推荐，有基础也有例子，还讲了Tabby和CodeQL在审计中的运用
+
 ## 若依
 
 [若依各版本漏洞 | 1diot9's Blog](https://1diot9.github.io/2025/08/02/若依各版本漏洞/)
@@ -286,6 +290,8 @@
 
 [自动化代码审计实践 | mayylu's blog](https://mayylu.github.io/2024/08/02/java/自动化代码审计实践/)
 
+[4. 案例-Tabby自动化挖掘JavaSecCode](https://www.yuque.com/pmiaowu/gpy1q8/ng9b5mu7ltkyi0to)
+
 
 
 
@@ -297,6 +303,8 @@
 # CodeQL <a id="CodeQL"></a>
 
 [Codeql全新版本从0到1-先知社区](https://xz.aliyun.com/news/16918)  25年的文章，比较新
+
+[1. 案例-CodeQL自动化挖掘JavaSecCode](https://www.yuque.com/pmiaowu/gpy1q8/upavb10n5vnit3y3)
 
 [利用Github Actions生成CodeQL数据库 -- 以AliyunCTF2024 Chain17的反序列化链挖掘为例 - KingBridge - 博客园](https://www.cnblogs.com/kingbridge/articles/18100619)
 
@@ -322,9 +330,11 @@
 
 # 学习路线整合 <a id="学习路线整合"></a>
 
-[前言 · 攻击Java Web应用-[Java Web安全\]](https://www.javasec.org/)
+[前言 · 攻击Java Web应用-[Java Web安全]](https://www.javasec.org/)
 
 [Y4tacker/JavaSec: a rep for documenting my study, may be from 0 to 0.1](https://github.com/Y4tacker/JavaSec?tab=readme-ov-file)
+
+[Java安全慢游记](https://www.yuque.com/pmiaowu/gpy1q8)
 
 [Drun1baby/JavaSecurityLearning: 记录一下 Java 安全学习历程，也算是半条学习路线了](https://github.com/Drun1baby/JavaSecurityLearning)
 
