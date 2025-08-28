@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <listener>
+    <listener-class>com.Listener.MyServletContextListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>name</param-name>
+    <param-value>test123</param-value>
+  </context-param>
+
+  <listener>
+    <listener-class>com.Listener.MyHttpSessionListener</listener-class>
+  </listener>
+
+  <listener>
+    <listener-class>com.Listener.MyServletRequestListener</listener-class>
+  </listener>
+
+  <filter>
+    <!-- 类名 -->
+    <filter-name>HelloFilter</filter-name>
+    <!-- 所在的包路径 -->
+    <filter-class>com.Filter.HelloFilter</filter-class>
+    <init-param>
+      <param-name>origin</param-name>
+      <param-value>web.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>testName</param-name>
+      <param-value>testValue</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <!-- 与 <filter> 标签里面的 <filter-name> 字段保持一致 -->
+    <filter-name>HelloFilter</filter-name>
+    <!--拦截路径，表示拦截/TomcatTest这个目录的所有资源-->
+    <url-pattern>/TomcatTest/*</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>INCLUDE</dispatcher>
+    <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+
+  <servlet>
+    <!-- 类名 -->
+    <servlet-name>HelloServlet</servlet-name>
+    <!-- 所在的包路径 -->
+    <servlet-class>com.Servlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <!-- 与 <servlet> 标签里面的 <servlet-name> 字段保持一致 -->
+    <servlet-name>HelloServlet</servlet-name>
+    <!-- web访问的网址 -->
+    <url-pattern>/TomcatTest/HelloServlet</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
