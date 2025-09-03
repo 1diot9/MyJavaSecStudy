@@ -1,0 +1,63 @@
+<!-- 如果你懒的话,也可以直接复制这个完整的web.xml -->
+<!-- 目录: ./SpringMVCTest/src/main/webapp/WEB-INF/ -->
+<!-- 文件: web.xml -->
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <!-- 项目名称 -->
+  <display-name>SpringMVCTest</display-name>
+
+  <servlet>
+    <!-- 要注册servlet的名字 -->
+    <servlet-name>ServletTestSpringMVC</servlet-name>
+    <!-- 要注册的servlet的类地址 -->
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <!-- 初始化参数 -->
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:springmvc.xml</param-value>
+    </init-param>
+    <!--
+        1. <load-on-startup>元素,标记容器是否在启动的时候就加载这个servlet(实例化并调用其init()方法)
+        2. 它的值必须是一个整数,表示servlet应该被载入的顺序
+        3. 当值为0或者大于0时,表示容器在应用启动时就加载并初始化这个servlet
+        4. 当值小于0或者没有指定时,则表示容器在该servlet被选择时才会去加载
+        5. 正数的值越小,该servlet的优先级越高,应用启动时就越先加载
+        6. 当值相同时,容器就会自己选择顺序来加载
+    -->
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletTestSpringMVC</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <!-- 配置CharacterEncoding,设置字符集,防止乱码 -->
+  <!-- CharacterEncodingFilter是一个过滤器,是Spring在web请求中定义request和response的编码 -->
+  <!--
+      CharacterEncodingFilter类具有encoding和forceEncoding两个属性
+      encoding是表示设置request的编码
+      forceEncoding表示是否同时设置response的编码
+  -->
+  <filter>
+    <filter-name>characterEncodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+    <init-param>
+      <param-name>forceEncoding</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>characterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+</web-app>

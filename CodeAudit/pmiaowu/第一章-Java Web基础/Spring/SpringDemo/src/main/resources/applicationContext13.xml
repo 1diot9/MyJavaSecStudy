@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="com.test.自动装配.例三.Cat3"/>
+    <bean class="com.test.自动装配.例三.Dog3"/>
+
+    <!--
+    constructor:
+    和byType一样,也是通过类型查找依赖对象
+    但是和byType的区别在于它不是使用Seter方法注入,而是使用构造方法注入
+    例如:
+        这里这样定义完以后Person3类有String name,Cat3 cat3,Dog3 dog3属性
+        那么自动装配就会获取构造方法也就是public Person3(String name, Cat3 cat3, Dog3 dog3)
+        String name的属性通过<constructor-arg name="name" value="马六"/>添加了进去
+        剩下的Cat3 cat3,Dog3 dog3属性IOC容器会在配置文件中进行查找对应的bean的class
+        找到了<bean class="com.test.自动装配.例三.Cat3"/>与<bean class="com.test.自动装配.例三.Dog3"/>
+        然后自动的进行属性赋值
+    -->
+    <bean id="personTest3" class="com.test.自动装配.例三.Person3" autowire="constructor">
+        <constructor-arg name="name" value="马六"/>
+    </bean>
+</beans>

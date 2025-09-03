@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.test</groupId>
+  <artifactId>SpringMVCTest</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>SpringMVCTest Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+  <!-- 1. 修改Maven编译的JDK版本为1.8 -->
+  <!-- 注: 在 <project></project> 标签中添加如下数据 -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <!-- 2. 添加spring-webmvc依赖 -->
+    <!-- 注: 在 <dependencies></dependencies> 标签中添加如下数据,没有这个标签就自己创建 -->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>5.3.22</version>
+    </dependency>
+
+    <!-- 3. 添加javax.servlet-api依赖 -->
+    <!-- 注: 在 <dependencies></dependencies> 标签中添加如下数据,没有这个标签就自己创建 -->
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- 4. 添加junit依赖 -->
+    <!-- 注: 在 <dependencies></dependencies> 标签中添加如下数据,没有这个标签就自己创建 -->
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- 5. 添加commons-fileupload依赖 -->
+    <!-- 注: 在 <dependencies></dependencies> 标签中添加如下数据,没有这个标签就自己创建 -->
+    <!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+    <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+      <version>1.4</version>
+    </dependency>
+
+    <!-- 6. 添加fastjson依赖 -->
+    <!-- 注: 在 <dependencies></dependencies> 标签中添加如下数据,没有这个标签就自己创建 -->
+    <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>2.0.12</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>SpringMVCTest</finalName>
+  </build>
+</project>

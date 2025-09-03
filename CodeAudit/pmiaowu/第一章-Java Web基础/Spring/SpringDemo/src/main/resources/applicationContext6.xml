@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--有参构造创建对象-下标赋值,不建议使用-->
+    <bean id="userTest2" class="com.test.依赖注入.构造函数注入.User2">
+        <constructor-arg index="0" value="李四"/>
+        <constructor-arg index="1" value="11"/>
+    </bean>
+
+    <!--有参构造创建对象-数据类型,不建议使用-->
+    <bean id="userTest2-2" class="com.test.依赖注入.构造函数注入.User2">
+        <constructor-arg type="java.lang.Integer" value="15"/>
+        <constructor-arg type="java.lang.String" value="王五"/>
+    </bean>
+
+    <!--有参构造创建对象-参数名注入,推荐使用-->
+    <bean id="userTest2-3" class="com.test.依赖注入.构造函数注入.User2">
+        <constructor-arg name="name" value="马六"/>
+        <constructor-arg name="age" value="18"/>
+    </bean>
+
+    <!--spellChecker bean的定义-->
+    <bean id="spellCheckerTest" class="com.test.依赖注入.构造函数注入.SpellChecker"/>
+    <!--有参构造创建对象-对象注入,推荐使用-->
+    <bean id="textEditorTest" class="com.test.依赖注入.构造函数注入.TextEditor">
+        <constructor-arg name="spellChecker" ref="spellCheckerTest"/>
+        <constructor-arg name="name" value="1diot9"/>
+    </bean>
+</beans>

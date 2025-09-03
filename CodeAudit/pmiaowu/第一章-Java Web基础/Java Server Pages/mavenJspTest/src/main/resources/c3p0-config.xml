@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <default-config>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/mysql</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+    </default-config>
+    <named-config name="c3p0-mysql-test">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/mysql</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+    </named-config>
+</c3p0-config>

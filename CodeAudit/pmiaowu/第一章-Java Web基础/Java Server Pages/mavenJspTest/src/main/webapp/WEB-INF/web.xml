@@ -21,6 +21,16 @@
     <listener-class>com.Listener.MyServletRequestListener</listener-class>
   </listener>
 
+  <listener>
+    <listener-class>com.Listener.MyServletContextAttributeListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.Listener.MyHttpSessionAttributeListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.Listener.MyServletRequestAttributeListener</listener-class>
+  </listener>
+
   <filter>
     <!-- 类名 -->
     <filter-name>HelloFilter</filter-name>

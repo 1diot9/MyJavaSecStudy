@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="hello" class="com.test.Bean定义继承.Hello">
+        <property name="message1" value="你好!"/>
+        <property name="message2" value="第二次说,你好!"/>
+    </bean>
+
+    <bean id="helloChina" class="com.test.Bean定义继承.HelloChina" parent="hello">
+        <property name="message1" value="你好,中国!"/>
+        <property name="message3" value="第三次说,你好中国!"/>
+    </bean>
+</beans>

@@ -1,0 +1,26 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: snowstorm-maxy
+  Date: 2025/8/31
+  Time: 15:35
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns="http://www.w3.org/1999/xhtml"
+          version="2.0" xmlns:prefix="http://java.sun.com/jsp/jstl/core">
+    <jsp:directive.page contentType="text/html;charset=UTF-8" language="java"/>
+    <jsp:directive.include file="/1.jspx"/>
+    <jsp:declaration xmlns:prefix="http://java.sun.com/jsp/jstl/xml">
+        private static final String S = "hello";
+    </jsp:declaration>
+    <jsp:scriptlet>
+        out.println(S + "," + request.getParameter("name"));
+    </jsp:scriptlet>
+    <jsp:expression>"这是一段文字"</jsp:expression>
+    <!-- 这是注释 -->
+</jsp:root>
+
+
+
+
+<!--        // 打开: http://127.0.0.1:8081/mavenJspTest_war/2.jspx?name=test-->

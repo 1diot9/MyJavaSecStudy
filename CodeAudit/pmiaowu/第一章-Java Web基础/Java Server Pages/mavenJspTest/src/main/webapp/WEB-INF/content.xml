@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <!-- maxIdleSwap:session中的对象多长时间不使用就钝化(单位:分钟) -->
+    <!-- directory:钝化后的对象写到磁盘的哪个文件夹下,directory的值要使用绝对路径,比如:/apache-tomcat-9.0.48/work/ -->
+    <Manager className="org.apache.catalina.session.PersistentManager" maxIdleSwap="1">
+        <Store className="org.apache.catalina.session.FileStore" directory="D:/sec_software/environment/apache-tomcat-9.0.48/work" />
+    </Manager>
+</Context>

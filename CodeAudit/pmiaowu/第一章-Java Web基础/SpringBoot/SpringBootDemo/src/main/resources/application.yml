@@ -1,0 +1,24 @@
+server:
+  # 访问地址
+  address: 127.0.0.1
+  # 访问端口
+  port: 8081
+
+spring:
+  # 数据库配置
+  datasource:
+    # mysql连接地址
+    url: jdbc:mysql://192.168.24.134:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    # 用户名
+    username: root
+    # 密码
+    password: Zaq123456789!!!a
+    # 数据库链接驱动
+    driver-class-name: com.mysql.jdbc.Driver
+
+# mybatis配置
+mybatis:
+  # 指定sql映射文件位置，mapper下的所有.xml文件都是映射文件
+  mapper-locations: classpath:mapper/*.xml
+  # 数据库表的映射实体类存放位置，存放POJO对象
+  type-aliases-package: com.example.demo.bean

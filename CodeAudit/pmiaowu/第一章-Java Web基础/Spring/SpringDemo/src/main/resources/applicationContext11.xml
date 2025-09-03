@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="cat" class="com.test.自动装配.例一.Cat"/>
+    <bean id="dog" class="com.test.自动装配.例一.Dog"/>
+
+    <!--
+    byName: 会自动在容器上下文中查找和自己对象set方法后面的值对应的beanId
+    例如:
+        这里这样定义完以后Person类有个setCat()与setDog()方法
+        那么自动装配就会删除set这个关键字,并且首字母变成小写
+        然后IOC容器会在配置文件中进行查找对应的beanId
+        也就是id叫做cat与dog的bean然后自动的进行属性赋值
+    -->
+    <bean id="personTest" class="com.test.自动装配.例一.Person" autowire="byName">
+        <property name="name" value="张三"/>
+    </bean>
+</beans>

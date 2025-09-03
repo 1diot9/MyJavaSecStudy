@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="beanTemplate" abstract="true">
+        <property name="message1" value="你好,世界!"/>
+        <property name="message2" value="第二次说,你好!"/>
+        <property name="message3" value="第三次说,你好!"/>
+    </bean>
+
+    <bean id="helloAmerica" class="com.test.Bean定义模板.HelloAmerica" parent="beanTemplate">
+        <property name="message1" value="你好,美国!"/>
+        <property name="message3" value="第三次说,你好美国!"/>
+    </bean>
+</beans>

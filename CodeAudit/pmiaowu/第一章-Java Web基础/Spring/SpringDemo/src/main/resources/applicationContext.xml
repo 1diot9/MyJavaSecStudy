@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 使用Spring来创建对象, 在Spring中这些都叫Bean
+         property标签就是对应对象中的属性设置
+         这种过程也叫做控制反转, 生成对象的任务交给了Spring容器来生成 -->
+
+    <!-- <bean id="xx" class="xx"></bean>标签
+            bean = 对象
+            id = 变量名
+            class = new的对象 -->
+
+    <!-- <property name="xx" value="xx"></property>
+            property = 相当于给对象中的属性设值
+            name = 要设置的对象属性名称
+            value = 具体的值, 基本数据类型 -->
+
+    <!-- 注意: property标签中,name属性必须带有对应的setXxxx方法 -->
+    <!-- 例如: name=张三, 必须要有一个setName()方法进行属性值的设置与getName()方法进行数据读取 -->
+    <bean id="userTest" class="com.test.User">
+        <property name="name" value="张三"></property>
+    </bean>
+
+    <bean id="helloWorldTest" class="com.test.HelloWorld" scope="singleton">
+        <property name="message" value="Hello World!"/>
+    </bean>
+
+    <bean id="helloWorldTest3" class="com.test.HelloWorld3" init-method="init" destroy-method="destroy">
+        <property name="message" value="Hello World!"/>
+    </bean>
+
+    <!-- 配置自动扫描 -->
+    <context:component-scan base-package="com.test"></context:component-scan>
+</beans>

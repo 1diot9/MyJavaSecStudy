@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="com.test.自动装配.例二.Cat2"/>
+    <bean class="com.test.自动装配.例二.Dog2"/>
+
+    <!--
+    byType: 会自动在容器上下文中查找和自己对象属性类型相同的bean
+    例如:
+        这里这样定义完以后Person2类有个setCat2()与setDog2()方法
+        那么自动装配就会删除set这个关键字,也就是Cat2与Dog2
+        然后IOC容器会在配置文件中进行查找对应的bean的class
+        找到了<bean class="com.test.自动装配.例二.Cat2"/>与<bean class="com.test.自动装配.例二.Dog2"/>
+        然后自动的进行属性赋值
+    -->
+    <bean id="personTest2" class="com.test.自动装配.例二.Person2" autowire="byType">
+        <property name="name" value="李四"/>
+    </bean>
+</beans>
