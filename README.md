@@ -1,5 +1,7 @@
 # MyJavaSecStudy
-记录一下我的Java安全学习历程。目前入门和进阶内容放一起了，以后有空的话会整理得更清楚一些。
+记录一下我的Java安全学习历程。会不定时更新索引和代码仓库。
+
+<br>
 
 - [Java基础](#Java基础)
 - [Java安全基础](#Java安全基础)
@@ -48,6 +50,10 @@
 
 - [工具推荐](#工具推荐)
 
+
+
+<br>
+
 # Java基础<a id="Java基础"></a>
 
 主要目标是学会Java基础语法就行，不用一下子学太深，之后遇到不会的再回来查就行
@@ -60,13 +66,15 @@
 
 [【狂神说Java】Java零基础学习视频通俗易懂_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV12J41137hu/?spm_id_from=333.337.search-card.all.click) b站看其他的也行，比如黑马，找自己适合的就行
 
-
+<br>
 
 # Java安全基础 <a id="Java安全基础"></a>
 
 主要是学习反射，类加载，动态代理，各种命令执行方式等概念，为后面的学习打下基础。
 
 一开始看不懂很正常，能有个印象就行，后面在具体问题中发现自己不会时再回来看；多问AI
+
+<br>
 
 ## 基础内容
 
@@ -81,6 +89,8 @@
 [Java反序列化基础篇-05-类的动态加载 | Drunkbaby's Blog](https://drun1baby.top/2022/06/03/Java反序列化基础篇-05-类的动态加载/) 类加载学完要知道，类加载时，会触发哪些部分的代码
 
 [Java反序列化基础篇-01-反序列化概念与利用 | Drunkbaby's Blog](https://drun1baby.top/2022/05/17/Java反序列化基础篇-01-反序列化概念与利用/) 看完这个可以把上面那个URLDNS链看一下
+
+<br>
 
 ## 补充内容
 
@@ -104,7 +114,7 @@
 
 
 
-
+<br>
 
 
 
@@ -122,11 +132,15 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 ==============快速入门的话，可以只看上面的CC链===============
 
+<br>
+
 ## hessian
 
 [Java安全学习——Hessian反序列化漏洞 - 枫のBlog](https://goodapple.top/archives/1193)
 
 [Hessian 反序列化知一二 | 素十八](https://su18.org/post/hessian/)
+
+<br>
 
 ## 其他链子&姿势
 
@@ -142,7 +156,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 
 
-
+<br>
 
 
 
@@ -158,11 +172,15 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 ===========快速入门的话，可以先只看上面部分的============
 
+<br>
+
 ## 高版本JDK绕过
 
 ### 基于BeanFactory
 
 [探索高版本 JDK 下 JNDI 漏洞的利用方法 - 跳跳糖](https://tttang.com/archive/1405/#toc_0x01-beanfactory)  除了最基本的EL表达式执行，还有Snakeyaml，XStream等方式（高版本tomcat的forceString被禁）
+
+<br>
 
 ### 其他Factory绕过
 
@@ -173,6 +191,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 [探索高版本 JDK 下 JNDI 漏洞的利用方法 - 跳跳糖](https://tttang.com/archive/1405/#toc_snakeyaml)	jdk17的题特别喜欢考JNDI+JDBC
 
 [JNDI jdk高版本绕过—— Druid-先知社区](https://xz.aliyun.com/news/10104)
+
+<br>
 
 ## 未分类
 
@@ -186,6 +206,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [奇安信攻防社区-【2024补天白帽黑客大会】JNDI新攻击面探索](https://forum.butian.net/share/3857)
 
+<br>
+
 # JDBC <a id="JDBC"></a>
 
 ## mysql
@@ -196,7 +218,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [从JDBC MySQL不出网攻击到spring临时文件利用-先知社区](https://xz.aliyun.com/news/17830)  这个打法比较新，其中的临时文件上传适用性广
 
-
+<br>
 
 ## h2sql
 
@@ -204,7 +226,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [SolarWinds Security Event Manager AMF 反序列化 RCE (CVE-2024-0692) - X1r0z Blog](https://exp10it.io/2024/03/solarwinds-security-event-manager-amf-deserialization-rce-cve-2024-0692/#hikaricp-jndi-注入)	h2可以结合其他依赖写文件
 
-
+<br>
 
 ## sqlite
 
@@ -214,7 +236,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [从一道题看利用sqlite打jdbc达到RCE-先知社区](https://xz.aliyun.com/news/14234)
 
-
+<br>
 
 
 
@@ -225,6 +247,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 [N1CTF Junior 2024 Web Official Writeup - X1r0z Blog](https://exp10it.io/2024/02/n1ctf-junior-2024-web-official-writeup/#derby)
 
 [因为项目中遇到Nacos挺多的...-知识星球](https://wx.zsxq.com/group/2212251881/topic/1524448452142582)
+
+<br>
 
 
 
@@ -239,6 +263,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 [Jdbc碎碎念三：内存数据库 | m0d9's blog](https://m0d9.me/2021/04/26/Jdbc碎碎念三：内存数据库/)	h2sql，hsql，sqlite，derby
 
 [yulate/jdbc-tricks: 《深入JDBC安全：特殊URL构造与不出网反序列化利用技术揭秘》对应研究总结项目 "Deep Dive into JDBC Security: Special URL Construction and Non-Networked Deserialization Exploitation Techniques Revealed" - Research Summary Project](https://github.com/yulate/jdbc-tricks)
+
+<br>
 
 # shiro<a id="shiro"></a>
 
@@ -256,13 +282,15 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Shiro绕过Header长度限制进阶利用 | Bmth's blog](http://www.bmth666.cn/2024/11/03/Shiro绕过Header长度限制进阶利用/index.html) 里面还提到pen4uin师傅的文章，也可以去看看
 
+<br>
+
 ## shiro越权
 
+待完善。。。
 
 
 
-
-
+<br>
 
 # Fastjson&Jackson&SnakeYaml <a id="Fastjson&Jackson&SnakeYaml"></a>
 
@@ -282,6 +310,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [FastJson与原生反序列化(二)](https://y4tacker.github.io/2023/04/26/year/2023/4/FastJson与原生反序列化-二/) 讲了高版本fastjson怎么在原生反序列化中进行绕过
 
+<br>
+
 ## SnakeYaml
 
 [Java反序列化之 SnakeYaml 链 | Drunkbaby's Blog](https://drun1baby.top/2022/10/16/Java反序列化之-SnakeYaml-链/) 比较SnakeYaml反序列化的fastjson的异同；了解SPI机制是怎么被利用的
@@ -298,7 +328,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 
 
-
+<br>
 
 # 内存马&回显技术 <a id="内存马&回显技术"></a>
 
@@ -314,7 +344,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Spring内存马学习 | Bmth's blog](http://www.bmth666.cn/2022/09/27/Spring内存马学习/index.html) 这里没讲原理，主要是给出了能直接用的内存马
 
-==========可以先只看上面的几篇文章==============
+==========快速入门的话，可以先只看上面的几篇文章==============
 
 [bitterzzZZ/MemoryShellLearn: 分享几个直接可用的内存马，记录一下学习过程中看过的文章](https://github.com/bitterzzZZ/MemoryShellLearn)
 
@@ -334,11 +364,15 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [内存对象搜索原理剖析-先知社区](https://xz.aliyun.com/news/11303)  java-object-searcher原理
 
+<br>
+
 ### 内存马工具
 
 [pen4uin/java-memshell-generator: 一款支持自定义的 Java 内存马生成工具｜A customizable Java in-memory webshell generation tool.](https://github.com/pen4uin/java-memshell-generator)
 
 [ReaJason/MemShellParty: 一款专注于 Java 主流 Web 中间件的内存马快速生成工具，致力于简化安全研究人员和红队成员的工作流程，提升攻防效率](https://github.com/ReaJason/MemShellParty)
+
+<br>
 
 ## 回显技术
 
@@ -346,17 +380,19 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 
 
-
+<br>
 
 # RASP <a id="RASP"></a>
 
 [JNI攻击 · 攻击Java Web应用-Java Web安全](https://www.javasec.org/java-vuls/JNI.html)
 
-
+<br>
 
 # SpringBoot <a id="SpringBoot"></a>
 
 [LandGrey/SpringBootVulExploit: SpringBoot 相关漏洞学习资料，利用方法和技巧合集，黑盒安全评估 check list](https://github.com/LandGrey/SpringBootVulExploit) 总结了SpringBoot的常见利用方式
+
+<br>
 
 ## heapdump分析
 
@@ -366,13 +402,15 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [京麟CTF 2024 ezldap 分析-先知社区](https://xz.aliyun.com/news/14103?time__1311=eqUxuiDt5WqYqY5DsD7mPD%3DIZK7q9hGBbD&u_atoken=b94f9c93564049e1d2601ebb22a1098b&u_asig=0a472f9217433333617862864e004b)
 
+<br>
+
 ## 文件缓存机制
 
 [从JDBC MySQL不出网攻击到spring临时文件利用-先知社区](https://xz.aliyun.com/news/17830)
 
 
 
-
+<br>
 
 
 
@@ -380,7 +418,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [新年快乐 | ysoserial 分析与魔改](https://mp.weixin.qq.com/s?__biz=MzkwMzQyMTg5OA==&mid=2247486647&idx=1&sn=2e2ce3bad829dacd4807cbdb88e4ba2f&chksm=c097c612f7e04f0411454885e3d3248607f32ab6722592cc005eb610973220e8156999e75751&scene=178&cur_album_id=3744968375202660352&search_click_id=#rd)
 
-
+<br>
 
 
 
@@ -389,6 +427,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 待完善。。。
 
 
+
+<br>
 
 # 代码审计<a id="CodeAudit"></a>
 
@@ -406,11 +446,15 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [charonlight/RuoYiExploitGUI: 若依最新定时任务SQL注入可导致RCE漏洞的一键利用工具](https://github.com/charonlight/RuoYiExploitGUI?tab=readme-ov-file)
 
+<br>
+
 ## WebGoat
 
 [WebGoat靶场-身份认证缺陷 | 1diot9's Blog](https://1diot9.github.io/2025/07/22/WebGoat靶场-身份认证缺陷/)
 
 [WebGoat代码审计-03-目录遍历漏洞 | Drunkbaby's Blog](https://drun1baby.top/2022/03/22/WebGoat代码审计-03-目录遍历漏洞/)
+
+<br>
 
 ## 泛微Ecology9
 
@@ -428,6 +472,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [泛微e-cology9 changeUserInfo信息泄漏及ofsLogin任意用户登录漏洞分析](https://mp.weixin.qq.com/s?__biz=MzI0NzEwOTM0MA==&mid=2652502015&idx=1&sn=39a4dd93fe5cc0a85dcb4aae28c6bf9c&chksm=f258544cc52fdd5a3ef748e125527cbe76d325b0b403ce359b686362a5cd923963e16faa2d45&scene=126&sessionid=1685092163&key=79faf193ca39ac845d45b240e517ccf717a50d07a9efad057991dbb878a24c00e9e8e4c2f3c84761361f7ff6a20040112d0d939914828f699229867b029a53fa957167f7b7be31f03cc8f249ba8f24232b359ecbc12c17027d3143b22e4915b41d3a6506ca566b13c76ce44a1e998cfa82968ee5fa4b159a3d52661d7480b3a9&ascene=15&uin=MzgxODQ4MjMz&devicetype=Windows+10+x64&version=63060012&lang=zh_CN&session_us=gh_7c749a8346d4&countrycode=GY&exportkey=n_ChQIAhIQ%2BcZx3tWxO0E8DrQjq2wpEhLvAQIE97dBBAEAAAAAADhYIKpLxZwAAAAOpnltbLcz9gKNyK89dVj021DG4x9QVpW9CXybpPpZ9qPTtZ8Qi0IYkOJTsU0z01YuxLeoWHBWWnq6ahSSdj2YdyvXZJVQNRmXDajYswlKJonxlRiXhKW%2Buu%2BNT%2BRFdiemTUgrCWyDH%2FFRsuXV%2FCeFYKdgPyKsjVNsv2nkl%2FurlVE%2F%2ByKVBB6ZktCegyDjbLg3wbFJ3cPplsGjjO4U%2FbW%2BRb7MPyBGa7xALwKMKjBejakftbNF63xcQG7CKN9s8CV73KbORpi3c5JXMk2DVZoNxFcynBMtEoc8&acctmode)
 
+<br>
+
 ## 用友U8cloud
 
 [用友U8Cloud环境搭建 | 1diot9's Blog](https://1diot9.github.io/2025/08/16/U8Cloud环境搭建/)
@@ -440,7 +486,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [用友U8cloud-LoginVideoServlet接口反序列化 | 1diot9's Blog](https://1diot9.github.io/2025/08/16/用友U8cloud-LoginVideoServlet接口反序列化/)
 
-
+<br>
 
 # 代码审计辅助工具<a id="代码审计辅助工具"></a>
 
@@ -450,6 +496,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Jar Analyzer 官方文档](https://docs.qq.com/doc/DV3pKbG9GS0pJS0tk)
 
+<br>
+
 ## tabby 
 
 [1. Neo4j CQL - 数据类型](https://www.yuque.com/pmiaowu/gpy1q8/arufc2k5gdmkesau/)  这个写的很详细，有基础，也有案例，还提供了很多模板查询语句，十分推荐
@@ -457,6 +505,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 [自动化代码审计实践 | mayylu's blog](https://mayylu.github.io/2024/08/02/java/自动化代码审计实践/)
 
 [4. 案例-Tabby自动化挖掘JavaSecCode](https://www.yuque.com/pmiaowu/gpy1q8/ng9b5mu7ltkyi0to)
+
+<br>
 
 ## CodeQL 
 
@@ -479,6 +529,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 [safe6Sec/CodeqlNote: Codeql学习笔记](https://github.com/safe6Sec/CodeqlNote?tab=readme-ov-file)
 
 [自动化代码审计实践 | mayylu's blog](https://mayylu.github.io/2024/08/02/java/自动化代码审计实践/)
+
+<br>
 
 
 
@@ -504,7 +556,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [LyleMi/Learn-Web-Hacking: Study Notes For Web Hacking / Web安全学习笔记](https://github.com/LyleMi/Learn-Web-Hacking)  这个是Web安全的
 
-
+<br>
 
 # 工具推荐<a id="工具推荐"></a>
 
