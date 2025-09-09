@@ -130,7 +130,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Java 反序列化漏洞（二） - Commons Collections | 素十八](https://su18.org/post/ysoserial-su18-2/#commonscollections1) su18师傅的反序列化取经路
 
-==============快速入门的话，可以只看上面的CC链===============
+=========================快速入门的话，可以只看上面的CC链=========================
 
 <br>
 
@@ -170,7 +170,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [JNDI · 攻击Java Web应用-Java Web安全](https://www.javasec.org/javase/JNDI/#jndi) 里面引用了一篇命名和目录服务基本概念的文章，记得看，对后面理解RMI和LDAP很有帮助，很多东西都会在调试里遇到
 
-===========快速入门的话，可以先只看上面部分的============
+=========================快速入门的话，可以先只看上面部分的=========================
 
 <br>
 
@@ -274,7 +274,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Java反序列化Shiro篇02-Shiro721流程分析 | Drunkbaby's Blog](https://drun1baby.top/2023/03/08/Java反序列化Shiro篇02-Shiro721流程分析/)
 
-==========shiro反序列化快速入门的话，可以只看上面的==========
+=========================shiro反序列化快速入门的话，可以只看上面的=========================
 
 [Shiro RememberMe 漏洞检测的探索之路 - CT Stack 安全社区](https://stack.chaitin.com/techblog/detail/39) 通过密钥正常错误时，回显中rememberMe字段的不同来实现密钥爆破
 
@@ -300,7 +300,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Fastjson 反序列化漏洞 · 攻击Java Web应用-Java Web安全](https://www.javasec.org/java-vuls/FastJson.html) 
 
-=============还是一样，着急的话，可以只看上面的==============
+=============================快速入门的话，可以只看上面的=============================
 
 [FastJsonParty/Fastjson全版本检测及利用-Poc.md at main · lemono0/FastJsonParty](https://github.com/lemono0/FastJsonParty/blob/main/Fastjson全版本检测及利用-Poc.md) fastjson主要是在黑盒条件下利用，这个项目给了各版本的探测利用姿势
 
@@ -320,7 +320,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Yaml文件写法总结 | 1diot9's Blog](https://1diot9.github.io/2025/08/04/Yaml文件写法总结/)
 
-===========快速入门的话，可以先只看上面的============
+=============================快速入门的话，可以先只看上面的=============================
 
 [Java利用无外网（上）：从HertzBeat聊聊SnakeYAML反序列化 | 离别歌](https://www.leavesongs.com/PENETRATION/jdbc-injection-with-hertzbeat-cve-2024-42323.html)
 
@@ -344,7 +344,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Spring内存马学习 | Bmth's blog](http://www.bmth666.cn/2022/09/27/Spring内存马学习/index.html) 这里没讲原理，主要是给出了能直接用的内存马
 
-==========快速入门的话，可以先只看上面的几篇文章==============
+=========================快速入门的话，可以先只看上面的几篇文章=========================
 
 [bitterzzZZ/MemoryShellLearn: 分享几个直接可用的内存马，记录一下学习过程中看过的文章](https://github.com/bitterzzZZ/MemoryShellLearn)
 
@@ -417,6 +417,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 # 工具开发/二开<a id="devTools"></a>
 
 [新年快乐 | ysoserial 分析与魔改](https://mp.weixin.qq.com/s?__biz=MzkwMzQyMTg5OA==&mid=2247486647&idx=1&sn=2e2ce3bad829dacd4807cbdb88e4ba2f&chksm=c097c612f7e04f0411454885e3d3248607f32ab6722592cc005eb610973220e8156999e75751&scene=178&cur_album_id=3744968375202660352&search_click_id=#rd)
+
+[yhy0/ExpDemo-JavaFX: 图形化漏洞利用Demo-JavaFX版](https://github.com/yhy0/ExpDemo-JavaFX) GUI工具的开发框架
 
 <br>
 
@@ -559,6 +561,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 <br>
 
 # 工具推荐<a id="工具推荐"></a>
+
+[vulhub/java-chains: Vulhub Vulnerability Reproduction Designated Platform](https://github.com/vulhub/java-chains) 利用链神器
 
 [jar-analyzer/jar-analyzer: Jar Analyzer - 一个 JAR 包 GUI 分析工具，方法调用关系搜索，方法调用链 DFS 算法分析，模拟 JVM 的污点分析验证 DFS 结果，字符串搜索，Java Web 组件入口分析，CFG 程序分析，JVM 栈帧分析，自定义表达式搜索。官方文档：https://docs.qq.com/doc/DV3pKbG9GS0pJS0tk](https://github.com/jar-analyzer/jar-analyzer)    比tabby和codeql更简单的审计工具，功能也很丰富
 
