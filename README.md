@@ -274,7 +274,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Java反序列化Shiro篇02-Shiro721流程分析 | Drunkbaby's Blog](https://drun1baby.top/2023/03/08/Java反序列化Shiro篇02-Shiro721流程分析/)
 
-=========================shiro反序列化快速入门的话，可以只看上面的=========================
+====================shiro反序列化快速入门的话，可以只看上面的======================
 
 [Shiro RememberMe 漏洞检测的探索之路 - CT Stack 安全社区](https://stack.chaitin.com/techblog/detail/39) 通过密钥正常错误时，回显中rememberMe字段的不同来实现密钥爆破
 
@@ -300,7 +300,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Fastjson 反序列化漏洞 · 攻击Java Web应用-Java Web安全](https://www.javasec.org/java-vuls/FastJson.html) 
 
-=============================快速入门的话，可以只看上面的=============================
+=========================快速入门的话，可以只看上面的=========================
 
 [FastJsonParty/Fastjson全版本检测及利用-Poc.md at main · lemono0/FastJsonParty](https://github.com/lemono0/FastJsonParty/blob/main/Fastjson全版本检测及利用-Poc.md) fastjson主要是在黑盒条件下利用，这个项目给了各版本的探测利用姿势
 
@@ -320,7 +320,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Yaml文件写法总结 | 1diot9's Blog](https://1diot9.github.io/2025/08/04/Yaml文件写法总结/)
 
-=============================快速入门的话，可以先只看上面的=============================
+=========================快速入门的话，可以先只看上面的=========================
 
 [Java利用无外网（上）：从HertzBeat聊聊SnakeYAML反序列化 | 离别歌](https://www.leavesongs.com/PENETRATION/jdbc-injection-with-hertzbeat-cve-2024-42323.html)
 
@@ -344,7 +344,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Spring内存马学习 | Bmth's blog](http://www.bmth666.cn/2022/09/27/Spring内存马学习/index.html) 这里没讲原理，主要是给出了能直接用的内存马
 
-=========================快速入门的话，可以先只看上面的几篇文章=========================
+=====================快速入门的话，可以先只看上面的几篇文章======================
 
 [bitterzzZZ/MemoryShellLearn: 分享几个直接可用的内存马，记录一下学习过程中看过的文章](https://github.com/bitterzzZZ/MemoryShellLearn)
 
