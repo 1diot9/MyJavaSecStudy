@@ -124,7 +124,7 @@
 
 CC链是Java反序列化的开始，每个人都应该好好学习。
 
-[Java反序列化Commons-Collections篇01-CC1链 | Drunkbaby's Blog](https://drun1baby.top/2022/06/06/Java反序列化Commons-Collections篇01-CC1链/) 小叮师傅的博客讲了所有的CC链，同时也有环境搭建的示例，而且还有一张全CC链的流程图([JavaSecurityLearning/链子流程图/全 CC 链流程.png at main · Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning/blob/main/链子流程图/全 CC 链流程.png))，当时我就是看他学的，推荐
+[Java反序列化Commons-Collections篇01-CC1链 | Drunkbaby's Blog](https://drun1baby.top/2022/06/06/Java反序列化Commons-Collections篇01-CC1链/) 小叮师傅的博客讲了所有的CC链，同时也有环境搭建的示例，而且还有一张全CC链的流程图[JavaSecurityLearning/链子流程图 at main · Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning/tree/main/链子流程图) 
 
 [MyJavaSecStudy/docs/Java安全漫谈.pdf at main · 1diot9/MyJavaSecStudy](https://github.com/1diot9/MyJavaSecStudy/blob/main/docs/Java安全漫谈.pdf) 挑07之后涉及CC链的内容看，18、19和涉及shiro的可以先不看(其实shiro反序列化的原理差不多，都是找链子，不过因为用的类加载器不一样，会出现一些变化)
 
