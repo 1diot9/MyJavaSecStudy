@@ -382,6 +382,22 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 <br>
 
+# 高版本jdk下的链子
+
+[高版本JDK加载字节码分析](https://mp.weixin.qq.com/s/Nvra3OljzllryYg9L9yCFQ)
+
+[2024 巅峰极客 easy_java学习jdk17下打内存马方式-先知社区](https://xz.aliyun.com/news/14807)   MethodHandles+CC
+
+[jdk17&CC链下利用TemplatesImpl | Jiecub3](https://jiecub3.github.io/zh/posts/java/chain/jdk17cc链下利用templatesimpl/) 
+
+[高版本JDK下的Spring原生反序列化链 – fushulingのblog](https://fushuling.com/index.php/2025/08/21/高版本jdk下的spring原生反序列化链/)
+
+[JDK17不出网？Shiro反序列化极限RCE！](https://mp.weixin.qq.com/s/xfmHjgx5jQRLKkIR7XUCcg) 
+
+
+
+<br>
+
 # RASP <a id="RASP"></a>
 
 [JNI攻击 · 攻击Java Web应用-Java Web安全](https://www.javasec.org/java-vuls/JNI.html)
