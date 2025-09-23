@@ -14,24 +14,17 @@
   - 高版本JDK绕过
     - 基于BeanFactory
     - 其他Factory绕过(主要结合JDBC打)
-
 - [JDBC](#JDBC)
-
 - [shiro](#shiro)
 
   - shiro反序列化
   - shiro越权
-
 - [Fastjson&Jackson&SnakeYaml](#Fastjson&Jackson&SnakeYaml)
-
 - [内存马&回显技术](#内存马&回显技术)
-
+- [高版本jdk下的链子](#高版本jdk下的链子)
 - [RASP](#RASP)
-
 - [SpringBoot](#SpringBoot)
-
 - [工具开发/二开](#devTools)
-
 - [代码审计](#CodeAudit)
 
   - 若依
@@ -39,15 +32,12 @@
   - WebGoat
   - 泛微Ecology9
   - 用友U8Cloud
-
 - [代码审计辅助工具](#代码审计辅助工具)
 
   - jar-analyzer
   - tabby
   - CodeQL
-
 - [学习路线整合](#学习路线整合)
-
 - [工具推荐](#工具推荐)
 
 
@@ -382,7 +372,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 <br>
 
-# 高版本jdk下的链子
+# 高版本jdk下的链子<a id="高版本jdk下的链子"></a>
 
 [高版本JDK加载字节码分析](https://mp.weixin.qq.com/s/Nvra3OljzllryYg9L9yCFQ)
 
