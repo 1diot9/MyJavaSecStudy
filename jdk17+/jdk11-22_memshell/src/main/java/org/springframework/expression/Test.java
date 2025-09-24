@@ -254,23 +254,19 @@ public class Test {
         Class tempClass = clazz;
         while (method == null && tempClass != null) {
             if (paramClazz == null) {
-                try {
-                    Method[] methods = tempClass.getDeclaredMethods();
-                    int i = 0;
-                    while (true) {
-                        if (i < methods.length) {
-                            if (!methods[i].getName().equals(methodName) || methods[i].getParameterTypes().length != 0) {
-                                i++;
-                            } else {
-                                method = methods[i];
-                                break;
-                            }
+                Method[] methods = tempClass.getDeclaredMethods();
+                int i = 0;
+                while (true) {
+                    if (i < methods.length) {
+                        if (!methods[i].getName().equals(methodName) || methods[i].getParameterTypes().length != 0) {
+                            i++;
                         } else {
+                            method = methods[i];
                             break;
                         }
+                    } else {
+                        break;
                     }
-                } catch (NoSuchMethodException e) {
-                    tempClass = tempClass.getSuperclass();
                 }
             } else {
                 method = tempClass.getDeclaredMethod(methodName, paramClazz);

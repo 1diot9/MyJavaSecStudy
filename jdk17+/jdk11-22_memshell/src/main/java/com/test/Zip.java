@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.zip.GZIPOutputStream;
 
-public class Evil {
+public class Zip {
 
     public static void main(String[] args) {
         // 内存马代码文件
