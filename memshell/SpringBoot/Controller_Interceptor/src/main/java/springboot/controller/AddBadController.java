@@ -1,4 +1,4 @@
-package controller;
+package springboot.controller;
 
 import Tools.WaysToFindContext;
 import org.springframework.stereotype.Controller;

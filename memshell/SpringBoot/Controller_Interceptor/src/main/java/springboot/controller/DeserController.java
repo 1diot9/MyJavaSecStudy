@@ -1,4 +1,4 @@
-package controller;
+package springboot.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +12,7 @@ import java.io.ObjectInputStream;
 import java.util.Base64;
 
 @Controller
-public class TestController {
+public class DeserController {
     @RequestMapping("/test")
     @ResponseBody
     public String test() {

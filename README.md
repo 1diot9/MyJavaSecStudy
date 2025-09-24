@@ -5,6 +5,7 @@
 
 - [Java基础](#Java基础)
 - [Java安全基础](#Java安全基础)
+- [代码 / jar包调试](#代码 / jar包调试)
 - [反序列化](#反序列化)
   - CC链
   - hessian
@@ -106,7 +107,17 @@
 
 <br>
 
+# 代码 / jar包调试<a id="代码 / jar包调试"></a>
 
+一开始做ctf题的时候，遇到过很尴尬的情况，拿到jar包，不知道要怎么在本地调试。后面才学习到了反编译，远程调试等内容。
+
+[奇安信攻防社区-java审计调试方式](https://forum.butian.net/share/1753)  基本涉及了所有情况
+
+[skylot/jadx: Dex to Java decompiler](https://github.com/skylot/jadx)  反编译工具
+
+
+
+<br>
 
 # 反序列化  <a id="反序列化"></a>
 
@@ -228,7 +239,13 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 <br>
 
+## Postgresql
 
+[Postgresql JDBC Attack and Stuff | 素十八](https://su18.org/post/postgresql-jdbc-attack-and-stuff/) 可以设置jdbc url 来加载xml文件
+
+
+
+<br>
 
 ## Derby
 
@@ -332,7 +349,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [奇安信攻防社区-利用 intercetor 注入 spring 内存 webshell](https://forum.butian.net/share/102) 也是landgrey师傅的
 
-[Spring内存马学习 | Bmth's blog](http://www.bmth666.cn/2022/09/27/Spring内存马学习/index.html) 这里没讲原理，主要是给出了能直接用的内存马
+[Spring内存马学习 | Bmth's blog](http://www.bmth666.cn/2022/09/27/Spring内存马学习/index.html) 这里没讲原理，主要是给出了能直接用的内存马，注意SpringBoot2.6前后，Controller内存马实现方式有不同
 
 =====================快速入门的话，可以先只看上面的几篇文章======================
 
@@ -376,11 +393,13 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [高版本JDK加载字节码分析](https://mp.weixin.qq.com/s/Nvra3OljzllryYg9L9yCFQ)
 
-[2024 巅峰极客 easy_java学习jdk17下打内存马方式-先知社区](https://xz.aliyun.com/news/14807)   MethodHandles+CC
+[2024 巅峰极客 easy_java学习jdk17下打内存马方式-先知社区](https://xz.aliyun.com/news/14807)   CC+MethodHandlers
 
 [jdk17&CC链下利用TemplatesImpl | Jiecub3](https://jiecub3.github.io/zh/posts/java/chain/jdk17cc链下利用templatesimpl/) 
 
 [高版本JDK下的Spring原生反序列化链 – fushulingのblog](https://fushuling.com/index.php/2025/08/21/高版本jdk下的spring原生反序列化链/)
+
+[jdk17+Springboot链 | 1diot9's Blog](https://1diot9.github.io/2025/09/23/jdk17-Springboot链/)
 
 [JDK17不出网？Shiro反序列化极限RCE！](https://mp.weixin.qq.com/s/xfmHjgx5jQRLKkIR7XUCcg) 
 

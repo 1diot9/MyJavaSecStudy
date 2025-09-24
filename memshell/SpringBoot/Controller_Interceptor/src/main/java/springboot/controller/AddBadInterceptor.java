@@ -1,4 +1,4 @@
-package controller;
+package springboot.controller;
 
 import bad_interceptor.BadInterceptor_within;
 import org.springframework.stereotype.Controller;
