@@ -5,7 +5,7 @@
 
 - [Java基础](#Java基础)
 - [Java安全基础](#Java安全基础)
-- [代码 / jar包调试](#代码 / jar包调试)
+- [代码和jar包调试](#代码和jar包调试)
 - [反序列化](#反序列化)
   - CC链
   - hessian
@@ -107,7 +107,7 @@
 
 <br>
 
-# 代码 / jar包调试<a id="代码 / jar包调试"></a>
+# 代码 / jar包调试<a id="代码和jar包调试"></a>
 
 一开始做ctf题的时候，遇到过很尴尬的情况，拿到jar包，不知道要怎么在本地调试。后面才学习到了反编译，远程调试等内容。
 
@@ -422,6 +422,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 ## heapdump分析
 
 主要是jdk自带的VisualVM看jdk版本，heapdump_tools分析依赖和密码
+
+[heapdump深度利用之信息泄露篇](https://mp.weixin.qq.com/s/VBCjtLxcdFvIJ0uK-sCdDw)
 
 [Springboot信息泄露以及heapdump的利用_heapdump信息泄露-CSDN博客](https://blog.csdn.net/weixin_44309905/article/details/127279561)
 
