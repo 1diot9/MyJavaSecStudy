@@ -1,0 +1,10 @@
+九月 25, 2025 1:01:07 下午 org.postgresql.Driver connect
+详细: Connecting with URL: jdbc:postgresql://FileWrite/?loggerLevel=DEBUG&loggerFile=log.txt
+九月 25, 2025 1:11:13 下午 org.postgresql.jdbc.PgConnection <init>
+详细: PostgreSQL JDBC Driver 42.3.0
+九月 25, 2025 1:11:13 下午 org.postgresql.jdbc.PgConnection setDefaultFetchSize
+详细:   setDefaultFetchSize = 0
+九月 25, 2025 1:11:13 下午 org.postgresql.jdbc.PgConnection setPrepareThreshold
+详细:   setPrepareThreshold = 5
+九月 25, 2025 1:11:18 下午 org.postgresql.core.v3.ConnectionFactoryImpl openConnectionImpl
+详细: Trying to establish a protocol version 3 connection to FileWrite:5432
