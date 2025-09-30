@@ -3,6 +3,60 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="ChangeListManager">
+    <list default="true" id="421657a9-c733-4454-98e9-afb6164181e0" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../JDBC/PostgreSql/src/main/java/Calc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBC/PostgreSql/src/main/java/com/test/DirectConnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JDBC/PostgreSql/src/main/java/tmp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ExecFailed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ProcessBuilderExec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/processBuilder.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/runtime.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/runtime2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReflectionStudy/src/main/java/com/test/pojo/Baka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReflectionStudy/src/main/java/com/test/study/Reflection2Runtime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReflectionStudy/src/main/java/com/test/study/ReflectionMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReflectionStudy/src/main/java/com/test/study/Ways2Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CodeAudit/mavenJspTest/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CodeAudit/mavenJspTest/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CodeAudit/mavenJspTest/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CodeAudit/mavenJspTest/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CodeAudit/mavenJspTest/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CodeAudit/mavenJspTest/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CodeAudit/mavenJspTest/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../memshell/SpringBoot/Controller_Interceptor/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../memshell/SpringBoot/Controller_Interceptor/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../memshell/SpringBoot/Controller_Interceptor/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../memshell/SpringBoot/Controller_Interceptor/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../memshell/SpringBoot/Controller_Interceptor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../memshell/SpringBoot/Controller_Interceptor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../memshell/SpringBoot/Controller_Interceptor/src/main/java/POC/Gadget.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../memshell/SpringBoot/Controller_Interceptor/src/main/java/POC/Gadget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../memshell/SpringBoot/Controller_Interceptor/src/main/java/bad_interceptor/BadInterceptor_within.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../memshell/SpringBoot/Controller_Interceptor/src/main/java/bad_interceptor/BadInterceptor_within.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../memshell/demo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../memshell/demo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../memshell/demo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../memshell/demo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../memshell/demo/src/main/java/org/example/demo/JndiServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../memshell/demo/src/main/java/org/example/demo/JndiServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../memshell/demo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../memshell/demo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -14,12 +68,206 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="33P8k9swtBBJZiVF1SAn4HJhbL9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.27816093",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.ExecFailed.executor": "Debug",
+    "应用程序.ProcessBuilderExec.executor": "Run"
   }
-}</component>
+}]]></component>
+  <component name="RunManager" selected="应用程序.ProcessBuilderExec">
+    <configuration name="ExecFailed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.ExecFailed" />
+      <module name="RceStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProcessBuilderExec" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.ProcessBuilderExec" />
+      <module name="RceStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.81" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.81" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="RceStudy:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/RceStudy" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="793c2629-cd0b-461b-9861-9edf05849fb5" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5083" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="RceStudy:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat 服务器.Tomcat 8.5.81" />
+      <item itemvalue="应用程序.ExecFailed" />
+      <item itemvalue="应用程序.ProcessBuilderExec" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.ProcessBuilderExec" />
+        <item itemvalue="应用程序.ExecFailed" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="421657a9-c733-4454-98e9-afb6164181e0" name="更改" comment="" />
+      <created>1759207487740</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759207487740</updated>
+      <workItem from="1759207488679" duration="1455000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../../../../sec_software/jdks/jdk-1.8.0_65/src.zip!/java/lang/Runtime.java</url>
+          <line>616</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
 </project>
