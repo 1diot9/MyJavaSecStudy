@@ -7,19 +7,9 @@
 - [Java安全基础](#Java安全基础)
 - [代码和jar包调试](#代码和jar包调试)
 - [反序列化](#反序列化)
-  - CC链
-  - hessian
-  - 其他链子&姿势
 - [JNDI](#JNDI)
-  - 基础内容
-  - 高版本JDK绕过
-    - 基于BeanFactory
-    - 其他Factory绕过(主要结合JDBC打)
 - [JDBC](#JDBC)
 - [shiro](#shiro)
-
-  - shiro反序列化
-  - shiro越权
 - [Fastjson&Jackson&SnakeYaml](#Fastjson&Jackson&SnakeYaml)
 - [内存马&回显技术](#内存马&回显技术)
 - [高版本jdk下的链子](#高版本jdk下的链子)
@@ -27,17 +17,7 @@
 - [SpringBoot](#SpringBoot)
 - [工具开发/二开](#devTools)
 - [代码审计](#CodeAudit)
-
-  - 若依
-
-  - WebGoat
-  - 泛微Ecology9
-  - 用友U8Cloud
 - [代码审计辅助工具](#代码审计辅助工具)
-
-  - jar-analyzer
-  - tabby
-  - CodeQL
 - [学习路线整合](#学习路线整合)
 - [工具推荐](#工具推荐)
 
@@ -118,6 +98,22 @@
 
 
 <br>
+
+# 查漏补缺
+
+主要记录一些新遇到的小知识。
+
+[Java Runtime.getRuntime().exec由表及里-先知社区](https://xz.aliyun.com/news/6642)  剖析了Runtime为什么不能识别特殊符号的本质
+
+[shadow-horse/java.lang.Runtime.exec-Payload: 反弹shell，Runtime.exec()执行系统命令](https://github.com/shadow-horse/java.lang.Runtime.exec-Payload)  Runtime命令生成
+
+
+
+
+
+<br>
+
+
 
 # 反序列化  <a id="反序列化"></a>
 
@@ -214,6 +210,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 ## mysql
 
 [MySQL jdbc 反序列化分析 | Drunkbaby's Blog](https://drun1baby.top/2023/01/13/MySQL-jdbc-反序列化分析/) 最经典的mysql-jdbc
+
+[mysql JDBC 攻击 | 1diot9's Blog](https://1diot9.github.io/2025/05/05/mysql-JDBC-绕过/) 整理了打法和绕过
 
 ============如果真的很急，JDBC可以先只看上面这一个mysql，其他的遇到了再学=================
 
