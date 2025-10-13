@@ -30,6 +30,8 @@ public class ReflectionMethods {
             System.out.println(method.getName());
         }
 
+        System.out.println("================================");
+
         Method method = aClass.getDeclaredMethod("kiss", String.class);
         // 临时设置私有方法可访问
         method.setAccessible(true);

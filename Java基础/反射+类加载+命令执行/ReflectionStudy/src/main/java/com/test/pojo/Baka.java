@@ -1,6 +1,6 @@
 package com.test.pojo;
 
-public class Baka {
+public class Baka extends Object{
     public String name;
     protected int gender;
     private int age;
