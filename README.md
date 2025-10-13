@@ -6,6 +6,7 @@
 - [Java基础](#Java基础)
 - [Java安全基础](#Java安全基础)
 - [代码和jar包调试](#代码和jar包调试)
+- [查漏补缺](#查漏补缺)
 - [反序列化](#反序列化)
 - [JNDI](#JNDI)
 - [JDBC](#JDBC)
@@ -13,6 +14,7 @@
 - [Fastjson&Jackson&SnakeYaml](#Fastjson&Jackson&SnakeYaml)
 - [内存马&回显技术](#内存马&回显技术)
 - [高版本jdk下的链子](#高版本jdk下的链子)
+- [表达式+SSTI](#表达式+SSTI)
 - [RASP](#RASP)
 - [SpringBoot](#SpringBoot)
 - [工具开发/二开](#devTools)
@@ -99,7 +101,7 @@
 
 <br>
 
-# 查漏补缺
+# 查漏补缺 <a id="查漏补缺"></a>
 
 主要记录一些新遇到的小知识。
 
@@ -405,6 +407,36 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 <br>
 
+## 
+
+# 表达式+SSTI<a id="表达式+SSTI"></a>
+
+## SPEL
+
+[SpEL表达式注入漏洞学习和回显poc研究 - bitterz - 博客园](https://www.cnblogs.com/bitterz/p/15206255.html#语法基础)  写的比较简洁，可以按里面搭Web环境
+
+[SpEL注入RCE分析与绕过-先知社区](https://xz.aliyun.com/news/8744)  payload比较完整
+
+[Java 之 SpEL 表达式注入 | Drunkbaby's Blog](https://drun1baby.top/2022/09/23/Java-之-SpEL-表达式注入/) 写的很详细，包括SPEL用法
+
+<br>
+
+## EL
+
+
+
+<br>
+
+## Thymeleaf
+
+[Java Thymeleaf SSTI(本质为SpEL) | Godown_blog](https://godownio.github.io/2025/04/28/java-thymeleaf-ssti-spel/)  
+
+
+
+
+
+<br>
+
 # RASP <a id="RASP"></a>
 
 [JNI攻击 · 攻击Java Web应用-Java Web安全](https://www.javasec.org/java-vuls/JNI.html)
@@ -414,6 +446,14 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 # SpringBoot <a id="SpringBoot"></a>
 
 [LandGrey/SpringBootVulExploit: SpringBoot 相关漏洞学习资料，利用方法和技巧合集，黑盒安全评估 check list](https://github.com/LandGrey/SpringBootVulExploit) 总结了SpringBoot的常见利用方式
+
+<br>
+
+## 源码分析
+
+[DispatcherServlet.doDispatch请求分发详解 | Godown_blog](https://godownio.github.io/2025/03/25/spring-dispatcherservlet-xiang-jie/) 
+
+
 
 <br>
 
