@@ -89,6 +89,14 @@
 
 <br>
 
+# JavaWeb基础<a id="JavaWeb基础"></a>
+
+待完善。。。
+
+
+
+<br>
+
 # 代码 / jar包调试<a id="代码和jar包调试"></a>
 
 一开始做ctf题的时候，遇到过很尴尬的情况，拿到jar包，不知道要怎么在本地调试。后面才学习到了反编译，远程调试等内容。
@@ -283,11 +291,17 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 ====================shiro反序列化快速入门的话，可以只看上面的======================
 
+[全版本Shiro反序列化漏洞原理详解 - Smile3306 - 博客园](https://www.cnblogs.com/Smile3306/p/18984943)  详细梳理了加密和利用原理
+
+[CBC字节翻转攻击&Padding Oracle Attack原理解析 - 枫のBlog](https://goodapple.top/archives/217)  721构造合法密文的具体原理
+
 [Shiro RememberMe 漏洞检测的探索之路 - CT Stack 安全社区](https://stack.chaitin.com/techblog/detail/39) 通过密钥正常错误时，回显中rememberMe字段的不同来实现密钥爆破
 
-[一种另类的 shiro 检测方式](https://mp.weixin.qq.com/s/do88_4Td1CSeKLmFqhGCuQ)
+[奇安信攻防社区-一种另类的shiro检测方式](https://forum.butian.net/share/92)
 
-[Shiro绕过Header长度限制进阶利用 | Bmth's blog](http://www.bmth666.cn/2024/11/03/Shiro绕过Header长度限制进阶利用/index.html) 里面还提到pen4uin师傅的文章，也可以去看看
+[Shiro绕过Header长度限制进阶利用 | Bmth's blog](http://www.bmth666.cn/2024/11/03/Shiro绕过Header长度限制进阶利用/index.html) 里面提到的文章都要看
+
+[终极Java反序列化Payload缩小技术](https://mp.weixin.qq.com/s/cQCYhBkR95vIVBicA9RR6g)  
 
 <br>
 
@@ -407,8 +421,6 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 <br>
 
-## 
-
 # 表达式+SSTI<a id="表达式+SSTI"></a>
 
 ## SPEL
@@ -489,13 +501,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 
 
-# JavaWeb基础<a id="JavaWeb基础"></a>
 
-待完善。。。
-
-
-
-<br>
 
 # 代码审计<a id="CodeAudit"></a>
 
@@ -624,6 +630,26 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 [LyleMi/Learn-Web-Hacking: Study Notes For Web Hacking / Web安全学习笔记](https://github.com/LyleMi/Learn-Web-Hacking)  这个是Web安全的
 
 <br>
+
+# 博客&公众号整理
+
+整理一些我经常看的博客和公众号，仅根据个人主观收录，可能有很多其他优秀的没收录
+
+## 博客
+
+[Archives | Bmth's blog](http://www.bmth666.cn/archives/)
+
+[Y4tacker:Hacking The World!](https://y4tacker.github.io/)
+
+
+
+
+
+## 公众号
+
+漫漫安全路
+
+
 
 # 工具推荐<a id="工具推荐"></a>
 
