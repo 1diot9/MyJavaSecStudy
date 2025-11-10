@@ -16,11 +16,12 @@
 - [高版本jdk下的链子](#高版本jdk下的链子)
 - [表达式+SSTI](#表达式+SSTI)
 - [RASP](#RASP)
-- [SpringBoot](#SpringBoot)
+- [Spring系列](#Spring系列)
 - [工具开发/二开](#devTools)
 - [代码审计](#CodeAudit)
 - [代码审计辅助工具](#代码审计辅助工具)
-- [学习路线整合](#学习路线整合)
+- [参考学习路线](#参考学习路线)
+- [博客&公众号整理](#博客整理)
 - [工具推荐](#工具推荐)
 
 
@@ -91,7 +92,17 @@
 
 # JavaWeb基础<a id="JavaWeb基础"></a>
 
-待完善。。。
+## JavaWeb常见漏洞
+
+### XXE
+
+[XXE外部实体注入漏洞的测试和修复——Java_xxe漏洞的两种修复方法-CSDN博客](https://blog.csdn.net/jian876601394/article/details/107610681) 列举了很多漏洞函数
+
+[Java XXE漏洞原理研究 - 郑瀚 - 博客园](https://www.cnblogs.com/LittleHann/p/17776458.html) 
+
+[一篇文章带你深入理解漏洞之 XXE 漏洞-先知社区](https://xz.aliyun.com/news/2994) 虽然不针对Java，但是写的很完整
+
+
 
 
 
@@ -119,13 +130,13 @@
 
 
 
-
-
 <br>
 
 
 
 # 反序列化  <a id="反序列化"></a>
+
+一开始可以只看CC链
 
 ## CC链
 
@@ -137,7 +148,13 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Java 反序列化漏洞（二） - Commons Collections | 素十八](https://su18.org/post/ysoserial-su18-2/#commonscollections1) su18师傅的反序列化取经路
 
-=========================快速入门的话，可以只看上面的CC链=========================
+=========================快速入门的话，可以只看上面的=========================
+
+[CC链再次挖掘-先知社区](https://xz.aliyun.com/news/14431) 可以尝试一下自己能不能找到其他类利用
+
+[CC链再挖掘 | 1diot9's Blog](https://1diot9.github.io/2025/10/27/CC链再挖掘/)  基于上面的文章，着重于如何审计
+
+[java反序列化漏洞commons-collections3.2.1TransformedList触发transform-先知社区](https://xz.aliyun.com/news/13748) 
 
 <br>
 
@@ -146,6 +163,14 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 [Java安全学习——Hessian反序列化漏洞 - 枫のBlog](https://goodapple.top/archives/1193)
 
 [Hessian 反序列化知一二 | 素十八](https://su18.org/post/hessian/)
+
+<br>
+
+## 利用链探测
+
+[构造java探测class反序列化gadget | 回忆飘如雪](https://gv7.me/articles/2021/construct-java-detection-class-deserialization-gadget/#0x01-背景)  实战下利用链探测，dns法，反序列化炸弹延时法
+
+[Java序列化炸弹解析-CSDN博客](https://blog.csdn.net/nevermorewo/article/details/100100048)  
 
 <br>
 
@@ -179,9 +204,55 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 =========================快速入门的话，可以先只看上面部分的=========================
 
+## RMI、JRMP、JEP290、LDAP
+
+这里的目标是：
+
+1、搞清楚RMI的通信流程，搞清楚Server，Registry，Client三者互相的打法
+
+2、了解JRMP在RMI中的作用，知道它和DGC的关系
+
+3、了解两次JEP290的防护和绕过，JEP290(8u121~8u230)，JEP290(>8u231)
+
+4、了解JNDI的基本打法，包括codebase远程加载，ldap发送反序列化数据，reference本地工厂(BeanFactory为例)
+
+[RMI JRMP JEP290 LDAP基础梳理 | 1diot9's Blog](https://1diot9.github.io/2025/11/10/RMI-JRMP-JEP290-LDAP基础梳理/) 我这篇写的比较完整，但是不会过于全面，可以先看
+
+下面整理当时看的部分文章
+
+### 整合类
+
+[奇安信攻防社区-JAVA JRMP、RMI、JNDI、反序列化漏洞之间的风花雪月](https://forum.butian.net/share/2278) 这个感觉最清楚，底下的参考文章也看看
+
+[基于Java反序列化RCE - 搞懂RMI、JRMP、JNDI-先知社区](https://xz.aliyun.com/news/6675) 
+
+[搞懂RMI、JRMP、JNDI-终结篇-先知社区](https://xz.aliyun.com/news/6860) 里面提到的文章也要看
+
+### RMI
+
+[RMI协议分析 - lvyyevd's 安全博客](http://www.lvyyevd.cn/archives/rmi-xie-yi-fen-xi) 
+
+[Java RMI 攻击由浅入深 | 素十八](https://su18.org/post/rmi-attack/) 
+
+[RMI-攻击方式总结-安全KER - 安全资讯平台](https://www.anquanke.com/post/id/257452#h2-6) 有比较完整的示例代码
+
+[MyJavaSecStudy/docs/Java安全漫谈.pdf at main · 1diot9/MyJavaSecStudy](https://github.com/1diot9/MyJavaSecStudy/blob/main/docs/Java安全漫谈.pdf) 04-06详细讲了RMI的通信过程
+
+### JRMP&JEP290
+
+[JRMP通信攻击过程及利用介绍-先知社区](https://xz.aliyun.com/news/15240) 
+
+[RMI-JEP290的分析与绕过-安全KER - 安全资讯平台](https://www.anquanke.com/post/id/259059#h2-0) 
+
+[Shiro有key但无回显利用链子-JRMP大法_shiro有key无链怎么办?-CSDN博客](https://blog.csdn.net/weixin_43264067/article/details/139626398)  可以通过jrmp进行利用链探测
+
 <br>
 
 ## 高版本JDK绕过
+
+### 基于反序列化
+
+[RMI JRMP JEP290 LDAP基础梳理 | 1diot9's Blog](https://1diot9.github.io/2025/11/10/RMI-JRMP-JEP290-LDAP基础梳理/) 5.1.1和5.2.2有讲
 
 ### 基于BeanFactory
 
@@ -191,27 +262,17 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 ### 其他Factory绕过
 
+[京麟CTF 2024 ezldap 分析-先知社区](https://xz.aliyun.com/news/14103)  com.sun.jndi.ldap.object.trustSerialData false的绕过
+
 [SolarWinds Security Event Manager AMF 反序列化 RCE (CVE-2024-0692) - X1r0z Blog](https://exp10it.io/2024/03/solarwinds-security-event-manager-amf-deserialization-rce-cve-2024-0692/#hikaricp-jndi-注入)	Hikari跟Druid一样，都可以实现JNDI+JDBC，都是可以执行初始化sql语句
 
-[高版本JNDI注入-高版本Tomcat利用方案-先知社区](https://xz.aliyun.com/news/16156)
+[高版本JNDI注入-高版本Tomcat利用方案-先知社区](https://xz.aliyun.com/news/16156) 
 
 [探索高版本 JDK 下 JNDI 漏洞的利用方法 - 跳跳糖](https://tttang.com/archive/1405/#toc_snakeyaml)	jdk17的题特别喜欢考JNDI+JDBC
 
-[JNDI jdk高版本绕过—— Druid-先知社区](https://xz.aliyun.com/news/10104)
+[JNDI jdk高版本绕过—— Druid-先知社区](https://xz.aliyun.com/news/10104) 
 
-<br>
-
-## 未分类
-
-[RMI协议分析 - lvyyevd's 安全博客](http://www.lvyyevd.cn/archives/rmi-xie-yi-fen-xi)
-
-[Java RMI 攻击由浅入深 | 素十八](https://su18.org/post/rmi-attack/)
-
-[MyJavaSecStudy/docs/Java安全漫谈.pdf at main · 1diot9/MyJavaSecStudy](https://github.com/1diot9/MyJavaSecStudy/blob/main/docs/Java安全漫谈.pdf) 04-06详细讲了RMI的通信过程
-
-[京麟CTF 2024 ezldap 分析-先知社区](https://xz.aliyun.com/news/14103)  com.sun.jndi.ldap.object.trustSerialData false的绕过
-
-[奇安信攻防社区-【2024补天白帽黑客大会】JNDI新攻击面探索](https://forum.butian.net/share/3857)
+[奇安信攻防社区-【2024补天白帽黑客大会】JNDI新攻击面探索](https://forum.butian.net/share/3857) 
 
 <br>
 
@@ -299,9 +360,15 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [奇安信攻防社区-一种另类的shiro检测方式](https://forum.butian.net/share/92)
 
+payload缩短这部分内容挺多的，感觉能单独研究了。
+
 [Shiro绕过Header长度限制进阶利用 | Bmth's blog](http://www.bmth666.cn/2024/11/03/Shiro绕过Header长度限制进阶利用/index.html) 里面提到的文章都要看
 
+[浅谈Shiro550受Tomcat Header长度限制影响突破](https://y4tacker.github.io/2022/04/14/year/2022/4/浅谈Shiro550受Tomcat-Header长度限制影响突破/) 这里提供了其他缩短的方法
+
 [终极Java反序列化Payload缩小技术](https://mp.weixin.qq.com/s/cQCYhBkR95vIVBicA9RR6g)  
+
+
 
 <br>
 
@@ -387,6 +454,10 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 <br>
 
+### 其他内存马
+
+[Lilctf_blade_cc](https://www.n1ght.cn/2025/08/21/blade_cc/#blade内存马)  blade内存马
+
 ### 内存马工具
 
 [pen4uin/java-memshell-generator: 一款支持自定义的 Java 内存马生成工具｜A customizable Java in-memory webshell generation tool.](https://github.com/pen4uin/java-memshell-generator)
@@ -398,6 +469,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 ## 回显技术
 
 [pen4uin/java-echo-generator: 一款支持自定义的 Java 回显载荷生成工具｜A customizable Java echo payload generation tool.](https://github.com/pen4uin/java-echo-generator) 回显技术的工具
+
+[java_linux通用回显马](https://www.n1ght.cn/2025/08/21/java_linux通用回显马/) 
 
 
 
@@ -455,21 +528,39 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 <br>
 
-# SpringBoot <a id="SpringBoot"></a>
+# 中间件相关
+
+## Tomcat
+
+[Tomcat URL解析差异性导致的安全问题-先知社区](https://xz.aliyun.com/news/7139) 
+
+## Resin
+
+[URL解析导致的鉴权绕过问题探究-Resin篇 - 进阶的胖闹-pwnull](https://pwnull.github.io/2023/from-urlparser-to-authbypass-resin/)  
+
+# Spring系列<a id="Spring系列"></a>
+
+## SpringBoot 
 
 [LandGrey/SpringBootVulExploit: SpringBoot 相关漏洞学习资料，利用方法和技巧合集，黑盒安全评估 check list](https://github.com/LandGrey/SpringBootVulExploit) 总结了SpringBoot的常见利用方式
 
 <br>
 
-## 源码分析
+### 源码分析
 
 [DispatcherServlet.doDispatch请求分发详解 | Godown_blog](https://godownio.github.io/2025/03/25/spring-dispatcherservlet-xiang-jie/) 
 
+<br>
 
+### URL解析差异
+
+[URL解析导致的鉴权绕过问题探究-SpringSecurity篇 - 进阶的胖闹-pwnull](https://pwnull.github.io/2023/from-urlparser-to-authbypass-SpringSecurity/) 
+
+[7. JEECG-灰盒Fuzzing](https://www.yuque.com/pmiaowu/gpy1q8/gl653fmytz1hoyev) 
 
 <br>
 
-## heapdump分析
+### heapdump分析
 
 主要是jdk自带的VisualVM看jdk版本，heapdump_tools分析依赖和密码
 
@@ -481,15 +572,17 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 <br>
 
-## 文件缓存机制
+### 文件缓存机制
 
 [从JDBC MySQL不出网攻击到spring临时文件利用-先知社区](https://xz.aliyun.com/news/17830)
 
-
-
 <br>
 
+## Spring Cloud
 
+[Spring Cloud GateWay CVE-2025-41243 分析-先知社区](https://xz.aliyun.com/news/19006) 
+
+[CVE-2025-41243 Spring Cloud Gateway SpEL 沙箱从任意属性访问到任意文件下载 - 白帽酱の博客](https://rce.moe/2025/09/29/CVE-2025-41243/) 
 
 # 工具开发/二开<a id="devTools"></a>
 
@@ -551,13 +644,23 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [用友U8Cloud环境搭建 | 1diot9's Blog](https://1diot9.github.io/2025/08/16/U8Cloud环境搭建/)
 
+[用友U8Cloud最新前台RCE漏洞挖掘过程分享](https://mp.weixin.qq.com/s/gwdzmBCu5PjYdzVeWEcpDQ)
+
 [用友U8cloud-esnserver接口RCE | 1diot9's Blog](https://1diot9.github.io/2025/08/16/用友U8cloud-esnserver接口RCE/)
 
 [用友U8cloud-ServiceDispacherServlet反序列化 | 1diot9's Blog](https://1diot9.github.io/2025/08/16/用友U8cloud-ServiceDispacherServlet反序列化/)
 
-[微信公众平台](https://mp.weixin.qq.com/s/gwdzmBCu5PjYdzVeWEcpDQ)
-
 [用友U8cloud-LoginVideoServlet接口反序列化 | 1diot9's Blog](https://1diot9.github.io/2025/08/16/用友U8cloud-LoginVideoServlet接口反序列化/)
+
+## 契约锁
+
+[契约锁电子签章系统 pdfverifier rce 前台漏洞分析(从源码分析)-先知社区](https://xz.aliyun.com/news/18520) 
+
+[契约锁pdfverifier RCE攻防绕过史](https://mp.weixin.qq.com/s/u--mcFjhYly74q-Qg3D7jQ) 
+
+[契约锁电子签章系统 pdfverifier 远程代码执行漏洞分析（补丁包逆向分析）-先知社区](https://xz.aliyun.com/news/18482) 
+
+[契约锁代码审计分析_契约锁漏洞-CSDN博客](https://blog.csdn.net/baidu_25299117/article/details/139990814)
 
 <br>
 
@@ -587,6 +690,16 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [1. 案例-CodeQL自动化挖掘JavaSecCode](https://www.yuque.com/pmiaowu/gpy1q8/upavb10n5vnit3y3)
 
+[使用CodeQL_n1ght进行漏洞审计思路-先知社区](https://xz.aliyun.com/news/18769)  实战审计例子，有空看看
+
+[codeql带依赖jar包数据库生成](https://www.n1ght.cn/2025/06/16/codeql带依赖jar包数据库生成/) 
+
+[CodeQL踩坑日记and规则分享](https://mp.weixin.qq.com/s/cOXc0MyDXhslTPBENfd4Pg) 
+
+[CodeQL分析java反序列化gadget第一期--CC1链-先知社区](https://xz.aliyun.com/news/18578) 
+
+[聊一聊 CodeQL 基础之过河问题](https://mp.weixin.qq.com/s/CCwWUrRa0K_hcBYEaAe8xQ) 
+
 [利用Github Actions生成CodeQL数据库 -- 以AliyunCTF2024 Chain17的反序列化链挖掘为例 - KingBridge - 博客园](https://www.cnblogs.com/kingbridge/articles/18100619)
 
 [aliyun ctf chain17 回顾(超详细解读)-先知社区](https://xz.aliyun.com/news/16179)
@@ -611,7 +724,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 
 
-# 学习路线整合 <a id="学习路线整合"></a>
+# 参考学习路线 <a id="参考学习路线"></a>
 
 这里是其他师傅整理的学习路线，我这里仅列举了我看过的一些，如果有其他推荐的，可以私聊我
 
@@ -631,25 +744,37 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 <br>
 
-# 博客&公众号整理
+# 博客&公众号整理<a id="博客整理"></a>
 
-整理一些我经常看的博客和公众号，仅根据个人主观收录，可能有很多其他优秀的没收录
+整理一些我经常看的博客和公众号。由于个人见识有些，可能有很多其他优秀的博客和公众号没收录
 
 ## 博客
 
-[Archives | Bmth's blog](http://www.bmth666.cn/archives/)
+[Archives | Bmth's blog](http://www.bmth666.cn/archives/) 
 
-[Y4tacker:Hacking The World!](https://y4tacker.github.io/)
+[Y4tacker:Hacking The World!](https://y4tacker.github.io/) 
 
+[All Posts - X1r0z Blog](https://exp10it.io/posts/) 
 
+[Jasper_sec](https://jaspersec.top/) 
 
+[真爱和自由 的个人主页-先知社区](https://xz.aliyun.com/users/141946/news) 
 
+[Archives - Boogiepop Doesn't Laugh](https://boogipop.com/archives/) 
+
+<br>
 
 ## 公众号
 
 漫漫安全路
 
+珂技知识分享   里面还有pwn入门文章
 
+菜狗安全
+
+Heihu Share
+
+<br>
 
 # 工具推荐<a id="工具推荐"></a>
 
