@@ -16,6 +16,7 @@
 - [高版本jdk下的链子](#高版本jdk下的链子)
 - [表达式+SSTI](#表达式+SSTI)
 - [RASP](#RASP)
+- [中间件相关](#中间件相关)
 - [Spring系列](#Spring系列)
 - [工具开发/二开](#devTools)
 - [代码审计](#CodeAudit)
@@ -96,11 +97,11 @@
 
 ### XXE
 
-[XXE外部实体注入漏洞的测试和修复——Java_xxe漏洞的两种修复方法-CSDN博客](https://blog.csdn.net/jian876601394/article/details/107610681) 列举了很多漏洞函数
-
-[Java XXE漏洞原理研究 - 郑瀚 - 博客园](https://www.cnblogs.com/LittleHann/p/17776458.html) 
+[XXE整理 | 1diot9's Blog](https://1diot9.github.io/2025/11/18/XXE整理/) 参考的文章记得看
 
 [一篇文章带你深入理解漏洞之 XXE 漏洞-先知社区](https://xz.aliyun.com/news/2994) 虽然不针对Java，但是写的很完整
+
+
 
 
 
@@ -156,13 +157,35 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [java反序列化漏洞commons-collections3.2.1TransformedList触发transform-先知社区](https://xz.aliyun.com/news/13748) 
 
+[老链新看——CommonsCollections链](https://mp.weixin.qq.com/s/zNsTKVumW-wa91Eb63WVZA) 
+
 <br>
 
 ## hessian
 
-[Java安全学习——Hessian反序列化漏洞 - 枫のBlog](https://goodapple.top/archives/1193)
+[Hessian反序列化原理到武器化利用 - FreeBuf网络安全行业门户](https://www.freebuf.com/articles/web/424308.html) 简要原理+常规链子
 
-[Hessian 反序列化知一二 | 素十八](https://su18.org/post/hessian/)
+[超详细解析Hessian利用链-先知社区](https://xz.aliyun.com/news/13039) 常规链子
+
+[漏洞篇 - Hessian 反序列化详解 - 妙尽璇机](https://changeyourway.github.io/2025/02/20/Java 安全/漏洞篇-Hessian反序列化/) 常规链子
+
+[Java安全学习——Hessian反序列化漏洞 - 枫のBlog](https://goodapple.top/archives/1193) 原理+Apache Dubbo
+
+[0CTF/TCTF 2022 hessian-onlyJdk | Bmth's blog](http://www.bmth666.cn/2023/02/07/0CTF-TCTF-2022-hessian-onlyJdk/index.html) only-jdk链
+
+[0ctf2022 hessian-only-jdk writeup jdk原生链-先知社区](https://xz.aliyun.com/news/11178) tabby挖掘
+
+[Hessian 反序列化新链分析与坑点 | zoiltin's Blog](https://zoiltin.github.io/posts/hessian反序列化新链分析与坑点/) 新链
+
+[从2025blackhat-jdd hessian反序列化jdk原生新链开始学习链子构造-先知社区](https://xz.aliyun.com/news/18935) 新链
+
+[Hessian反序列化流程及漏洞浅析-先知社区](https://xz.aliyun.com/news/17603) 
+
+[基础篇 - Hessian 协议详解 - 妙尽璇机](https://changeyourway.github.io/2024/11/13/Java 安全/基础篇-Hessian协议详解/) 
+
+[Hessian 反序列化漏洞 · 攻击Java Web应用-Java Web安全\]](https://www.javasec.org/java-vuls/Hessian.html) 
+
+[Hessian 反序列化知一二 | 素十八](https://su18.org/post/hessian/) 
 
 <br>
 
