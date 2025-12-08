@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--status="WARN"：控制 Log4j2 自身的内部日志级别（不是应用日志）。如果 Log4j2 出现错误或警告，会在控制台打印。-->
+<!--monitorInterval="30"：表示每隔 30 秒检查一次配置文件是否被修改，如果修改了会自动重新加载。-->
+<Configuration status="WARN" monitorInterval="30">
+    <!--日志输出目标-->
+    <Appenders>
+        <!--输出到控制台-->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--时间戳 启用lookups解析，用于在高版本组件中手动开启 线程名 日志级别（INFO/DEBUG 等） Logger 名称，最多显示 36 个字符 日志消息 换行-->
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <!--输出到文件 logs/app.log-->  <!--filePattern：日志滚动时的文件命名规则，例如 logs/app-2025-12-04-1.log.gz-->
+        <RollingFile name="File" fileName="logs/app.log" filePattern="logs/app-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger - %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>  <!--文件超过 10MB 时滚动-->
+                <TimeBasedTriggeringPolicy/>    <!--按时间滚动（通常是每天）-->
+            </Policies>
+            <DefaultRolloverStrategy max="7"/>  <!--最多保留 7 个历史文件，超过会删除旧的-->
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!--针对 com.example 包下的类，日志级别设为 error；这里代表error以上的才会被解析记录，所以只有error以上的才能触发漏洞；可以在java类中临时更改记录等级-->
+        <!--additivity="false" 表示不再向上级 Root Logger 传递日志，避免重复输出-->
+        <!--trace < debug < info < warn < error < fatal-->
+        <Logger name="com.example" level="error" additivity="false">
+            <!--绑定两个 Appender：控制台和文件-->
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+        <!--所有没有单独配置的 Logger 都会走 Root-->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
