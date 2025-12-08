@@ -201,7 +201,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Java反序列化之C3P0链 | Drunkbaby's Blog](https://drun1baby.top/2022/10/06/Java反序列化之C3P0链/) c3p0，可以打二次反序列化
 
-[分析尝试利用tabby挖掘-SpringAOP链 - Potat0w0](https://blog.potatowo.top/2025/03/31/从复现到尝试用tabby挖掘-SpringAOP链/)
+[分析尝试利用tabby挖掘-SpringAOP链 - Potat0w0](https://blog.potatowo.top/2025/03/31/从复现到尝试用tabby挖掘-SpringAOP链/) 
 
 [realworldctf old system复盘（jdk1.4 getter jndi gadget）-先知社区](https://xz.aliyun.com/news/8630)	LdapAttribute链
 
@@ -225,6 +225,8 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [JNDI · 攻击Java Web应用-Java Web安全](https://www.javasec.org/javase/JNDI/#jndi) 里面引用了一篇命名和目录服务基本概念的文章，记得看，对后面理解RMI和LDAP很有帮助，很多东西都会在调试里遇到
 
+[Log4j2漏洞分析 | 1diot9's Blog](https://1diot9.github.io/2025/12/08/Log4j2漏洞分析/) 
+
 =========================快速入门的话，可以先只看上面部分的=========================
 
 ## RMI、JRMP、JEP290、LDAP
@@ -243,7 +245,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 下面整理当时看的部分文章
 
-### 整合类
+### 综合梳理
 
 [奇安信攻防社区-JAVA JRMP、RMI、JNDI、反序列化漏洞之间的风花雪月](https://forum.butian.net/share/2278) 这个感觉最清楚，底下的参考文章也看看
 
@@ -457,13 +459,15 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 =====================快速入门的话，可以先只看上面的几篇文章======================
 
-[bitterzzZZ/MemoryShellLearn: 分享几个直接可用的内存马，记录一下学习过程中看过的文章](https://github.com/bitterzzZZ/MemoryShellLearn)
+[bitterzzZZ/MemoryShellLearn: 分享几个直接可用的内存马，记录一下学习过程中看过的文章](https://github.com/bitterzzZZ/MemoryShellLearn) 
 
-[Getshell/Mshell: Memshell-攻防内存马研究](https://github.com/Getshell/Mshell)
+[Getshell/Mshell: Memshell-攻防内存马研究](https://github.com/Getshell/Mshell) 
 
-[W01fh4cker/LearnJavaMemshellFromZero: 【三万字原创】完全零基础从0到1掌握Java内存马，公众号：追梦信安](https://github.com/W01fh4cker/LearnJavaMemshellFromZero)
+[W01fh4cker/LearnJavaMemshellFromZero: 【三万字原创】完全零基础从0到1掌握Java内存马，公众号：追梦信安](https://github.com/W01fh4cker/LearnJavaMemshellFromZero) 
 
 上面这三篇都是内存马学习的相关项目，里面有很多优秀的文章和案例代码
+
+[浅谈 Java Agent 内存马 – 天下大木头](https://wjlshare.com/archives/1582) 
 
 [奇安信攻防社区-Solon框架注入内存马](https://forum.butian.net/share/3700)  里面提到的Java Object Searcher值得学习
 
