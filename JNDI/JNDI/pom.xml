@@ -16,6 +16,11 @@
 
    <dependencies>
        <dependency>
+           <groupId>commons-beanutils</groupId>
+           <artifactId>commons-beanutils</artifactId>
+           <version>1.9.4</version>
+       </dependency>
+       <dependency>
            <groupId>com.alibaba</groupId>
            <artifactId>fastjson</artifactId>
            <version>1.2.47</version>
@@ -54,6 +59,11 @@
            <groupId>com.unboundid</groupId>
            <artifactId>unboundid-ldapsdk</artifactId>
            <version>3.2.0</version>
+       </dependency>
+       <dependency>
+           <groupId>commons-collections</groupId>
+           <artifactId>commons-collections</artifactId>
+           <version>3.2.1</version>
        </dependency>
    </dependencies>
 
