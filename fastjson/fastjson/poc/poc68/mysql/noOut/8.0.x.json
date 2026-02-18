@@ -1,0 +1,27 @@
+{
+  "x1": {
+    "@type": "java.lang.AutoCloseable",
+    "@type": "com.mysql.cj.jdbc.ha.ReplicationMySQLConnection",
+    "proxy": {
+      "@type": "com.mysql.cj.jdbc.ha.LoadBalancedConnectionProxy",
+      "connectionUrl": {
+        "@type": "com.mysql.cj.conf.url.ReplicationConnectionUrl",
+        "masters": [
+          {}
+        ],
+        "slaves": [],
+        "properties": {
+          "host": "xxx",
+          "user": "mysql",
+          "queryInterceptors": "com.mysql.cj.jdbc.interceptors.ServerStatusDiffInterceptor",
+          "autoDeserialize": "true",
+          "socketFactory": "com.mysql.cj.protocol.NamedPipeSocketFactory",
+          "path": "/tmp/mysql.pcap",
+          "maxAllowedPacket": "74996390",
+          "dbname": "test",
+          "useSSL": "false"
+        }
+      }
+    }
+  }
+}

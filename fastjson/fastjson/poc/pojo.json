@@ -1,0 +1,4 @@
+{
+  "@type": "pojo.Student",
+  "charSequence":{"@type":"java.lang.String""aaaaaa"
+}

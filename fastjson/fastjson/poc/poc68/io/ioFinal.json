@@ -1,0 +1,46 @@
+{
+  "@type":"java.lang.AutoCloseable",
+  "@type":"org.apache.commons.io.input.BOMInputStream",
+  "delegate":{
+    "@type": "org.apache.commons.io.input.AutoCloseInputStream",
+    "in": {
+      "@type": "org.apache.commons.io.input.TeeInputStream",
+      "input": {
+        "@type": "org.apache.commons.io.input.ReaderInputStream",
+        "reader": {
+          "@type": "org.apache.commons.io.input.CharSequenceReader",
+          "charSequence": {
+            "@type": "java.lang.String"
+            "${hexContent}",
+          },
+          "encoder": "iso-8859-1",
+          "charset": "iso-8859-1",
+          "charsetName": "iso-8859-1",
+          "bufferSize": 1
+        },
+        "branch": {
+          "@type": "org.apache.commons.io.output.WriterOutputStream",
+          "writer": {
+            "@type": "org.apache.commons.io.output.LockableFileWriter",
+            "file": "${path}",
+            "charset": "iso-8859-1",
+            "encoding": "iso-8859-1",
+            "lockDir": "/tmp/test/",
+            "append": false
+          },
+          "charset":"iso-8859-1",
+          "charsetName":"iso-8859-1",
+          "bufferSize": 1024,
+          "writeImmediately": true
+        },
+        "closeBranch": true
+      }
+    },
+    "include":true,
+    "boms":[{
+      "@type": "org.apache.commons.io.ByteOrderMark",
+      "charsetName": "iso-8859-1",
+      "bytes":${byteArray}
+    }],
+    "x":{"$ref":"$.bOM"}
+  }

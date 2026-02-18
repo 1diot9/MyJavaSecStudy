@@ -1,0 +1,11 @@
+{
+  "x1": {
+    "@type": "java.lang.AutoCloseable",
+    "@type": "com.mysql.cj.jdbc.ha.LoadBalancedMySQLConnection",
+    "proxy": {
+      "connectionString": {
+        "url": "jdbc:mysql://xxx/test?useSSL=false&autoDeserialize=true&statementInterceptors=com.mysql.cj.jdbc.interceptors.ServerStatusDiffInterceptor&user=mysql&socketFactory=com.mysql.cj.core.io.NamedPipeSocketFactory&namedPipePath=mysql"
+      }
+    }
+  }
+}

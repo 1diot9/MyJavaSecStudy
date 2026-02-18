@@ -1,0 +1,4 @@
+{
+  "@type": "pojo.Student",
+  "grades": {"@type": "pojo.Grades", "math": "145", "english": "135.5"}
+}

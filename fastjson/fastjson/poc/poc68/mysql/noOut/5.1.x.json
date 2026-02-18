@@ -1,0 +1,21 @@
+{
+  "x1": {
+    "@type": "java.lang.AutoCloseable",
+    "@type": "com.mysql.jdbc.JDBC4Connection",
+    "hostToConnectTo": "127.0.0.1",
+    "portToConnectTo": 3306,
+    "info": {
+      "useSSL": "false",
+      "user": "mysql",
+      "HOST": "xxx",
+      "statementInterceptors": "com.mysql.jdbc.interceptors.ServerStatusDiffInterceptor",
+      "autoDeserialize": "true",
+      "NUM_HOSTS": "1",
+      "socketFactory": "com.mysql.jdbc.NamedPipeSocketFactory",
+      "namedPipePath": "/tmp/mysql.pcap",
+      "DBNAME": "test"
+    },
+    "databaseToConnectTo": "test",
+    "url": ""
+  }
+}

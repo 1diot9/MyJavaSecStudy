@@ -1,0 +1,51 @@
+{
+  "x1": {
+    "@type": "java.lang.AutoCloseable",
+    "@type": "com.mysql.cj.jdbc.ha.ReplicationMySQLConnection",
+    "proxy": {
+      "@type": "com.mysql.cj.jdbc.ha.LoadBalancedConnectionProxy",
+      "connectionUrl": {
+        "@type": "com.mysql.cj.conf.url.ReplicationConnectionUrl",
+        "masters": [
+          {}
+        ],
+        "slaves": [],
+        "properties": {
+          "host": "127.0.0.1",
+          "port": "3308",
+          "user": "d6e26c4",
+          "dbname": "test",
+          "password": "pass",
+          "queryInterceptors": "com.mysql.cj.jdbc.interceptors.ServerStatusDiffInterceptor",
+          "autoDeserialize": "true"
+        }
+      }
+    }
+  }
+}
+
+//{
+//  "x1": {
+//    "\u+040\u+074\u+079\u+070\u+065": "java.lang.AutoCloseable",
+//    "\u+040\u+074\u+079\u+070\u+065": "com.mysql.cj.jdbc.ha.ReplicationMySQLConnection",
+//    "proxy": {
+//      "\u+040\u+074\u+079\u+070\u+065": "com.mysql.cj.jdbc.ha.LoadBalancedConnectionProxy",
+//      "connectionUrl": {
+//        "\u+040\u+074\u+079\u+070\u+065": "com.mysql.cj.conf.url.ReplicationConnectionUrl",
+//        "masters": [
+//          {}
+//        ],
+//        "slaves": [],
+//        "properties": {
+//          "host": "127.0.0.1",
+//          "port": "3308",
+//          "user": "d6e26c4",
+//          "dbname": "test",
+//          "password": "pass",
+//          "queryInterceptors": "com.mysql.cj.jdbc.interceptors.ServerStatusDiffInterceptor",
+//          "autoDeserialize": "true"
+//        }
+//      }
+//    }
+//  }
+//}

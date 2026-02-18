@@ -1,0 +1,12 @@
+{
+{
+  "@type": "java.lang.Exception",
+  "@type": "com.fasterxml.jackson.core.exc.InputCoercionException",
+  "p":{}
+},
+{
+"@type": "com.fasterxml.jackson.core.JsonParser",
+"@type": "com.fasterxml.jackson.core.json.UTF8StreamJsonParser",
+"in":{}
+}
+}

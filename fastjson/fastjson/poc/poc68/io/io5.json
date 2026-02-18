@@ -1,0 +1,34 @@
+{
+  "@type":"java.lang.AutoCloseable",
+  "@type":"org.apache.commons.io.input.BOMInputStream",
+  "delegate":{
+    "@type":"org.apache.commons.io.input.TeeInputStream",
+    "input":{
+      "@type": "org.apache.commons.codec.binary.Base64InputStream",
+      "in":{
+        "@type":"org.apache.commons.io.input.CharSequenceInputStream",
+        "charset":"utf-8",
+        "bufferSize": 1024,
+        "cs":{"@type":"java.lang.String","%1$s"
+      },
+      "doEncode":false,
+      "lineLength":1024,
+      "lineSeparator":"5ZWKCg==",
+      "decodingPolicy":0
+    },
+    "branch":{
+      "@type":"org.apache.tools.ant.util.LazyFileOutputStream",
+      "file":"%2$s",
+      "append":false,
+      "alwaysCreate":true
+    },
+    "closeBranch":false
+  },
+  "include":true,
+  "boms":[{
+                  "@type": "org.apache.commons.io.ByteOrderMark",
+                  "charsetName": "UTF-8",
+                  "bytes":%3$s
+                }],
+  "x":{"$ref":"$.bOM"}
+}
