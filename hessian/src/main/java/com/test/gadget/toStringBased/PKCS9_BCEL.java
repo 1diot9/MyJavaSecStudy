@@ -18,7 +18,7 @@ public class PKCS9_BCEL {
     public static void main(String[] args) throws Exception {
         Object payload = getPayload();
         byte[] bytes = HessianTools.hessian2ToStringSer(payload);
-        HessianTools.hessian2Deser(bytes);
+        HessianTools.hessianDeser(bytes, "2");
     }
 
     public static Object getPayload() throws Exception {

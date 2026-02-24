@@ -9,13 +9,18 @@ import com.test.pojo.Person;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.HashMap;
 
 public class HessianTest {
     public static void main(String[] args) throws IOException {
         Person baka = new Person(1, "baka");
-        byte[] bytes = hessianSer2bytes(baka);
-        Person deser = (Person) hessianDeser(bytes);
-        System.out.println(deser.getName());
+
+        HashMap<Object, Object> hashMap = new HashMap<>();
+        hashMap.put("name", "baka");
+
+        byte[] bytes = hessianSer2bytes(hashMap);
+        Object o = hessianDeser(bytes);
+
     }
 
     public static byte[] hessian2Ser2bytes(Object obj) throws IOException {

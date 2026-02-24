@@ -1,4 +1,4 @@
-package exp.tools.sinkClass;
+package tools.sinkClass;
 
 import java.io.Serializable;
 

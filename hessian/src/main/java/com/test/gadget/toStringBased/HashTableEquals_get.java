@@ -12,8 +12,8 @@ import java.util.HashMap;
 public class HashTableEquals_get {
     public static void main(String[] args) throws Exception {
         Object payload = getPayload();
-        byte[] bytes = HessianTools.hessian2Ser2bytes(payload);
-        HessianTools.hessian2Deser(bytes);
+        byte[] bytes = HessianTools.hessianSer2bytes(payload, "2");
+        HessianTools.hessianDeser(bytes, "2");
     }
 
     public static Object getPayload() throws Exception {

@@ -30,7 +30,7 @@ import java.util.Random;
 public class Server {
 
     public static void main(String[] args) throws Exception {
-        serverAttackRegistryWithBind();
+        serverAttackRegistryWithJRMP();
     }
 
     // 正常绑定远程对象

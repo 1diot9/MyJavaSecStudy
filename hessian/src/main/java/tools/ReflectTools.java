@@ -5,6 +5,7 @@ import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtField;
 
+import javax.swing.undo.CompoundEdit;
 import java.io.*;
 import java.lang.reflect.Array;
 import java.lang.reflect.Constructor;
@@ -15,6 +16,11 @@ import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class ReflectTools {
+    // 方便加虚拟机选项
+    public static void main(String[] args) {
+
+    }
+
     public static void setFieldValue(Object obj, String fieldName, Object value) throws IllegalAccessException {
         Class<?> aClass = obj.getClass();
         Field field = null;
@@ -44,13 +50,18 @@ public class ReflectTools {
         // 移除 final 修饰符
         Field modifiersField = Field.class.getDeclaredField("modifiers");
         modifiersField.setAccessible(true);
-        modifiersField.setInt(field, field.getModifiers() & ~java.lang.reflect.Modifier.FINAL);
+        modifiersField.setInt(field, field.getModifiers() & ~Modifier.FINAL);
 
         // 修改字段的值
         field.set(object, newValue);
     }
 
-    public static Object getFieldValue(Object obj, String fieldName) throws NoSuchFieldException, IllegalAccessException {
+    public static Object getFieldValue(Object obj, String fieldName) throws Exception {
+//        UnsafeTools.patchModule(ReflectTools.class, CompoundEdit.class);
+        try {
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
         Class<?> aClass = obj.getClass();
 
         while (aClass != null){
@@ -195,6 +206,8 @@ public class ReflectTools {
             return ois.readObject();
         }
     }
+
+
 
 
 }

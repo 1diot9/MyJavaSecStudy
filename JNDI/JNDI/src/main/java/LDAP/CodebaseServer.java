@@ -16,7 +16,7 @@ import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class codebaseServer {
+public class CodebaseServer {
     private static final String LDAP_BASE = "dc=example,dc=com";
     public static void main (String[] args) {
         String url = "http://127.0.0.1:7777/#Calc";

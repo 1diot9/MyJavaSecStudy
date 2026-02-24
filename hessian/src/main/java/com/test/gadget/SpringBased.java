@@ -20,8 +20,8 @@ import java.util.Set;
 public class SpringBased {
     public static void main(String[] args) throws Exception {
         Object o = pointcutAdvisor();
-        byte[] bytes = HessianTools.hessian2Ser2bytes(o);
-        HessianTools.hessian2Deser(bytes);
+        byte[] bytes = HessianTools.hessianSer2bytes(o, "2");
+        HessianTools.hessianDeser(bytes, "2");
     }
 
     public static Object advisorHolder() throws Exception {
