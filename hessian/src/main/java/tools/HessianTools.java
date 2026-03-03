@@ -1,6 +1,7 @@
 package tools;
 
 import com.caucho.hessian.io.*;
+import com.test.SafeSerializerFactory;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -18,7 +19,7 @@ public class HessianTools {
         baos.write(67);
         Hessian2Output hessian2Output = new Hessian2Output(baos);
 
-        SerializerFactory serializerFactory = new SerializerFactory();
+        SerializerFactory serializerFactory = hessian2Output.getSerializerFactory();
         serializerFactory.setAllowNonSerializable(true);
         hessian2Output.setSerializerFactory(serializerFactory);
 
@@ -33,7 +34,7 @@ public class HessianTools {
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             HessianOutput hessianOutput = new HessianOutput(baos);
 
-            SerializerFactory serializerFactory = new SerializerFactory();
+            SerializerFactory serializerFactory = hessianOutput.getSerializerFactory();
             serializerFactory.setAllowNonSerializable(true);
             hessianOutput.setSerializerFactory(serializerFactory);
 
@@ -44,12 +45,12 @@ public class HessianTools {
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             Hessian2Output hessian2Output = new Hessian2Output(baos);
 
-            SerializerFactory serializerFactory = new SerializerFactory();
+            SerializerFactory serializerFactory = hessian2Output.getSerializerFactory();
             serializerFactory.setAllowNonSerializable(true);
             hessian2Output.setSerializerFactory(serializerFactory);
 
             hessian2Output.writeObject(obj);
-            hessian2Output.close();
+            hessian2Output.flush();
             return baos.toByteArray();
         }
         return null;

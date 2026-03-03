@@ -66,6 +66,7 @@ public class HessianServer implements Runnable{
                 System.out.println("    (Error reading request: " + e.getMessage() + ")");
             }
 
+            // 利用链
             byte[] bytes = IOTools.readFile("dynamic.dll");
             String filename = "D:/1tmp/111.dll";
             byte[] body = null;
