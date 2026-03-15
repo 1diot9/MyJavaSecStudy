@@ -1,0 +1,11 @@
+com.fr.decision.webservice.interceptor.DeploymentInterceptor
+com.fr.decision.webservice.interceptor.SecurityHeaderInterceptor
+com.fr.decision.webservice.interceptor.SystemAvailableInterceptor
+com.fr.decision.webservice.interceptor.MigrationInterceptor
+com.fr.decision.webservice.interceptor.EncryptionInterceptor
+com.fr.decision.webservice.interceptor.RequestPreHandleInterceptor
+com.fr.decision.webservice.interceptor.DecisionInterceptor
+com.fr.web.core.cluster.ReportClusterRedirectInterceptor
+com.fr.decision.webservice.interceptor.URLRateLimiterInterceptor
+com.fr.third.springframework.web.servlet.handler.ConversionServiceExposingInterceptor
+com.fr.third.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor

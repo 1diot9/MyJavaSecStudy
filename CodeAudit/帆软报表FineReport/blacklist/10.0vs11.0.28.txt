@@ -1,0 +1,53 @@
+============================================================
+基准文件: FR10.0-3.9.txt
+比较文件: FR11.0.28-7.11.txt
+============================================================
+
+【减少的行】(2 个)
+----------------------------------------
+    om.mchange.v2.c3p0.WrapperConnectionPoolDataSource
+    om.sun.corba.se.spi.orbutil.proxy.CompositeInvocationHandlerImpl
+
+【增加的行】(33 个)
+----------------------------------------
+    org.immutables.value.internal.$guava$.collect.$CollectPreconditions
+    org.apache.hadoop.shaded.org.apache.curator.shaded.com.google.common.collect.SingletonImmutableList
+    com.fr.third.guava.collect.CollectPreconditions
+    org.sparkproject.guava.collect.SingletonImmutableList
+    com.fanruan.polars.report.common.collect.SingletonImmutableList
+    javax.swing.undo.UndoManager
+    com.fr.third.guava.collect.ImmutableListMultimap
+    org.immutables.value.internal.$guava$.collect.$SingletonImmutableList
+    javax.swing.UIDefaults$TextAndMnemonicHashMap
+    org.apache.iceberg.relocated.com.google.common.collect.CollectPreconditions
+    org.glassfish.jersey.internal.guava.CollectPreconditions
+    com.fr.third.guava.collect.SingletonImmutableList
+    com.mchange.v2.c3p0.WrapperConnectionPoolDataSource
+    com.fr.third.ibm.icu.impl.locale.XCldrStub$LinkedHashMultimap
+    com.google.common.collect.SingletonImmutableList
+    com.fr.plugin.cloud.analytics.json.JsonMapperProvider
+    org.freehep.util.VersionComparator
+    org.weakref.jmx.internal.guava.collect.CollectPreconditions
+    org.apache.hadoop.shaded.com.google.common.collect.SingletonImmutableList
+    com.fr.third.guava.collect.ImmutableMap$Builder
+    org.sparkproject.guava.collect.ImmutableMap$Builder
+    com.fr.base.core.serializable.SerialableLocalCollator
+    org.apache.hadoop.thirdparty.com.google.common.collect.CollectPreconditions
+    org.apache.iceberg.relocated.com.google.common.collect.SingletonImmutableList
+    org.weakref.jmx.internal.guava.collect.ImmutableMap$Builder
+    com.sun.corba.se.spi.orbutil.proxy.CompositeInvocationHandlerImpl
+    org.apache.hadoop.shaded.com.google.common.collect.CollectPreconditions
+    org.apache.curator.shaded.com.google.common.collect.SingletonImmutableList
+    org.apache.hadoop.thirdparty.com.google.common.collect.SingletonImmutableList
+    org.weakref.jmx.internal.guava.collect.SingletonImmutableList
+    org.apache.hadoop.shaded.org.apache.curator.shaded.com.google.common.collect.CollectPreconditions
+    org.apache.curator.shaded.com.google.common.collect.CollectPreconditions
+    com.google.common.collect.CollectPreconditions
+
+============================================================
+统计信息:
+  基准文件行数: 637
+  比较文件行数: 668
+  减少行数: 2
+  增加行数: 33
+============================================================

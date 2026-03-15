@@ -1,17 +1,18 @@
 # MyJavaSecStudy
 记录一下我的Java安全学习历程。会不定时更新索引和代码仓库。
 
+分割线表示至少要学完上面部分才能入门。
+
 <br>
 
 - [Java基础](#Java基础)
 - [Java安全基础](#Java安全基础)
 - [代码和jar包调试](#代码和jar包调试)
-- [查漏补缺](#查漏补缺)
 - [反序列化](#反序列化)
 - [JNDI](#JNDI)
 - [JDBC](#JDBC)
 - [shiro](#shiro)
-- [Fastjson&Jackson&SnakeYaml](#Fastjson&Jackson&SnakeYaml)
+- [Fastjson&Jackson&SnakeYaml](#Fastjson&Jackson&SnakeYaml) 
 - [内存马&回显技术](#内存马&回显技术)
 - [高版本jdk下的链子](#高版本jdk下的链子)
 - [表达式+SSTI](#表达式+SSTI)
@@ -21,6 +22,7 @@
 - [工具开发/二开](#devTools)
 - [代码审计](#CodeAudit)
 - [代码审计辅助工具](#代码审计辅助工具)
+- [查漏补缺](#查漏补缺)
 - [参考学习路线](#参考学习路线)
 - [博客&公众号整理](#博客整理)
 - [工具推荐](#工具推荐)
@@ -121,35 +123,23 @@
 
 <br>
 
-# 查漏补缺 <a id="查漏补缺"></a>
-
-主要记录一些新遇到的小知识。
-
-[Java Runtime.getRuntime().exec由表及里-先知社区](https://xz.aliyun.com/news/6642)  剖析了Runtime为什么不能识别特殊符号的本质
-
-[shadow-horse/java.lang.Runtime.exec-Payload: 反弹shell，Runtime.exec()执行系统命令](https://github.com/shadow-horse/java.lang.Runtime.exec-Payload)  Runtime命令生成
-
-
-
-<br>
-
 
 
 # 反序列化  <a id="反序列化"></a>
 
-一开始可以只看CC链
+初学可以只看CC链
 
 ## CC链
 
-CC链是Java反序列化的开始，每个人都应该好好学习。
+CC链是Java反序列化的开始。
 
-[Java反序列化Commons-Collections篇01-CC1链 | Drunkbaby's Blog](https://drun1baby.top/2022/06/06/Java反序列化Commons-Collections篇01-CC1链/) 小叮师傅的博客讲了所有的CC链，同时也有环境搭建的示例，而且还有一张全CC链的流程图[JavaSecurityLearning/链子流程图 at main · Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning/tree/main/链子流程图) 
+[Java反序列化Commons-Collections篇01-CC1链 | Drunkbaby's Blog](https://drun1baby.top/2022/06/06/Java反序列化Commons-Collections篇01-CC1链/) 小叮师傅的博客讲了所有的CC链，同时也有环境搭建的示例（一定跟着配一下8u65的源码，后面查找用法的时候才能搜索到），而且还有一张全CC链的流程图[JavaSecurityLearning/链子流程图 at main · Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning/tree/main/链子流程图) 
 
 [MyJavaSecStudy/docs/Java安全漫谈.pdf at main · 1diot9/MyJavaSecStudy](https://github.com/1diot9/MyJavaSecStudy/blob/main/docs/Java安全漫谈.pdf) 挑07之后涉及CC链的内容看，18、19和涉及shiro的可以先不看(其实shiro反序列化的原理差不多，都是找链子，不过因为用的类加载器不一样，会出现一些变化)
 
 [Java 反序列化漏洞（二） - Commons Collections | 素十八](https://su18.org/post/ysoserial-su18-2/#commonscollections1) su18师傅的反序列化取经路
 
-=========================快速入门的话，可以只看上面的=========================
+========================================================
 
 [CC链再次挖掘-先知社区](https://xz.aliyun.com/news/14431) 可以尝试一下自己能不能找到其他类利用
 
@@ -163,27 +153,11 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 ## hessian
 
-[Hessian反序列化原理到武器化利用 - FreeBuf网络安全行业门户](https://www.freebuf.com/articles/web/424308.html) 简要原理+常规链子
-
-[超详细解析Hessian利用链-先知社区](https://xz.aliyun.com/news/13039) 常规链子
-
-[漏洞篇 - Hessian 反序列化详解 - 妙尽璇机](https://changeyourway.github.io/2025/02/20/Java 安全/漏洞篇-Hessian反序列化/) 常规链子
+[Hessian反序列化整理 | 1diot9's Blog](https://1diot9.github.io/2026/03/06/Hessian反序列化整理/) 
 
 [Java安全学习——Hessian反序列化漏洞 - 枫のBlog](https://goodapple.top/archives/1193) 原理+Apache Dubbo
 
-[0CTF/TCTF 2022 hessian-onlyJdk | Bmth's blog](http://www.bmth666.cn/2023/02/07/0CTF-TCTF-2022-hessian-onlyJdk/index.html) only-jdk链
-
 [0ctf2022 hessian-only-jdk writeup jdk原生链-先知社区](https://xz.aliyun.com/news/11178) tabby挖掘
-
-[Hessian 反序列化新链分析与坑点 | zoiltin's Blog](https://zoiltin.github.io/posts/hessian反序列化新链分析与坑点/) 新链
-
-[从2025blackhat-jdd hessian反序列化jdk原生新链开始学习链子构造-先知社区](https://xz.aliyun.com/news/18935) 新链
-
-[Hessian反序列化流程及漏洞浅析-先知社区](https://xz.aliyun.com/news/17603) 
-
-[基础篇 - Hessian 协议详解 - 妙尽璇机](https://changeyourway.github.io/2024/11/13/Java 安全/基础篇-Hessian协议详解/) 
-
-[Hessian 反序列化漏洞 · 攻击Java Web应用-Java Web安全\]](https://www.javasec.org/java-vuls/Hessian.html) 
 
 [Hessian 反序列化知一二 | 素十八](https://su18.org/post/hessian/) 
 
@@ -199,7 +173,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 ## 其他链子&姿势
 
-[Java反序列化之C3P0链 | Drunkbaby's Blog](https://drun1baby.top/2022/10/06/Java反序列化之C3P0链/) c3p0，可以打二次反序列化
+[Java反序列化之C3P0链 | Drunkbaby's Blog](https://drun1baby.top/2022/10/06/Java反序列化之C3P0链/) 
 
 [分析尝试利用tabby挖掘-SpringAOP链 - Potat0w0](https://blog.potatowo.top/2025/03/31/从复现到尝试用tabby挖掘-SpringAOP链/) 
 
@@ -227,7 +201,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Log4j2漏洞分析 | 1diot9's Blog](https://1diot9.github.io/2025/12/08/Log4j2漏洞分析/) 
 
-=========================快速入门的话，可以先只看上面部分的=========================
+========================================================
 
 ## RMI、JRMP、JEP290、LDAP
 
@@ -275,7 +249,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 ## 高版本JDK绕过
 
-### 基于反序列化
+### 基于反序列化链
 
 [RMI JRMP JEP290 LDAP基础梳理 | 1diot9's Blog](https://1diot9.github.io/2025/11/10/RMI-JRMP-JEP290-LDAP基础梳理/) 5.1.1和5.2.2有讲
 
@@ -283,21 +257,21 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [探索高版本 JDK 下 JNDI 漏洞的利用方法 - 跳跳糖](https://tttang.com/archive/1405/#toc_0x01-beanfactory)  除了最基本的EL表达式执行，还有Snakeyaml，XStream等方式（高版本tomcat的forceString被禁）
 
-<br>
-
 ### 其他Factory绕过
 
-[京麟CTF 2024 ezldap 分析-先知社区](https://xz.aliyun.com/news/14103)  com.sun.jndi.ldap.object.trustSerialData false的绕过
+[高版本JNDI注入-高版本Tomcat利用方案-先知社区](https://xz.aliyun.com/news/16156) tomcat中，非BeanFactory的工厂利用
+
+[奇安信攻防社区-【2024补天白帽黑客大会】JNDI新攻击面探索](https://forum.butian.net/share/3857) 是上面文章的参考
+
+[探索高版本 JDK 下 JNDI 漏洞的利用方法 - 跳跳糖](https://tttang.com/archive/1405/#toc_snakeyaml)	最后有jdbc相关工厂
 
 [SolarWinds Security Event Manager AMF 反序列化 RCE (CVE-2024-0692) - X1r0z Blog](https://exp10it.io/2024/03/solarwinds-security-event-manager-amf-deserialization-rce-cve-2024-0692/#hikaricp-jndi-注入)	Hikari跟Druid一样，都可以实现JNDI+JDBC，都是可以执行初始化sql语句
 
-[高版本JNDI注入-高版本Tomcat利用方案-先知社区](https://xz.aliyun.com/news/16156) 
+[京麟CTF 2024 ezldap 分析-先知社区](https://xz.aliyun.com/news/14103)  com.sun.jndi.ldap.object.trustSerialData false的绕过
 
-[探索高版本 JDK 下 JNDI 漏洞的利用方法 - 跳跳糖](https://tttang.com/archive/1405/#toc_snakeyaml)	jdk17的题特别喜欢考JNDI+JDBC
+### RMI返回恶意stub
 
-[JNDI jdk高版本绕过—— Druid-先知社区](https://xz.aliyun.com/news/10104) 
-
-[奇安信攻防社区-【2024补天白帽黑客大会】JNDI新攻击面探索](https://forum.butian.net/share/3857) 
+[[2025\]N1CTF WP for n1cat,eezzjs | GSBP's Blog](https://gsbp0.github.io/post/2025n1ctf-wp-for-n1cateezzjs/#n1cat)   
 
 <br>
 
@@ -309,8 +283,6 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [mysql JDBC 攻击 | 1diot9's Blog](https://1diot9.github.io/2025/05/05/mysql-JDBC-绕过/) 整理了打法和绕过
 
-============如果真的很急，JDBC可以先只看上面这一个mysql，其他的遇到了再学=================
-
 [从JDBC MySQL不出网攻击到spring临时文件利用-先知社区](https://xz.aliyun.com/news/17830)  这个打法比较新，其中的临时文件上传适用性广
 
 <br>
@@ -321,6 +293,10 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [SolarWinds Security Event Manager AMF 反序列化 RCE (CVE-2024-0692) - X1r0z Blog](https://exp10it.io/2024/03/solarwinds-security-event-manager-amf-deserialization-rce-cve-2024-0692/#hikaricp-jndi-注入)	h2可以结合其他依赖写文件
 
+## hsql
+
+[基于 hsqldb造成的 jdbc各种利用手法-先知社区](https://xz.aliyun.com/news/18806) 
+
 <br>
 
 ## sqlite
@@ -329,7 +305,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [CISCN2024 writeup（web部分）](https://jaspersec.top/posts/3286688009.html#ezjava)	ezjava
 
-[从一道题看利用sqlite打jdbc达到RCE-先知社区](https://xz.aliyun.com/news/14234)
+[从一道题看利用sqlite打jdbc达到RCE-先知社区](https://xz.aliyun.com/news/14234) 
 
 <br>
 
@@ -375,7 +351,7 @@ CC链是Java反序列化的开始，每个人都应该好好学习。
 
 [Java反序列化Shiro篇02-Shiro721流程分析 | Drunkbaby's Blog](https://drun1baby.top/2023/03/08/Java反序列化Shiro篇02-Shiro721流程分析/)
 
-====================shiro反序列化快速入门的话，可以只看上面的======================
+========================================================
 
 [全版本Shiro反序列化漏洞原理详解 - Smile3306 - 博客园](https://www.cnblogs.com/Smile3306/p/18984943)  详细梳理了加密和利用原理
 
@@ -413,15 +389,23 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 [Fastjson 反序列化漏洞 · 攻击Java Web应用-Java Web安全](https://www.javasec.org/java-vuls/FastJson.html) 
 
-=========================快速入门的话，可以只看上面的=========================
+========================================================
 
 [FastJsonParty/Fastjson全版本检测及利用-Poc.md at main · lemono0/FastJsonParty](https://github.com/lemono0/FastJsonParty/blob/main/Fastjson全版本检测及利用-Poc.md) fastjson主要是在黑盒条件下利用，这个项目给了各版本的探测利用姿势
 
-[safe6Sec/Fastjson: Fastjson姿势技巧集合](https://github.com/safe6Sec/Fastjson)
+[safe6Sec/Fastjson: Fastjson姿势技巧集合](https://github.com/safe6Sec/Fastjson) 
 
 [FastJson与原生反序列化](https://y4tacker.github.io/2023/03/20/year/2023/3/FastJson与原生反序列化/#为什么fastjson1的1-2-49以后不再能利用) fastjson在原生反序列化中起到toString-->getter的作用
 
 [FastJson与原生反序列化(二)](https://y4tacker.github.io/2023/04/26/year/2023/4/FastJson与原生反序列化-二/) 讲了高版本fastjson怎么在原生反序列化中进行绕过
+
+[springboot环境下的写文件RCE](https://mp.weixin.qq.com/s/n8RW0NIllcQ0sn3nI9uceA)  讲了许多写文件的链
+
+[炒冷饭之FastJson](https://mp.weixin.qq.com/s/7c_zi5Pv4a69IV0zzJo5Ww) 提到了$ref引用
+
+[[Java Puzzle #3 WP\] Fastjson write ascii JAR RCE](https://mp.weixin.qq.com/s/9e0V4bnV6fuGAfO1AKLYdw) 
+
+[fastjson写文件挑战2——两个fastjson链](https://mp.weixin.qq.com/s/H0_UqhyCT7pDa6Szc7rNAQ) 
 
 <br>
 
@@ -433,7 +417,7 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 [Yaml文件写法总结 | 1diot9's Blog](https://1diot9.github.io/2025/08/04/Yaml文件写法总结/)
 
-=========================快速入门的话，可以先只看上面的=========================
+========================================================
 
 [Java利用无外网（上）：从HertzBeat聊聊SnakeYAML反序列化 | 离别歌](https://www.leavesongs.com/PENETRATION/jdbc-injection-with-hertzbeat-cve-2024-42323.html)
 
@@ -449,15 +433,15 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 [Java内存马系列-01-基础内容学习 | Drunkbaby's Blog](https://drun1baby.top/2022/08/19/Java内存马系列-01-基础内容学习/) 可以先看01，02，03，05，里面提到的方法适用于传统JavaWeb项目(Tomcat为中间件的)
 
-[基于内存 Webshell 的无文件攻击技术研究-安全KER - 安全资讯平台](https://www.anquanke.com/post/id/198886) 详细讲了Spring环境下，如何一步步动态注册一个Controller或者Interceptor来实现内存马注入
+[基于内存 Webshell 的无文件攻击技术研究-安全KER - 安全资讯平台](https://www.anquanke.com/post/id/198886) Spring环境下，如何获取当前代码的上下文；Controller内存马注入
+
+[奇安信攻防社区-利用 intercetor 注入 spring 内存 webshell](https://forum.butian.net/share/102) 
 
 [针对Spring MVC的Interceptor内存马 - bitterz - 博客园](https://www.cnblogs.com/bitterz/p/14859766.html) 是上面landgrey师傅文章的二创
 
-[奇安信攻防社区-利用 intercetor 注入 spring 内存 webshell](https://forum.butian.net/share/102) 也是landgrey师傅的
-
 [Spring内存马学习 | Bmth's blog](http://www.bmth666.cn/2022/09/27/Spring内存马学习/index.html) 这里没讲原理，主要是给出了能直接用的内存马，注意SpringBoot2.6前后，Controller内存马实现方式有不同
 
-=====================快速入门的话，可以先只看上面的几篇文章======================
+========================================================
 
 [bitterzzZZ/MemoryShellLearn: 分享几个直接可用的内存马，记录一下学习过程中看过的文章](https://github.com/bitterzzZZ/MemoryShellLearn) 
 
@@ -599,9 +583,17 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 <br>
 
-### 文件缓存机制
+### 写文件技巧
 
-[从JDBC MySQL不出网攻击到spring临时文件利用-先知社区](https://xz.aliyun.com/news/17830)
+[从JDBC MySQL不出网攻击到spring临时文件利用-先知社区](https://xz.aliyun.com/news/17830) 
+
+[springboot环境下的写文件RCE](https://mp.weixin.qq.com/s/n8RW0NIllcQ0sn3nI9uceA) 
+
+[springboot环境下的写文件RCE——so劫持篇](https://mp.weixin.qq.com/s/NrNFwEfNbqGKd5jUSe-4eA) 
+
+[springboot环境下的写文件RCE——so加载篇](https://mp.weixin.qq.com/s/yF1zeXGPEnDzMosAssqAlQ) 
+
+
 
 <br>
 
@@ -747,7 +739,17 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 
 
+# 查漏补缺 <a id="查漏补缺"></a>
 
+主要记录一些新遇到的小知识。
+
+[Java Runtime.getRuntime().exec由表及里-先知社区](https://xz.aliyun.com/news/6642)  剖析了Runtime为什么不能识别特殊符号的本质
+
+[shadow-horse/java.lang.Runtime.exec-Payload: 反弹shell，Runtime.exec()执行系统命令](https://github.com/shadow-horse/java.lang.Runtime.exec-Payload)  Runtime命令生成
+
+
+
+<br>
 
 
 
@@ -771,9 +773,9 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 <br>
 
-# 博客&公众号整理<a id="博客整理"></a>
+# 博客&公众号<a id="博客整理"></a>
 
-整理一些我经常看的博客和公众号。由于个人见识有些，可能有很多其他优秀的博客和公众号没收录
+一些我经常看的博客和公众号。由于个人见识有限，这里一定会有很多其他优秀的博客和公众号没收录，所以仅供参考。
 
 ## 博客
 

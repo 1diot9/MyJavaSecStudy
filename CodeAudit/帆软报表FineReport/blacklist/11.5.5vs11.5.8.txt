@@ -1,0 +1,24 @@
+============================================================
+基准文件: FR11.5.5-10.20.txt
+比较文件: FR11.5.8-2.5.txt
+============================================================
+
+【减少的行】(0 个)
+----------------------------------------
+  (无)
+
+【增加的行】(5 个)
+----------------------------------------
+    com.fr.third.guava.collect.TreeMultiset
+    com.fr.third.v2.org.apache.commons.io.FileUtils
+    com.fr.third.v2.org.apache.commons.io.output.DeferredFileOutputStream
+    com.fr.third.v2.org.apache.commons.io.output.ThresholdingOutputStream
+    com.fr.third.guava.collect.Serialization
+
+============================================================
+统计信息:
+  基准文件行数: 674
+  比较文件行数: 679
+  减少行数: 0
+  增加行数: 5
+============================================================

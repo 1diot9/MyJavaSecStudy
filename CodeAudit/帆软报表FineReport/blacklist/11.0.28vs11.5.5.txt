@@ -1,0 +1,25 @@
+============================================================
+基准文件: FR11.0.28-7.11.txt
+比较文件: FR11.5.5-10.20.txt
+============================================================
+
+【减少的行】(0 个)
+----------------------------------------
+  (无)
+
+【增加的行】(6 个)
+----------------------------------------
+    org.terracotta.modules.ehcache.collections.SerializationHelper
+    com.fr.third.org.hibernate.internal.util.SerializationHelper
+    org.weakref.jmx.internal.guava.collect.ImmutableSetMultimap
+    com.fr.third.guava.collect.ImmutableSetMultimap
+    org.sparkproject.guava.collect.ImmutableSetMultimap
+    sun.print.UnixPrintServiceLookup
+
+============================================================
+统计信息:
+  基准文件行数: 668
+  比较文件行数: 674
+  减少行数: 0
+  增加行数: 6
+============================================================

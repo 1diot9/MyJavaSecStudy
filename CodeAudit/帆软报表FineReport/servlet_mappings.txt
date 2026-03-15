@@ -1,0 +1,4 @@
+映射路径: [/] ===> 类名: org.apache.catalina.servlets.DefaultServlet
+映射路径: [/decision/*] ===> 类名: com.fr.third.springframework.web.servlet.DispatcherServlet
+映射路径: [*.jspx, *.jsp] ===> 类名: org.apache.jasper.servlet.JspServlet
+映射路径: [/ReportServer/*] ===> 类名: com.fr.web.ReportServlet
