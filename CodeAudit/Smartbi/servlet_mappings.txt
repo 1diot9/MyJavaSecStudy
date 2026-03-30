@@ -1,0 +1,293 @@
+================ Servlet Mappings ================
+Servlet Name : TokenloginServlet
+Class Name   : smartbi.usermanager.servlet.TokenloginServlet
+Mappings     : [/vision/loginByToken]
+--------------------------------------------------
+Servlet Name : SpreadsheetReportImportServlet
+Class Name   : smartbi.spreadsheetreport.core.SpreadsheetReportImportServlet
+Mappings     : [/vision/ssreportImportServlet]
+--------------------------------------------------
+Servlet Name : ConfigUploadExtensionServlet
+Class Name   : smartbi.config.ConfigUploadExtensionServlet
+Mappings     : [/configExtension, /vision/configExtension]
+--------------------------------------------------
+Servlet Name : GeoMapDataServlet
+Class Name   : smartbi.geomap.data.GeoMapDataServlet
+Mappings     : [/vision/GeoMapDataServlet]
+--------------------------------------------------
+Servlet Name : IndexServlet
+Class Name   : smartbi.index.IndexServlet
+Mappings     : [/vision/IndexServlet]
+--------------------------------------------------
+Servlet Name : ExportLogServlet
+Class Name   : smartbi.logs.ExportLogServlet
+Mappings     : [/vision/ExportLogServlet]
+--------------------------------------------------
+Servlet Name : SpreadsheetTemplateServlet
+Class Name   : smartbi.spreadsheetreport.core.SpreadsheetTemplateServlet
+Mappings     : [/vision/ssreporttemplate/*]
+--------------------------------------------------
+Servlet Name : TextVerCodeServlet
+Class Name   : smartbi.usermanager.servlet.TextVerCodeServlet
+Mappings     : [/vision/TextVerCodeServlet]
+--------------------------------------------------
+Servlet Name : NetWorkAlgorithmServlet
+Class Name   : smartbi.freequery.client.servlet.NetWorkAlgorithmServlet
+Mappings     : [/vision/NetWorkAlgorithmServlet]
+--------------------------------------------------
+Servlet Name : SpreadsheetReportHTMLServlet
+Class Name   : smartbi.spreadsheetreport.core.SheetHTMLServlet
+Mappings     : [/vision/ssreport/htmls/*]
+--------------------------------------------------
+Servlet Name : SmartbiX
+Class Name   : smartbix.spring.SmartbiXDispatcherServlet
+Mappings     : [/smartbix/api/*]
+--------------------------------------------------
+Servlet Name : FileResource
+Class Name   : smartbi.freequery.fileresource.FileResourceServlet
+Mappings     : [/vision/FileResource]
+--------------------------------------------------
+Servlet Name : PortalExportServlet
+Class Name   : smartbi.decisionpanel.export.PortalExportServlet
+Mappings     : [/vision/PortalExportServlet]
+--------------------------------------------------
+Servlet Name : Workflow
+Class Name   : smartbilibs.org.springframework.web.servlet.DispatcherServlet
+Mappings     : [/workflow/*]
+--------------------------------------------------
+Servlet Name : ExportServlet
+Class Name   : smartbi.freequery.export.ExportServlet
+Mappings     : [/vision/ExportServlet]
+--------------------------------------------------
+Servlet Name : UploadPageBgImgServlet
+Class Name   : smartbi.uploadimg.UploadPageBgImgServlet
+Mappings     : [/vision/UploadPageBgImgServlet]
+--------------------------------------------------
+Servlet Name : SpreadsheetReportServlet
+Class Name   : smartbi.spreadsheetreport.core.SpreadsheetReportServlet
+Mappings     : [/vision/ssreportServlet]
+--------------------------------------------------
+Servlet Name : ImageChartServlet
+Class Name   : smartbi.chart.ImageChartServlet
+Mappings     : [/vision/ImageChartServlet]
+--------------------------------------------------
+Servlet Name : PseudoMessageServlet
+Class Name   : smartbi.message.PseudoMessageServlet
+Mappings     : [/vision/getPseudoMessages]
+--------------------------------------------------
+Servlet Name : ExcelAnalysis
+Class Name   : smartbi.freequery.report.ExcelAnalysisServlet
+Mappings     : [/vision/ExcelAnalysis]
+--------------------------------------------------
+Servlet Name : SmartbiXPatcher
+Class Name   : smartbix.web.SmartbiXPatcherServlet
+Mappings     : []
+--------------------------------------------------
+Servlet Name : RMIServlet
+Class Name   : smartbi.framework.rmi.RMIServlet
+Mappings     : [/vision/RMIServlet]
+--------------------------------------------------
+Servlet Name : CheckRestrictServlet
+Class Name   : smartbi.module.socialcontactshare.CheckRestrictServlet
+Mappings     : [/vision/CheckRestrictServlet]
+--------------------------------------------------
+Servlet Name : OfficeReportHTMLServlet
+Class Name   : smartbi.officereport.OfficeReportHTMLServlet
+Mappings     : [/vision/officehtmls/*]
+--------------------------------------------------
+Servlet Name : jsp
+Class Name   : org.apache.jasper.servlet.JspServlet
+Mappings     : [*.jspx, *.jsp]
+--------------------------------------------------
+Servlet Name : DownloadOffline
+Class Name   : smartbi.offline.impl.DownloadOfflineServlet
+Mappings     : [/vision/downloadOffline]
+--------------------------------------------------
+Servlet Name : DownloadExcelServlet
+Class Name   : smartbi.freequery.util.DownloadExcelServlet
+Mappings     : [/vision/DownloadExcelServlet]
+--------------------------------------------------
+Servlet Name : UploadExcelServlet
+Class Name   : smartbi.freequery.util.UploadExcelServlet
+Mappings     : [/vision/UploadExcelServlet]
+--------------------------------------------------
+Servlet Name : ExcelDataServlet
+Class Name   : smartbi.spreadsheetreport.core.ExcelDataServlet
+Mappings     : [/vision/excelDataServlet]
+--------------------------------------------------
+Servlet Name : default
+Class Name   : org.apache.catalina.servlets.DefaultServlet
+Mappings     : [/]
+--------------------------------------------------
+Servlet Name : MigrateServlet
+Class Name   : smartbi.freequery.migrate.MigrateServlet
+Mappings     : [/vision/MigrateServlet]
+--------------------------------------------------
+Servlet Name : ScreenShotServlet
+Class Name   : smartbi.decisionpanel.portal.ScreenShotServlet
+Mappings     : [/vision/ScreenShotServlet]
+--------------------------------------------------
+Servlet Name : SmartbiXStartupServlet
+Class Name   : smartbix.smartbi.SmartbiXStartupServlet
+Mappings     : []
+--------------------------------------------------
+Servlet Name : GetReportDataServlet
+Class Name   : smartbi.freequery.report.GetReportDataServlet
+Mappings     : [/vision/GetReportData]
+--------------------------------------------------
+Servlet Name : ConfigUploadServlet
+Class Name   : smartbi.config.ConfigUploadServlet
+Mappings     : [/config, /vision/config]
+--------------------------------------------------
+Servlet Name : SyncServlet
+Class Name   : smartbi.freequery.sync.SyncServlet
+Mappings     : [/vision/SyncServlet]
+--------------------------------------------------
+Servlet Name : TraceServlet
+Class Name   : smartbi.framework.trace.TraceServlet
+Mappings     : [/vision/trace]
+--------------------------------------------------
+Servlet Name : UploadBMapBgImageServlet
+Class Name   : smartbi.geomap.UploadBMapBgImageServlet
+Mappings     : [/vision/UploadBMapBgImageServlet]
+--------------------------------------------------
+Servlet Name : GbkJsp
+Class Name   : smartbi.GbkJsp
+Mappings     : [/vision/gbk.jsp]
+--------------------------------------------------
+Servlet Name : LayoutServlet
+Class Name   : smartbi.decisionpanel.portal.LayoutServlet
+Mappings     : [/vision/LayoutServlet]
+--------------------------------------------------
+Servlet Name : ChartThemePreviewImgServlet
+Class Name   : smartbi.chart.theme.ChartThemePreviewImgServlet
+Mappings     : [/vision/ChartThemePreviewImgServlet]
+--------------------------------------------------
+Servlet Name : ExportHttpServlet
+Class Name   : smartbi.module.export.ExportHttpServlet
+Mappings     : [/vision/ExportHttpServlet]
+--------------------------------------------------
+Servlet Name : DpExportServlet
+Class Name   : smartbi.decisionpanel.export.DpExportServlet
+Mappings     : [/vision/DpExportServlet]
+--------------------------------------------------
+Servlet Name : OfficeReportServlet
+Class Name   : smartbi.officereport.OfficeReportServlet
+Mappings     : [/vision/officeReportServlet]
+--------------------------------------------------
+Servlet Name : StubServlet
+Class Name   : smartbi.framework.rmi.StubServlet
+Mappings     : [*.stub]
+--------------------------------------------------
+Servlet Name : WebsheetServlet
+Class Name   : smartbi.websheet.WebsheetServlet
+Mappings     : [/vision/websheet/convert/spreadsheet, /vision/websheet/export, /vision/websheet/preview, /vision/websheet/convert/luckysheet, /vision/websheet/save, /vision/websheet/import, /vision/websheet/update]
+--------------------------------------------------
+Servlet Name : UploadImageServlet
+Class Name   : smartbi.uploadimg.UploadImageServlet
+Mappings     : [/vision/UploadImageServlet]
+--------------------------------------------------
+Servlet Name : DynamicLibServlet
+Class Name   : smartbi.framework.DynamicLibServlet
+Mappings     : [/vision/dynamicLibServlet]
+--------------------------------------------------
+Servlet Name : LoadTransformRuleServlet
+Class Name   : smartbi.freequery.client.transformrule.LoadTransformRuleServlet
+Mappings     : [/vision/LoadTransformRuleServlet]
+--------------------------------------------------
+Servlet Name : OlapExportServlet
+Class Name   : smartbi.olap.export.OlapExportServlet
+Mappings     : [/vision/OlapExportServlet]
+--------------------------------------------------
+
+================ Filter Mappings ================
+Filter Name      : DisableUrlSessionFilter
+Class Name       : smartbi.freequery.filter.DisableUrlSessionFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : ExceptionResponseFilter
+Class Name       : smartbi.freequery.filter.ExceptionResponseFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : CheckHttpMethodFilter
+Class Name       : smartbi.freequery.filter.CheckHttpMethodFilter
+URL Mappings     : [/vision/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : TransactionFilter
+Class Name       : smartbi.framework.rmi.TransactionFilter
+URL Mappings     : [/vision/DownloadExcelServlet, /vision/ssreportServlet, /vision/LoadTransformRuleServlet, /vision/ssreportImportServlet, /vision/ScreenShotServlet, /vision/UploadPageBgImgServlet, /vision/PortalExportServlet, /vision/RMIServlet, /vision/DpExportServlet, /vision/UploadImageServlet, /vision/downloadOffline, /vision/LayoutServlet, /vision/ImageChartServlet, /vision/GetChartXml, /vision/FileResource, /vision/ExportHttpServlet, /vision/configExtension, /vision/ssreporttemplate/*, *.jsp, /vision/trace, /vision/GetReportData, /vision/ExportServlet, /vision/ExportLogServlet, /vision/MigrateServlet, /vision/OlapExportServlet, /vision/SyncServlet, /vision/services/*, /vision/excelDataServlet, /vision/ExcelAnalysis, /vision/UploadExcelServlet, /vision/IndexServlet, /vision/officeReportServlet, /vision/FreeQueryServlet, /vision/config, /vision/ChartThemePreviewImgServlet, /vision/ssreport/htmls/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : CheckIsLoggedFilter
+Class Name       : smartbi.freequery.filter.CheckIsLoggedFilter
+URL Mappings     : [/vision/DownloadExcelServlet, /vision/ssreportServlet, /vision/LoadTransformRuleServlet, /vision/ssreportImportServlet, /vision/ScreenShotServlet, /vision/UploadPageBgImgServlet, /vision/PortalExportServlet, /vision/RMIServlet, /vision/DpExportServlet, /vision/UploadImageServlet, /vision/downloadOffline, /vision/LayoutServlet, /vision/ImageChartServlet, /vision/FileResource, /vision/ExportHttpServlet, /vision/GetReportData, /vision/ExportServlet, /vision/ExportLogServlet, /vision/MigrateServlet, /vision/OlapExportServlet, /vision/SyncServlet, /vision/GeoMapDataServlet, /vision/excelDataServlet, /vision/ExcelAnalysis, /vision/UploadExcelServlet, /vision/packageinfo.txt, /vision/officeReportServlet, /vision/FreeQueryServlet, /vision/ChartThemePreviewImgServlet, /vision/MetricsImporterServlet]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : Tomcat WebSocket (JSR356) Filter
+Class Name       : org.apache.tomcat.websocket.server.WsFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : SmartbiApplicationFilter
+Class Name       : smartbi.framework.SmartbiApplicationFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : SmartbiXTraceFilter
+Class Name       : smartbix.smartbi.filter.SmartbiXTraceFilter
+URL Mappings     : [/smartbix/api/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : RedisSessionFilter
+Class Name       : smartbi.framework.RedisSessionFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : HiddenHttpMethodFilter
+Class Name       : smartbixlibs.org.springframework.web.filter.HiddenHttpMethodFilter
+URL Mappings     : [/smartbix/api/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : CheckRefererFilter
+Class Name       : smartbi.freequery.filter.CheckRefererFilter
+URL Mappings     : [/vision/*, /smartbix/api/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : ETagFilter
+Class Name       : smartbi.freequery.filter.ETagFilter
+URL Mappings     : [/vision/css/bof_merge_integrate.css.jsp, /vision/css/bof_merge_dp.css.jsp, /vision/gbk.jsp, /vision/css/bof_merge.css.jsp]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : GZIPFilter
+Class Name       : smartbi.freequery.filter.GZIPFilter
+URL Mappings     : [*.jsp, *.svg, *.css, /vision/FileResource, *.html, *.htm, *.stub, *.template, *.js, /vision/RMIServlet]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : ExtensionFilter
+Class Name       : smartbi.extension.ExtensionFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : CacheFilter
+Class Name       : smartbi.freequery.CacheFilter
+URL Mappings     : [/vision/css/bof_merge_integrate.css.jsp, *.png, *.gif, /vision/css/bof_merge_dp.css.jsp, /vision/css/bof_merge.css.jsp, *.template, *.ico, *.swf, /vision/gbk.jsp, *.css, *.jpg, *.stub, *.js]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : TraceFilter
+Class Name       : smartbi.freequery.filter.TraceFilter
+URL Mappings     : [/vision/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : LogFilter
+Class Name       : smartbi.freequery.filter.LogFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : MonitorFilter
+Class Name       : smartbi.config.MonitorFilter
+URL Mappings     : [/vision/SyncServlet, /vision/recorddata.jsp, /monitoring, /vision/designer/*, /vision/chooser.jsp, /vision/monitor/*, /vision/recorddownload.jsp, /vision/userListManager.jsp, /vision/restoredata.jsp]
+Servlet Mappings : []
+--------------------------------------------------
