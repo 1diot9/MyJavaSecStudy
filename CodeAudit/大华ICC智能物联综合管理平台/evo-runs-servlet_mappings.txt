@@ -1,0 +1,55 @@
+================ Servlet Mappings ================
+Servlet Name : oauth-dispatcherServlet
+Class Name   : org.springframework.web.servlet.DispatcherServlet
+Mappings     : [/oauth/check_token, /oauth/token]
+--------------------------------------------------
+Servlet Name : version-dispatcherServlet
+Class Name   : org.springframework.web.servlet.DispatcherServlet
+Mappings     : [/1.0.0/*, /version]
+--------------------------------------------------
+Servlet Name : dispatcherServlet
+Class Name   : org.springframework.web.servlet.DispatcherServlet
+Mappings     : [/]
+--------------------------------------------------
+
+================ Filter Mappings ================
+Filter Name      : webMvcMetricsFilter
+Class Name       : org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : cookieFilter
+Class Name       : com.dahua.evo.runs.filter.CookieFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : interfacePermissionsFilter
+Class Name       : com.dahua.evo.runs.filter.UriPermissionsFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : Tomcat WebSocket (JSR356) Filter
+Class Name       : org.apache.tomcat.websocket.server.WsFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : sessionFilter
+Class Name       : com.dahua.evo.runs.filter.SessionFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : xssFilter
+Class Name       : com.dahua.evo.runs.filter.XSSFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : authFilter
+Class Name       : com.dahua.evo.runs.filter.AuthFilter
+URL Mappings     : [/v1.0/receive, /v1.0/receive/*, /v1.0/push/*, /v1.0/push]
+Servlet Mappings : []
+--------------------------------------------------
+Filter Name      : characterEncodingFilter
+Class Name       : org.springframework.boot.web.servlet.filter.OrderedCharacterEncodingFilter
+URL Mappings     : [/*]
+Servlet Mappings : []
+--------------------------------------------------
