@@ -20,7 +20,7 @@
 - [中间件相关](#中间件相关)
 - [Spring系列](#Spring系列)
 - [工具开发/二开](#devTools)
-- [代码审计](#CodeAudit)
+- [代码审计](#代码审计)
 - [代码审计辅助工具](#代码审计辅助工具)
 - [查漏补缺](#查漏补缺)
 - [参考学习路线](#参考学习路线)
@@ -431,6 +431,8 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 ## 内存马
 
+[Java安全学习——内存马 - 枫のBlog](https://goodapple.top/archives/1355)  先看Tomcat和Spring
+
 [Java内存马系列-01-基础内容学习 | Drunkbaby's Blog](https://drun1baby.top/2022/08/19/Java内存马系列-01-基础内容学习/) 可以先看01，02，03，05，里面提到的方法适用于传统JavaWeb项目(Tomcat为中间件的)
 
 [基于内存 Webshell 的无文件攻击技术研究-安全KER - 安全资讯平台](https://www.anquanke.com/post/id/198886) Spring环境下，如何获取当前代码的上下文；Controller内存马注入
@@ -443,25 +445,43 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 ========================================================
 
-[bitterzzZZ/MemoryShellLearn: 分享几个直接可用的内存马，记录一下学习过程中看过的文章](https://github.com/bitterzzZZ/MemoryShellLearn) 
-
-[Getshell/Mshell: Memshell-攻防内存马研究](https://github.com/Getshell/Mshell) 
-
-[W01fh4cker/LearnJavaMemshellFromZero: 【三万字原创】完全零基础从0到1掌握Java内存马，公众号：追梦信安](https://github.com/W01fh4cker/LearnJavaMemshellFromZero) 
-
-上面这三篇都是内存马学习的相关项目，里面有很多优秀的文章和案例代码
-
-[浅谈 Java Agent 内存马 – 天下大木头](https://wjlshare.com/archives/1582) 
-
 [奇安信攻防社区-Solon框架注入内存马](https://forum.butian.net/share/3700)  里面提到的Java Object Searcher值得学习
 
-[c0ny1/java-object-searcher: java内存对象搜索辅助工具](https://github.com/c0ny1/java-object-searcher)
+[c0ny1/java-object-searcher: java内存对象搜索辅助工具](https://github.com/c0ny1/java-object-searcher) 
 
 [Shiro RememberMe 漏洞检测的探索之路 - CT Stack 安全社区](https://stack.chaitin.com/techblog/detail/39)  这里也有用到Java-object-searcher 构造tomcat回显
 
 [半自动化挖掘request实现多种中间件回显 | 回忆飘如雪](https://gv7.me/articles/2020/semi-automatic-mining-request-implements-multiple-middleware-echo/)  java-object-searcher工具的作者
 
 [内存对象搜索原理剖析-先知社区](https://xz.aliyun.com/news/11303)  java-object-searcher原理
+
+========================================================
+
+下面这三篇都是内存马学习的相关项目，里面有很多优秀的文章和案例代码
+
+[bitterzzZZ/MemoryShellLearn: 分享几个直接可用的内存马，记录一下学习过程中看过的文章](https://github.com/bitterzzZZ/MemoryShellLearn) 
+
+[Getshell/Mshell: Memshell-攻防内存马研究](https://github.com/Getshell/Mshell) 
+
+[W01fh4cker/LearnJavaMemshellFromZero: 【三万字原创】完全零基础从0到1掌握Java内存马，公众号：追梦信安](https://github.com/W01fh4cker/LearnJavaMemshellFromZero) 
+
+<br>
+
+### Java Agent内存马
+
+[Java Agent 从入门到内存马-先知社区](https://xz.aliyun.com/news/8949) 
+
+[浅谈 Java Agent 内存马 – 天下大木头](https://wjlshare.com/archives/1582) 
+
+[JAVA安全之Java Agent打内存马-先知社区](https://xz.aliyun.com/news/16399) 
+
+[论如何优雅的注入Java Agent内存马-先知社区](https://xz.aliyun.com/news/11086) 
+
+[无文件落地注入Agent内存马实操-先知社区](https://xz.aliyun.com/news/12596) 
+
+[java反序列化通过java agent实现utf-8 Overlong Encoding-先知社区](https://xz.aliyun.com/news/13737) 
+
+[基于javaAgent内存马检测查杀指南](https://mp.weixin.qq.com/s/Whta6akjaZamc3nOY1Tvxg) 
 
 <br>
 
@@ -549,6 +569,10 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 [URL解析导致的鉴权绕过问题探究-Resin篇 - 进阶的胖闹-pwnull](https://pwnull.github.io/2023/from-urlparser-to-authbypass-resin/)  
 
+## ActiveMQ
+
+[CVE-2023-46604 activemq<5.18.3 RCE 分析 - KingBridge - 博客园](https://www.cnblogs.com/kingbridge/articles/17812062.html#arbitrary-constructorstring) 
+
 # Spring系列<a id="Spring系列"></a>
 
 ## SpringBoot 
@@ -611,11 +635,7 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 <br>
 
-
-
-
-
-# 代码审计<a id="CodeAudit"></a>
+# 代码审计<a id="代码审计"></a>
 
 [Java安全慢游记](https://www.yuque.com/pmiaowu/gpy1q8) 非常好整理，强烈推荐，有基础也有例子，还讲了Tabby和CodeQL在审计中的运用
 
@@ -679,7 +699,21 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 [契约锁电子签章系统 pdfverifier 远程代码执行漏洞分析（补丁包逆向分析）-先知社区](https://xz.aliyun.com/news/18482) 
 
-[契约锁代码审计分析_契约锁漏洞-CSDN博客](https://blog.csdn.net/baidu_25299117/article/details/139990814)
+[契约锁代码审计分析_契约锁漏洞-CSDN博客](https://blog.csdn.net/baidu_25299117/article/details/139990814) 
+
+## 帆软报表FineReport
+
+[帆软报表FineReport历史漏洞分析（一） | 1diot9's Blog](https://1diot9.github.io/2026/03/15/帆软报表FineReport历史漏洞分析（一）/) 
+
+[帆软报表FineReport历史漏洞分析（二） | 1diot9's Blog](https://1diot9.github.io/2026/03/20/帆软报表FineReport历史漏洞分析（二）/) 
+
+## SmartBI
+
+[Smartbi历史漏洞分析(一)————RMIServlet接口引发的惨案 | 1diot9's Blog](https://1diot9.github.io/2026/03/30/Smartbi历史漏洞分析-一-————RMIServlet接口引发的惨案/) 
+
+## DaHua
+
+[某华ICC智能物联综合管理平台历史漏洞分析（一）——从两层接口转发到漏洞利用 | 1diot9's Blog](https://1diot9.github.io/2026/04/16/大华ICC智能物联综合管理平台历史漏洞分析（一）——从两层接口转发到漏洞利用/) 
 
 <br>
 
