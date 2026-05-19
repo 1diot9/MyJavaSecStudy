@@ -1,0 +1,2 @@
+jar cvfm hello.jar .\src\main\resources\hello.mf .\Hello.class
+java -javaagent:./target/agent-1.0-SNAPSHOT.jar=anyArgs -jar hello.jar
