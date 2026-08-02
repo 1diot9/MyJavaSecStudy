@@ -6,9 +6,9 @@
   python classNameModefier.py Calc.class com.sun.rowset.JdbcRowSetImpl
   python classNameModefier.py Calc.class com/example/Evil -o out
 
-  # 只改 .class 实际类名，不打包 jar（文件名仍用原简单类名）
-  python classNameModefier.py Calc.class com.example.Evil --class-only
-  python classNameModefier.py Calc.class NewName -c -o out
+  # 只改 .class 实际类名，不打包 jar（输出文件名=输入文件名）
+  python classNameModefier.py CalcJType1.class "file:.D:.CalcJType" -c
+  python classNameModefier.py Calc.class com.example.Evil -c -o out
 
   python classNameModefier.py Calc.class NewName --dry-run
 """
@@ -48,8 +48,12 @@ _DOUBLE_SLOT = {CONSTANT_Long, CONSTANT_Double}
 
 
 def _to_binary_name(name: str) -> str:
-    """com.example.Foo / com/example/Foo -> com/example/Foo"""
-    return name.strip().replace(".", "/")
+    """普通包名 com.example.Foo -> com/example/Foo；已含 / 或 : 的保持原样。"""
+    name = name.strip()
+    # file:...、已是二进制名、或刻意保留点号的名字，不做 . -> / 转换
+    if "/" in name or ":" in name:
+        return name
+    return name.replace(".", "/")
 
 
 def _read_u1(data: bytes, off: int) -> tuple[int, int]:
@@ -250,7 +254,7 @@ def main(argv: list[str] | None = None) -> int:
         "-c",
         "--class-only",
         action="store_true",
-        help="只修改实际类名并输出 .class，不打包 jar（文件名仍为原简单类名.class）",
+        help="只修改实际类名并输出 .class，不打包 jar（输出文件名与输入文件名相同）",
     )
     parser.add_argument(
         "--dry-run",
@@ -275,9 +279,10 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     new_name = _to_binary_name(args.new_name)
-    # 文件名用「原简单类名」（路径最后一段）
-    simple_name = old_name.rsplit("/", 1)[-1]
-    entry_name = f"{simple_name}.class"
+    # 输出文件名跟随「输入文件名」，不跟随内部类名
+    # 例如输入 CalcJType1.class（内部仍是 CalcJType）-> 输出 CalcJType1.class / CalcJType1
+    file_stem = class_path.stem
+    entry_name = f"{file_stem}.class"
     out_dir = args.output_dir or class_path.parent
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -285,8 +290,7 @@ def main(argv: list[str] | None = None) -> int:
         out_path = out_dir / entry_name
         mode_desc = "仅 .class"
     else:
-        # 输出无扩展名 jar，文件名与原简单类名相同
-        out_path = out_dir / simple_name
+        out_path = out_dir / file_stem
         mode_desc = "无扩展名 jar"
 
     print(f"[*] 输入文件 : {class_path}")
