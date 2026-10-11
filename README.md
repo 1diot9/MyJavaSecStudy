@@ -7,7 +7,6 @@
 
 - [Java基础](#Java基础)
 - [Java安全基础](#Java安全基础)
-- [代码和jar包调试](#代码和jar包调试)
 - [反序列化](#反序列化)
 - [JNDI](#JNDI)
 - [JDBC](#JDBC)
@@ -22,7 +21,9 @@
 - [工具开发/二开](#devTools)
 - [代码审计](#代码审计)
 - [代码审计辅助工具](#代码审计辅助工具)
+- [AI安全/AI For Sec](#AI安全/AI For Sec)
 - [查漏补缺](#查漏补缺)
+- [面经](#面经)
 - [参考学习路线](#参考学习路线)
 - [博客&公众号整理](#博客整理)
 - [工具推荐](#工具推荐)
@@ -30,6 +31,21 @@
 
 
 <br>
+
+推销一下自己写的白盒审计agent，目前已经获得了44个漏洞编号：
+
+https://github.com/1diot9/VulnHunter-White
+
+<br>
+
+# 更新日志
+
+2026-10-11
+
+- 新增AI安全专题，开源组件专题，面经专题，leetcode专题
+- 更新Fastjson专题，补充了最新的83版本漏洞
+- 更新代码审计工具，添加了我自己写的agent
+- 暑假在实习，最近学习动力又有点丧失，所以好久没更新（
 
 # Java基础<a id="Java基础"></a>
 
@@ -43,13 +59,31 @@
 
 [【狂神说Java】Java零基础学习视频通俗易懂_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV12J41137hu/?spm_id_from=333.337.search-card.all.click) b站看其他的也行，比如黑马，找自己适合的就行
 
-<br>
+========================================================
+
+之前刚学的时候，遗漏了一些重要概念，现在补上。 2026-04-21
+
+JMX：
+
+这个在ActiveMQ里第一次遇到
+
+[面试官问我 JMX 了解不，我说：什么？ - 知乎](https://zhuanlan.zhihu.com/p/166530442)  
+
+[GitHub - ZhangZiSheng001/02-jmx-demo: 如何使用JMX来管理程序 · GitHub](https://github.com/ZhangZiSheng001/02-jmx-demo)  
 
 # Java安全基础 <a id="Java安全基础"></a>
 
 主要是学习反射，类加载，动态代理，各种命令执行方式等概念，为后面的学习打下基础。
 
 一开始看不懂很正常，能有个印象就行，后面在具体问题中发现自己不会时再回来看；多问AI
+
+## 代码 / jar包调试
+
+一开始做ctf题的时候，遇到过很尴尬的情况，拿到jar包，不知道要怎么在本地调试。后面才学习到了反编译，远程调试等内容。
+
+[奇安信攻防社区-java审计调试方式](https://forum.butian.net/share/1753)  基本涉及了所有情况
+
+[skylot/jadx: Dex to Java decompiler](https://github.com/skylot/jadx)  反编译工具
 
 <br>
 
@@ -106,18 +140,6 @@
 
 
 
-
-
-
-<br>
-
-# 代码 / jar包调试<a id="代码和jar包调试"></a>
-
-一开始做ctf题的时候，遇到过很尴尬的情况，拿到jar包，不知道要怎么在本地调试。后面才学习到了反编译，远程调试等内容。
-
-[奇安信攻防社区-java审计调试方式](https://forum.butian.net/share/1753)  基本涉及了所有情况
-
-[skylot/jadx: Dex to Java decompiler](https://github.com/skylot/jadx)  反编译工具
 
 
 
@@ -406,6 +428,12 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 [[Java Puzzle #3 WP\] Fastjson write ascii JAR RCE](https://mp.weixin.qq.com/s/9e0V4bnV6fuGAfO1AKLYdw) 
 
 [fastjson写文件挑战2——两个fastjson链](https://mp.weixin.qq.com/s/H0_UqhyCT7pDa6Szc7rNAQ) 
+
+[Fastjson 1.2.83 checkAutoType 绕过 RCE 复现总结](https://xz.aliyun.com/news/92550) 83新漏洞，秋招必考
+
+[FastJson2 Hash 碰撞 RCE 分析与复现](https://xz.aliyun.com/news/92608) 与83版本的新洞本质一样
+
+[Fastjson1全版本漏洞利用总结](https://1diot9.github.io/2026/08/04/Fastjson1%E5%85%A8%E7%89%88%E6%9C%AC%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E6%80%BB%E7%BB%93/) 自己写的FJ1全版本利用
 
 <br>
 
@@ -769,9 +797,33 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 [自动化代码审计实践 | mayylu's blog](https://mayylu.github.io/2024/08/02/java/自动化代码审计实践/)
 
+## 白盒审计Agent
+
+https://github.com/1diot9/VulnHunter-White 自己写的，当然要放第一个（
+
 <br>
 
+# 开源组件分析<a id="开源组件分析"></a>
 
+## ActiveMQ
+
+[近期ActiveMQ Jolokia的两个漏洞以及部分历史漏洞分析](https://xz.aliyun.com/news/92029)
+
+
+
+# AI安全/AI For Sec<a id="AI安全/AI For Sec"></a>
+
+AI安全可以分成两块，一块是AI Sec，就是AI自身的安全，比如提示词注入；另一块是AI For Sec，就是让AI为安全赋能，比如帮忙挖漏洞。
+
+[从DeepAudit、AutoCVE到VulnHunter-White：白盒审计Agent设计笔记](https://xz.aliyun.com/news/92732)
+
+[AI&Sec知识图谱](https://xz.aliyun.com/picture-catrow?id=6) 
+
+[【AI安全】恶意Skill检测引擎绕过九板斧实战](https://xz.aliyun.com/news/92656)
+
+[【AI赋能安全】面向渗透 Agent 的任务失效化蜜罐探索](https://xz.aliyun.com/news/92504)
+
+[黑心中转站的安全风险---上下文膨胀、模型造假与提示词投毒](https://xz.aliyun.com/news/91721) 恶意中转站劫持agent工具调用
 
 # 查漏补缺 <a id="查漏补缺"></a>
 
@@ -785,7 +837,9 @@ payload缩短这部分内容挺多的，感觉能单独研究了。
 
 <br>
 
+# 面经<a id="面经"></a>
 
+[2025暑期面试汇总](https://1diot9.github.io/2025/06/19/2025%E6%9A%91%E6%9C%9F%E9%9D%A2%E8%AF%95%E6%B1%87%E6%80%BB/) 乙方为主
 
 # 参考学习路线 <a id="参考学习路线"></a>
 
